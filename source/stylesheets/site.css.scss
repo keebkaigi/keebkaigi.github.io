@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+$bg-color: #FFF;
+$link-color: #f92174;
+$hover-color: #f92174;
+$text-color: #000;
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+  "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif
+  ;
+  padding: 18vh 1rem;
+}
+
+a {
+  color: $link-color;
+  &:focus,
+  &:hover {
+    color: $hover-color;
+  }
+}
