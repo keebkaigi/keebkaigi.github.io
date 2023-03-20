@@ -4,5 +4,32 @@ title: KeebKaigi 2023
 
 - d = data.year_2023
 
-%h1= d.general.title
-%pre= d.general.teaser_message
+.bg
+  .bg__keeb-left
+    = image_tag('hero__keeb-left.svg', class: 'bg__keeb-img')
+  .bg__keeb-right
+    = image_tag('hero__keeb-right.svg', class: 'bg__keeb-img')
+.content
+  .hero
+    .hero__content
+      .hero__tagline
+        = d.general.tagline
+      .hero__logo
+        = image_tag('keebkaigi_main-logo.svg', class: 'hero__logo-image', alt: d.general.event_name)
+      .hero__year
+        = d.general.year
+      .hero__city
+        = image_tag('hero__matsumoto.svg', class: 'hero__city-img', alt: 'Matsumoto')
+      .hero__datetime
+        .hero__date
+          = d.general.date
+        .hero__time
+          = d.general.time
+      .hero__rubykaigi
+        = link_to d.general.rubykaigi.name, d.general.rubykaigi.url, target: '_blank'
+        = '-'
+        = d.general.rubykaigi.date
+  .teaser
+    %p.teaser__message.is-en= d.teaser.message.en
+    %p.teaser__message= d.teaser.message.ja
+    %p.teaser__message_2= d.teaser.message_2
