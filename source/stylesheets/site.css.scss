@@ -1,11 +1,11 @@
 @charset 'UTF-8';
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Saira:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Saira:wght@300;400;600;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap');
 
 // Variables
 
 $bg-color: #000;
-$link-color: #f92174;
-$hover-color: #f92174;
+$link-color: #FFF;
+$hover-color: #f9f693;
 $text-color: #FFF;
 
 // Mixin
@@ -14,24 +14,41 @@ $text-color: #FFF;
   background: linear-gradient(to right, #39B54A 0%, #FCC02E 10%, #f25350 30%, #F92174 50%, #D067FF 80%, #39B54A 100%);
 }
 
+@mixin mq{
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin mask-image($url: '/images/footer__matsumoto-castle.svg') {
+  mask-image: url($url);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
 // General
 
 body {
   background-color: $bg-color;
   color: $text-color;
-  font-family: 'Saira', "Hiragino Sans",
-  "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif
-  ;
+  font-family: 'Saira', 'Zen Kaku Gothic New', sans-serif;
+  font-weight: bold;
   text-align: center;
+  letter-spacing: 0.05rem;
+  margin: 0;
 }
 
 a {
   color: $link-color;
+  text-decoration: none;
+  transition-duration: 0.3s;
   &:focus,
   &:hover {
     color: $hover-color;
+    text-shadow:0px 0px 10px $hover-color;
   }
 }
+
 
 // Keyframes
 
@@ -45,6 +62,11 @@ a {
   100% { background-position: 30vw 0; }
 }
 
+@keyframes gaming-logo-mq {
+  0% { background-position: 0 0; }
+  100% { background-position: 100vw 0; }
+}
+
 // bg
 
 .bg {
@@ -53,38 +75,44 @@ a {
   position: absolute;
   overflow: hidden;
   z-index: 0;
+
+  @include mq {
+    position: relative;
+    height: 30vh;
+  }
 }
 
 @mixin bg-keeb {
   @include infinite-gradient;
-  position: absolute;
-  top: 16vh;
   width: 27.5vw;
   height: 20vw;
-  box-shadow:0px 0px 10px 10px #000000;
-  &:hover {
-    animation: gaming-keeb 0.3s linear infinite;
-  }
+  position: absolute;
+  top: 16vh;
+  mask-repeat: no-repeat;
+  mask-size: cover;
 }
 
 .bg__keeb-left {
   @include bg-keeb;
   left: -2vw;
+  mask-image: url('/images/bg__keeb-left.svg');
+  transform: rotate(10deg);
 }
 
 .bg__keeb-right {
   @include bg-keeb;
   right: -2vw;
+  mask-image: url('/images/bg__keeb-right.svg');
+  transform: rotate(-10deg);
 }
 
 .content {
   position: relative;
   z-index: 1;
-  padding: 10vh 1rem;
+  padding: 10vh 1rem 0;
 }
 
-
-// hero
+// .hero
 
 .hero {
   position: relative;
@@ -101,7 +129,12 @@ a {
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.2em;
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
+
+  @include mq {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .hero__logo {
@@ -111,11 +144,30 @@ a {
   position: relative;
   left: 0.8rem;
   margin: 0 auto 0.2rem;
-  box-shadow:0px 0px 20px 20px $bg-color;
+  mask-image: url('/images/logo.svg');
+  mask-repeat: no-repeat;
+  mask-size: cover;
   animation: gaming-logo 2s linear infinite;
+
   &:hover {
     animation: gaming-logo 0.3s linear infinite;
+    cursor: crosshair;
   }
+
+  @include mq {
+    width: 100vw;
+    height: 25vw;
+    left: 0;
+    animation: gaming-logo-mq 2s linear infinite;
+
+    &:hover {
+      animation: gaming-logo-mq 0.3s linear infinite;
+    }
+  }
+}
+
+.hero__text {
+  opacity: 0;
 }
 
 .hero__year {
@@ -130,6 +182,9 @@ a {
   width: 15rem;
   height: 3rem;
   margin: 0 auto 1.2rem;
+  mask-image: url('/images/matsumoto.svg');
+  mask-repeat: no-repeat;
+  mask-size: cover;
 }
 
 .hero__datetime {
@@ -146,16 +201,106 @@ a {
 
 .hero__rubykaigi {
   font-size: 0.9rem;
-  a {
-    text-decoration: none;
-    color:  white;
-    &:hover {
-      text-shadow:0px 0px 4px #FFF;
+}
+
+// .sponsor
+
+.sponsor {
+  margin-top: 10rem;
+}
+
+.sponsor__main {
+  margin-bottom: 4rem;
+}
+
+.sponsor__main-label {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.sponsor__main-logo {
+  font-size: 1.8rem;
+}
+
+.sponsor__sub-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.sponsor__sub {
+  display: flex;
+  margin-right: 10rem;
+  align-items: center;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.sponsor__sub-label {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+.sponsor__sub-logo-image {
+  height: 1.8rem;
+}
+
+// .team
+
+.team {
+  margin-top: 6rem;
+}
+
+.team__logo {
+  width: 16rem;
+  margin: 0 auto -0.3rem;
+}
+
+.team__year {
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+  font-family: 'Saira Stencil One', sans-serif;
+  margin: 0 0 0.5rem;
+}
+
+.team__label {
+  font-size: 0.8rem;
+  transform: translateX(-0.2rem)
+}
+
+.team__members-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.team__member {
+  margin-right: 0.5rem;
+  &:after {
+    content: ','
+  }
+  &:last-child {
+    &:after {
+      content: '';
+    }
+    &:before {
+      white-space: pre-wrap;
+      content: 'and ';
     }
   }
 }
 
-// teaser
+.team__licence {
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+
+// .teaser
 
 .teaser {
   position: relative;
@@ -164,13 +309,57 @@ a {
 
 .teaser__message {
   font-size: 1rem;
-  line-height: 1.8;
+  line-height: 2.2;
+  margin-bottom: 3rem;
   &.is-en {
     font-size: 1.1rem;
+    line-height: 2;
   }
 }
 
 .teaser__message_2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
+}
+
+// .footer
+
+$footer-height: 300px;
+$footer-castle-width: 360px;
+
+.footer {
+  width: 100vw;
+  height: $footer-height - 80px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-top: 3rem;
+}
+
+.footer__bg {
+  width: 100vw;
+  height: $footer-height;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 2;
+}
+
+.footer__matsumoto-castle {
+  @include infinite-gradient;
+  @include mask-image;
+  flex: 0 0 $footer-castle-width;
+}
+
+.footer__numa {
+  @include infinite-gradient;
+  @include mask-image('/images/footer__numa.svg');
+  mask-size: auto $footer-height;
+  mask-repeat: repeat-x;
+  flex: 100;
+
+  &.is-left {
+    mask-position: right;
+  }
 }

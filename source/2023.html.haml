@@ -6,30 +6,74 @@ title: KeebKaigi 2023
 
 .bg
   .bg__keeb-left
-    = image_tag('hero__keeb-left.svg', class: 'bg__keeb-img')
   .bg__keeb-right
-    = image_tag('hero__keeb-right.svg', class: 'bg__keeb-img')
 .content
   .hero
     .hero__content
       .hero__tagline
         = d.general.tagline
-      .hero__logo
-        = image_tag('keebkaigi_main-logo.svg', class: 'hero__logo-image', alt: d.general.event_name)
+      %h1.hero__logo
+        %span.hero__text
+          = d.general.event_name
       .hero__year
         = d.general.year
       .hero__city
-        = image_tag('hero__matsumoto.svg', class: 'hero__city-img', alt: 'Matsumoto')
+        %span.hero__text
+          = d.general.venue.city
       .hero__datetime
         .hero__date
           = d.general.date
         .hero__time
           = d.general.time
       .hero__rubykaigi
-        = link_to d.general.rubykaigi.name, d.general.rubykaigi.url, target: '_blank'
+        = link_to d.general.rubykaigi.name,
+          d.general.rubykaigi.url,
+          target: '_blank'
         = '-'
         = d.general.rubykaigi.date
   .teaser
     %p.teaser__message.is-en= d.teaser.message.en
     %p.teaser__message= d.teaser.message.ja
     %p.teaser__message_2= d.teaser.message_2
+  .sponsor
+    .sponsor__main
+      .sponsor__main-label Sponsor
+      .sponsor__main-logo
+        = link_to d.sponsors.main.name_ja,
+          d.sponsors.main.url,
+          target: '_blank'
+    %ul.sponsor__sub-list
+      - d.sponsors.sub.each do |sponsor|
+        %li.sponsor__sub
+          .sponsor__sub-label
+            = sponsor.role
+          .sponsor__sub-logo
+            = link_to image_tag("sponsors/#{sponsor.name}.svg",
+              class: 'sponsor__sub-logo-image',
+              alt: sponsor.name_ja),
+              sponsor.url,
+              title: sponsor.name_ja,
+              target: '_blank'
+  .team
+    .team__logo
+      = image_tag('logo-white.svg',
+        class: 'team__logo-image',
+        alt: d.general.event_name)
+    .team__year
+      = d.general.year
+    .team__label
+      Team
+    %ul.team__members-list
+      - d.team.members.each do |member|
+        %li.team__member<>
+          = link_to "@#{member}",
+            "https://twitter.com/#{member}",
+            target: '_blank'
+    .team__licence
+      = d.general.licence
+
+.footer
+  .footer__bg
+    .footer__numa.is-left
+    .footer__matsumoto-castle
+    .footer__numa

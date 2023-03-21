@@ -1,34 +1,21 @@
----
-  title: KeebKaigi 2023
-  tagline: A “Kaigi” for DIY Keyboard enthusiasts
-  event_name: KeebKaigi
-  year: '2023'
-  date: May 10th, 2023
-  time: 15:00 - 20:00
-  rubykaigi:
-    name: RubyKaigi 2023
-    url: https://rubykaigi.org/2023/
-    date: Day 0
-  venue:
-    name: 33GAKU
-    name_kana: サザンガク
-    url: https://33gaku.jp/
-    address: 〒390-0874 長野県松本市大手3-3-9 NTT東日本松本大名町ビル 1F
-    prefecture: Nagano
-    city: Matsumoto
-    country: Japan
-    map_url: https://www.google.co.jp/maps/place/%E9%9B%B75656%E4%BC%9A%E9%A4%A8/@35.7167015,139.7939054,17z/data=!3m1!4b1!4m5!3m4!1s0x60188fba1d7f9887:0xbd26bddbf96c3891!8m2!3d35.7167015!4d139.7960941
-  time_table:
-  registration:
-  party:
-  sponsor:
-    monster_lab: 株式会社モンスターラボ
-    ruby_no_kai: 財団法人 日本Rubyの会
-    esa: esa LLC
-  team:
-    members:
-      - swanmatch
-      - hasumikin
-      - takkanm
-      - ken_c_lo
-      - kakutani
+title: KeebKaigi 2023
+tagline: A “Kaigi” for DIY Keyboard enthusiasts
+event_name: KeebKaigi
+year: '2023'
+date: May 10th, 2023
+time: 15:00 - 20:00
+rubykaigi:
+  name: RubyKaigi 2023
+  url: https://rubykaigi.org/2023/
+  date: Day 0
+venue:
+  name: 33GAKU
+  name_kana: サザンガク
+  url: https://33gaku.jp/
+  address: 〒390-0874 長野県松本市大手3-3-9 NTT東日本松本大名町ビル 1F
+  prefecture: Nagano
+  city: Matsumoto
+  country: Japan
+  map_url: https://www.google.co.jp/maps/place/%E9%9B%B75656%E4%BC%9A%E9%A4%A8/@35.7167015,139.7939054,17z/data=!3m1!4b1!4m5!3m4!1s0x60188fba1d7f9887:0xbd26bddbf96c3891!8m2!3d35.7167015!4d139.7960941
+registration:
+licence: This work by KeebKaigi 2023 Team is licensed under a Creative Commons Attribution 4.0 Unported License.
