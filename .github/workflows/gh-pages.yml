@@ -2,7 +2,7 @@ name: Middleman
 
 on:
   push:
-    branches: [main, feature/gh-action]
+    branches: [main, introduce_middleman]
 
 jobs:
   build_and_deploy:
