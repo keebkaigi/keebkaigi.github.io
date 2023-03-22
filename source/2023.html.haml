@@ -28,6 +28,7 @@ title: KeebKaigi 2023
       .hero__rubykaigi
         = link_to d.general.rubykaigi.name,
           d.general.rubykaigi.url,
+          title: d.general.rubykaigi.name,
           target: '_blank'
         = '-'
         = d.general.rubykaigi.date
@@ -41,6 +42,7 @@ title: KeebKaigi 2023
       .sponsor__main-logo
         = link_to d.sponsors.main.name_ja,
           d.sponsors.main.url,
+          title: d.sponsors.main.name_ja,
           target: '_blank'
     %ul.sponsor__sub-list
       - d.sponsors.sub.each do |sponsor|
