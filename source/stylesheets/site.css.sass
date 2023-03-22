@@ -9,8 +9,7 @@ $link-color: #FFF
 $hover-color: #f9f693
 $text-color: #FFF
 $mq-width: 700px
-$footer-height: 300px
-$footer-castle-width: 360px
+$footer-height: 240px
 
 // Mixin
 
@@ -21,7 +20,7 @@ $footer-castle-width: 360px
   @media (max-width: $mq-width)
     @content
 
-=mask-image($url: "/images/footer__matsumoto-castle.svg")
+=mask-image($url: "/images/footer.svg")
   mask-image: url($url)
   mask-repeat: no-repeat
   mask-size: cover
@@ -56,19 +55,19 @@ a
   100%
     background-position: 50vw 0
 
-@keyframes gaming-matsumoto-castle
-  0%
-    background-position: 0 0
-
-  100%
-    background-position: $footer-castle-width 0
-
 @keyframes gaming-logo-mq
   0%
     background-position: 0 0
 
   100%
     background-position: 88vw 0
+
+@keyframes gaming-matsumoto-castle
+  0%
+    background-position: 0 0
+
+  100%
+    background-position: 100vw 0
 
 // bg
 
@@ -351,46 +350,18 @@ a
 // .footer
 
 .footer
-  width: 100vw
-  height: $footer-height - 80px
-  overflow: hidden
+  +infinite-gradient
+  mask-image: url('/images/footer__numa.svg')
+  mask-repeat: repeat-x
+  mask-size: auto $footer-height
+  mask-position: center
+  width: 100%
+  height: $footer-height
   position: relative
   z-index: 1
   margin-top: 3rem
+  animation: gaming-matsumoto-castle 2s linear infinite
 
-.footer__bg
-  width: 100vw
-  height: $footer-height
-  position: absolute
-  top: 0
-  left: 0
-  display: flex
-  z-index: 2
-
-.footer__matsumoto-castle
-  +infinite-gradient
-  +mask-image
-  flex: 0 0 $footer-castle-width
-  margin: 0 -0.5rem
-  position: relative
-  z-index: 2
-
-  +mq
-    animation: none
-
-.footer__numa
-  +infinite-gradient
-  +mask-image("/images/footer__numa.svg")
-
-  mask-size: auto $footer-height
-  mask-repeat: repeat-x
-  flex: 100
-  position: relative
-  z-index: 1
-
-  &.is-left
-    mask-position: right
-
-  +mq
-    background: #39B54A
-    animation: none
+  &:hover
+    animation: gaming-matsumoto-castle 0.3s linear infinite
+    cursor: crosshair
