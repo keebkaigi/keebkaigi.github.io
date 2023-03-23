@@ -2,7 +2,7 @@ name: Middleman
 
 on:
   push:
-    branches: [main, introduce_middleman]
+    branches: [main, teaser]
 
 jobs:
   build_and_deploy:
