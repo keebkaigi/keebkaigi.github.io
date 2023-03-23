@@ -49,3 +49,5 @@ activate :directory_indexes
 # end
 
 set :haml, { :format => :html5 }
+
+redirect "index.html", to: "2023.html"
