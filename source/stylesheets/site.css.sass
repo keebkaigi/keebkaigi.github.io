@@ -75,21 +75,22 @@ a
 
   +mq
     position: relative
+    margin-top: 1rem
     height: 40vw
 
 =bg-keeb
   +infinite-gradient
 
-  width: 27.5vw
-  height: 20vw
+  width: 27vw
+  height: 22.5vw
   position: absolute
   top: 16vh
   mask-repeat: no-repeat
   mask-size: cover
 
   +mq
-    width: 50vw
-    height: 36.3vw
+    width: 48vw
+    height: 40vw
     top: 0
 
 .bg__keeb-left
@@ -97,14 +98,12 @@ a
 
   left: -2vw
   mask-image: url("/images/bg__keeb-left.svg")
-  transform: rotate(10deg)
 
 .bg__keeb-right
   +bg-keeb
 
   right: -2vw
   mask-image: url("/images/bg__keeb-right.svg")
-  transform: rotate(-10deg)
 
 .content
   position: relative
