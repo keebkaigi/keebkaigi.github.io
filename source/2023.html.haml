@@ -44,10 +44,11 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
     .sponsor__main
       .sponsor__main-label Sponsor
       .sponsor__main-logo
-        = link_to d.sponsors.main.name_ja,
-          d.sponsors.main.url,
+        = link_to d.sponsors.main.url,
           title: d.sponsors.main.name_ja,
-          target: '_blank'
+          target: '_blank' do
+          = image_tag("sponsors/#{d.sponsors.main.name}.svg",
+            class: 'sponsor__main-logo-image')
     %ul.sponsor__sub-list
       - d.sponsors.sub.each do |sponsor|
         %li.sponsor__sub
