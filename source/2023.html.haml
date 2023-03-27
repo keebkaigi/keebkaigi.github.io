@@ -54,13 +54,9 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
             title: 'View on Google Map',
             target: '_blank',
             class: 'hero__venue-google-map-link'
-  .teaser
-    %p.teaser__message.is-en= d.teaser.message.en
-    %p.teaser__message= d.teaser.message.ja
-    %p.teaser__message_2= d.teaser.message_2
 
   = partial('partials/sponsors')
-
+  = partial('partials/teaser')
   .team
     .team__logo
       = image_tag('logo-white.svg',
