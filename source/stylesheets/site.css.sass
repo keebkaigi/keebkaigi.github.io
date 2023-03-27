@@ -11,6 +11,9 @@ $text-color: #FFF
 $mq-width: 700px
 $footer-height: 250px
 $sponsor-logo-width: 20rem
+$footer-height: 240px
+$enter-width: 175px
+$enter-height: 75px
 
 // Mixin
 
@@ -64,6 +67,13 @@ a
 
   100%
     background-position: 100vw 0
+
+@keyframes gaming-enter
+  0%
+    background-position: 0 0
+
+  100%
+    background-position: $enter-width 0
 
 // bg
 
@@ -240,6 +250,25 @@ a
   font-family: 'Zen Kaku Gothic New', sans-serif
   font-size: 0.8rem
   margin-top: 0.5rem
+
+.hero__registration
+  margin-top: 2.5rem
+
+.hero__registration-button
+  +infinite-gradient
+  display: block
+  margin: 0 auto
+  width: $enter-width
+  height: $enter-height
+  mask-image: url("/images/button-enter.svg")
+  mask-repeat: no-repeat
+  mask-size: cover
+  animation: gaming-enter 2s linear infinite
+  transition-duration: 0.3s
+
+  &:hover
+    transform: translateY(0.3rem)
+    animation: gaming-enter 0.2s linear infinite
 
 // .sponsor
 
