@@ -16,7 +16,7 @@
     github: https://github.com/takai
     website: https://keys.recompile.net/
     avatar: https://avatars.githubusercontent.com/u/9104?v=4
-    profile_html: Please write a cool profile description around 60-120 characters, just like rubyistokei.
+    bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
 - category: talk
   time: '17:40 - 18:00'
   title: Something very nice title of talk
@@ -27,7 +27,7 @@
     github: https://github.com/swanmatch
     website: https://royal-keyboard-works.square.site/
     avatar: https://avatars.githubusercontent.com/u/6962187?v=4
-    profile_html: Please write a cool profile description around 60-120 characters, just like rubyistokei.
+    bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
 - category: misc
   time: '18:00 - 18:20'
   title: Free Time
@@ -70,7 +70,7 @@
     github: https://github.com/tenderlove
     website: http://tenderlovemaking.com/
     avatar: https://avatars.githubusercontent.com/u/3124?v=4
-    profile_html: Please write a cool profile description around 60-120 characters, just like rubyistokei.
+    bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
 - category: talk
   time: '19:20 - 19:40'
   title: Something very nice title of talk
@@ -81,7 +81,7 @@
     github: https://github.com/hasumikin
     website: https://hasumikin.com/about/
     avatar: https://avatars.githubusercontent.com/u/8454208?v=4
-    profile_html: Please write a cool profile description around 60-120 characters, just like rubyistokei.
+    bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
 - category: talk
   time: '19:40 - 20:00'
   title: Something very nice title of talk
@@ -92,4 +92,4 @@
     github: https://github.com/foostan
     website: https://fstn.hateblo.jp/
     avatar: https://avatars.githubusercontent.com/u/736191?v=4
-    profile_html: Please write a cool profile description around 60-120 characters, just like rubyistokei.
+    bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.

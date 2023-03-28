@@ -14,7 +14,8 @@
             .timetable__lt-wrap
               .timetable__title--lt= item.title
               %ul.timetable__lt
-                - item.talks.each do |lt|
+                %span.timetable__lt-tbd TBD
+                -# item.talks.each do |lt|
                   %li.timetable__lt-item
                     .timetable__lt-avatar
                       = image_tag(lt.speaker.avatar,
@@ -59,5 +60,5 @@
                     target: '_blank',
                     class:  'timetable__speaker-sns is-website' do
                     %i.fa-solid.fa-link
-                .timetable__profile
-                  = item.speaker.profile_html
+                .timetable__bio
+                  = item.speaker.bio
