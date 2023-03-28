@@ -295,7 +295,12 @@ a
   flex: 0 0 10rem
   text-align: right
   margin-right: 2rem
-  transform: translateY(3px)
+  transform: translateY(5px)
+
+  +mq
+    font-size: 0.8rem
+    flex: 0 0 6rem
+    margin-right: 1rem
 
 .timetable__content
   flex: 100
@@ -303,13 +308,21 @@ a
 .timetable__title
   font-size: 1.4rem
   margin: 0
+  line-height: 1.4
 
 .timetable__title-ja
   font-size: 0.8rem
   margin-left: 0.2rem
 
+  +mq
+    display: block
+
 .timetable__lt-wrap
   display: flex
+
+  +mq
+    flex-direction: column
+    align-items: baseline
 
 .timetable__title--lt
   font-size: 1.4rem
@@ -317,7 +330,12 @@ a
   $size: 160px
   width: $size
   flex: 0 0 $size
-  margin-: 20px
+  margin-right: 20px
+
+  +mq
+    width: auto
+    flex: 1 0 0
+    margin-bottom: 2rem
 
 .timetable__lt
   list-style: none
@@ -329,6 +347,9 @@ a
   display: flex
   margin-bottom: 2rem
 
+  &:last-child
+    margin-bottom: 0
+
 .timetable__lt-avatar
   $size: 50px
   width: $size
@@ -336,12 +357,19 @@ a
   flex: 0 0 $size
   margin-right: 20px
 
+  +mq
+    size: 30px
+    width: $size
+    height: $size
+    flex: 0 0 $size
+    margin-right: 10px
+
 .timetable__lt-avatar-image
   $size: 50px
   width: $size
   height: $size
   border-radius: 6px
-  border: 2px solid $text-color
+  border: 1px solid $text-color
 
 .timetable__lt-content
   flex: 1 0 0
@@ -349,10 +377,16 @@ a
 .timetable__lt-title
   font-size: 1.2rem
   line-height: 1.4
-  margin-bottom: 0.4rem
+  margin-bottom: 0.3rem
+
+  +mq
+    font-size: 1rem
 
 .timetable__lt-speaker
   font-size: 0.9rem
+
+  +mq
+    font-size: 0.8rem
 
 .timetable__lt-speaker-id
   font-weight: 400
@@ -360,7 +394,10 @@ a
 .timetable__talk
   display: flex
 
-.timetable__avatar
+  +mq
+    flex-direction: column
+
+.timetable__talk-avatar
   background: image_url('avatar-keeb.svg'), linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
   background-repeat: no-repeat
   $size: 160px
@@ -370,7 +407,10 @@ a
   margin-right: 1.5rem
   border-radius: 20px
 
-.timetable__avatar-image
+  +mq
+    margin-bottom: 1rem
+
+.timetable__talk-avatar-image
   $size: 100px
   width: $size
   height: $size
@@ -393,8 +433,13 @@ a
   -webkit-text-fill-color: transparent
   margin: 1rem 0
 
+  +mq
+    font-size: 1.4rem
+    margin: 0.4rem 0
+
 .timetable__talk-speaker
   margin-bottom: 1rem
+  line-height: 2
 
 .timetable__talk-speaker-name
   font-size: 1.2rem
@@ -404,6 +449,10 @@ a
   font-weight: 400
   font-size: 1rem
   margin-right: 1rem
+
+  +mq
+    display: block
+    margin-bottom: 0.5rem
 
 .timetable__speaker-sns
   display: inline-block

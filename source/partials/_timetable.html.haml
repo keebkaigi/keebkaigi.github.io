@@ -29,15 +29,15 @@
                           %span.timetable__lt-speaker-id= "@#{lt.speaker.id}"
           - if item.category == 'talk'
             .timetable__talk
-              .timetable__avatar
+              .timetable__talk-avatar
                 = image_tag(item.speaker.avatar,
                 alt: item.speaker.id,
-                class: 'timetable__avatar-image')
+                class: 'timetable__talk-avatar-image')
               .timetable__talk-content
                 %h3.timetable__talk-title
                   = item.title
                 .timetable__talk-speaker
-                  %span.timetable__talk-speaker-name
+                  .timetable__talk-speaker-name
                     = item.speaker.name
                   = link_to item.speaker.twitter,
                     title:  item.speaker.id,
