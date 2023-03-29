@@ -1,11 +1,10 @@
 .sponsor
-  .sponsor__main
-    %h3.sponsor__main-heading Sponsors
-    %ul.sponsor__main-list
-      - data.year_2023.sponsors.each do |sponsor|
-        %li.sponsor__main-logo
-          = link_to sponsor.url,
-            title: sponsor.name_ja,
-            target: '_blank' do
-            = image_tag("sponsors/#{sponsor.logo}",
-              class: "sponsor__main-logo-image is-#{sponsor.name}")
+  %h3.sponsor__heading Sponsors
+  %ul.sponsor__list
+    - data.year_2023.sponsors.each do |sponsor|
+      %li.sponsor__logo
+        = link_to sponsor.url,
+          title: sponsor.name_ja,
+          target: '_blank' do
+          = image_tag("sponsors/#{sponsor.logo}",
+            class: "sponsor__logo-image is-#{sponsor.name}")
