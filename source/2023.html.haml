@@ -58,6 +58,16 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
           = link_to "@#{member}",
             "https://twitter.com/#{member}",
             target: '_blank'
-    .team__licence
-      = data.global.licence
+    .team__supporter
+      .team__supporter-label
+        Supported by
+      .team__supporter-logo
+        = link_to image_tag("sponsors/ruby-no-kai.svg",
+          class: 'team__supporter-logo-image',
+          alt: '日本Rubyの会'),
+          'https://ruby-no-kai.org/',
+          title: '日本Rubyの会',
+          target: '_blank'
+  .team__license
+    = data.global.license
 .footer

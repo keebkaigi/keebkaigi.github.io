@@ -9,7 +9,7 @@ $link-color: #FFF
 $hover-color: #f9f693
 $text-color: #FFF
 $mq-width: 700px
-$footer-height: 240px
+$footer-height: 250px
 
 // Mixin
 
@@ -255,35 +255,11 @@ a
     @media screen and (max-width: 400px)
       width: 100%
 
-.sponsor__sub-list
-  list-style: none
-  padding: 0
-  display: flex
-  justify-content: center
-  margin-bottom: 2rem
+  &.is-esa
+    width: 14rem
 
-  +mq
-    flex-direction: column
-
-.sponsor__sub
-  display: flex
-  margin-right: 10rem
-  align-items: center
-
-  &:last-child
-    margin-right: 0
-
-  +mq
-    margin-right: 0
-    align-self: center
-    margin-bottom: 2rem
-
-.sponsor__sub-label
-  font-size: 0.8rem
-  margin-right: 1rem
-
-.sponsor__sub-logo-image
-  height: 1.8rem
+    @media screen and (max-width: 400px)
+      width: 100%
 
 // .team
 
@@ -329,9 +305,27 @@ a
       white-space: pre-wrap
       content: 'and '
 
-.team__licence
+.team__supporter
+  margin-top: 2rem
+  display: flex
+  justify-content: center
+  align-items: baseline
+  margin: 3rem auto
+
+  +mq
+    flex-direction: column
+
+.team__supporter-label
+  font-size: 0.8rem
+  margin-right: 1rem
+
+.team__supporter-logo-image
+  height: 1.8rem
+
+.team__license
   font-size: 0.6rem
-  font-weight: normal
+  font-weight: 400
+  text-align: center
 
 // .teaser
 
@@ -378,6 +372,7 @@ a
   z-index: 1
   margin-top: 3rem
   animation: gaming-matsumoto-castle 2s linear infinite
+  position: relative
 
   &:hover
     animation: gaming-matsumoto-castle 0.3s linear infinite
