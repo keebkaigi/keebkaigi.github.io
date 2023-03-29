@@ -40,30 +40,9 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
     %p.teaser__message.is-en= d.teaser.message.en
     %p.teaser__message= d.teaser.message.ja
     %p.teaser__message_2= d.teaser.message_2
-  .sponsor
-    .sponsor__main
-      %h3.sponsor__main-heading Sponsor
-      %ul.sponsor__main-list
-        - d.sponsors.main.each do |sponsor|
-          %li.sponsor__main-logo
-            = link_to sponsor.url,
-              title: sponsor.name_ja,
-              target: '_blank' do
-              = image_tag("sponsors/#{sponsor.logo}",
-                class: "sponsor__main-logo-image is-#{sponsor.name}")
 
-    %ul.sponsor__sub-list
-      - d.sponsors.sub.each do |sponsor|
-        %li.sponsor__sub
-          .sponsor__sub-label
-            = sponsor.role
-          .sponsor__sub-logo
-            = link_to image_tag("sponsors/#{sponsor.name}.svg",
-              class: 'sponsor__sub-logo-image',
-              alt: sponsor.name_ja),
-              sponsor.url,
-              title: sponsor.name_ja,
-              target: '_blank'
+  = partial('partials/sponsors')
+
   .team
     .team__logo
       = image_tag('logo-white.svg',
