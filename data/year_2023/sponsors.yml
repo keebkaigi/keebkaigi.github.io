@@ -1,10 +1,10 @@
 main:
-- role: Sponsor
+- role: sponsor
   name: monstarlab
   name_ja: 株式会社モンスターラボ
   url: https://monstar-lab.com/
   logo: monstarlab.svg
-- role: Sponsor
+- role: sponsor
   name: yushakobo
   name_ja: 遊舎工房
   url: https://yushakobo.jp/
