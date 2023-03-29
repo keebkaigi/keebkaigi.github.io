@@ -10,6 +10,7 @@ $hover-color: #f9f693
 $text-color: #FFF
 $mq-width: 700px
 $footer-height: 250px
+$sponsor-logo-width: 20rem
 
 // Mixin
 
@@ -229,42 +230,56 @@ a
 .sponsor__list
   list-style: none
   padding: 0
-  margin: 0
+  display: flex
+  width: $mq-width
+  margin: 0 auto
+  flex-wrap: wrap
+  justify-content: space-between
+
+  +mq
+    display: block
+    width: 100%
 
 .sponsor__logo
+  flex: 0 0 $sponsor-logo-width
   margin-top: 4rem
 
 .sponsor__logo-image
-  width: 19rem
+  width: 18rem
 
   @media screen and (max-width: 400px)
-    width: 100%
+    width: 80vw
 
   &.is-monstarlab
     width: 20rem
+    transform: translateY(1.2rem)
+
+    +mq
+      transform: translateY(0)
 
     @media screen and (max-width: 400px)
-      width: 100%
+      width: 80vw
 
   &.is-talpkeyboard
     width: 17rem
 
     @media screen and (max-width: 400px)
-      width: 100%
+      width: 70vw
 
   &.is-esa
-    width: 14rem
+    width: 13rem
+    transform: translateY(1.2rem)
+
+    +mq
+      transform: translateY(0)
 
     @media screen and (max-width: 400px)
-      width: 100%
+      width: 55vw
 
 // .team
 
 .team
-  margin-top: 6rem
-
-  +mq
-    margin-top: 3rem
+  margin: 6rem auto 0
 
 .team__logo
   width: 16rem
@@ -308,9 +323,6 @@ a
   justify-content: center
   align-items: baseline
   margin: 3rem auto
-
-  +mq
-    flex-direction: column
 
 .team__supporter-label
   font-size: 0.8rem
