@@ -9,6 +9,11 @@ main:
   name_ja: 遊舎工房
   url: https://yushakobo.jp/
   logo: yushakobo.png
+- role: sponsor
+  name: talpkeyboard
+  name_ja: TALPKEYBOARD
+  url: https://talpkeyboard.net/
+  logo: talpkeyboard.svg
 sub:
 - role: Support
   name: ruby-no-kai
