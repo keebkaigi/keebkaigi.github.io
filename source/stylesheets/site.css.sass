@@ -279,21 +279,29 @@ a
 // .team
 
 .team
-  margin: 6rem auto 0
+  margin: 8rem auto 0
 
 .team__logo
-  width: 16rem
+  width: 20rem
   margin: 0 auto -0.3rem
 
 .team__year
-  font-size: 1.4rem
+  font-size: 1.6rem
   letter-spacing: 0.5rem
   font-family: 'Saira Stencil One', sans-serif
-  margin: 0 0 0.5rem
+  margin: 0 0 1rem
 
-.team__label
+.team__heading
+  font-size: 1.2rem
+  margin: 3rem 0
+
+.team__role
+  margin-top: 3rem
+
+.team__role-name
   font-size: 0.8rem
-  transform: translateX(-0.2rem)
+  margin-bottom: 0.7rem
+  font-weight: 400
 
 .team__members-list
   list-style: none
@@ -302,32 +310,29 @@ a
   display: flex
   justify-content: center
   flex-wrap: wrap
+  margin: 0 auto
+
+  +mq
+    display: block
 
 .team__member
-  margin-right: 0.5rem
+  font-size: 1rem
+  margin-left: 3rem
 
-  &:after
-    content: ","
+  &:first-child
+    margin-left: 0
 
-  &:last-child
-    &:after
-      content: ''
-
-    &:before
-      white-space: pre-wrap
-      content: 'and '
+  +mq
+    margin-left: 0
+    margin-bottom: 0.8rem
 
 .team__supporter
-  margin-top: 2rem
-  display: flex
-  justify-content: center
-  align-items: baseline
-  margin: 3rem auto
+  margin: 5rem auto 3rem
 
 .team__supporter-label
-  font-size: 0.8rem
-  margin-right: 1rem
-  transform: translateY(-0.2rem)
+  font-size: 0.7rem
+  margin-bottom: 0.8rem
+  font-weight: 400
 
 .team__supporter-logo-image
   height: 1.8rem
