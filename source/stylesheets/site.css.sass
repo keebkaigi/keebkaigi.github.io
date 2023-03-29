@@ -225,15 +225,30 @@ a
 .sponsor__main
   margin-bottom: 4rem
 
-.sponsor__main-label
-  font-size: 1.2rem
-  margin-bottom: 1rem
+.sponsor__main-heading
+  font-size: 1.6rem
+  margin-bottom: 2rem
+
+.sponsor__main-list
+  list-style: none
+  padding: 0
+  margin: 0
 
 .sponsor__main-logo
-  font-size: 1.8rem
+  margin-top: 3rem
 
 .sponsor__main-logo-image
   width: 20rem
+
+  @media screen and (max-width: 400px)
+    width: 100%
+
+  &.is-yushakobo
+    width: 19rem
+
+    @media screen and (max-width: 400px)
+      width: 100%
+
 
 .sponsor__sub-list
   list-style: none
