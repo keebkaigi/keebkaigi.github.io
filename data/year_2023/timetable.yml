@@ -7,7 +7,18 @@
   title: Opening
   title_ja: イベント開始
 - category: talk
-  time: '17:20 - 17:40'
+  time: '17:10 - 17:30'
+  title: Me, Keyboard, and RubyKaigi2023
+  speaker:
+    id: swan_match
+    name: Takuma Shirotori
+    twitter: https://twitter.com/swan_match
+    github: https://github.com/swanmatch
+    website: https://royal-keyboard-works.square.site/
+    avatar: https://avatars.githubusercontent.com/u/6962187?v=4
+    bio: I am a keyboard designer who loves unique layout and full color LEDs. I also create infinite possibilities.
+- category: talk
+  time: '17:30 - 17:50'
   title: TBD
   speaker:
     id: takai
@@ -17,24 +28,9 @@
     website: https://keys.recompile.net/
     avatar: https://avatars.githubusercontent.com/u/9104?v=4
     bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
-- category: talk
-  time: '17:40 - 18:00'
-  title: Something very nice title of talk
-  speaker:
-    id: swan_match
-    name: 迅雷の魔王
-    twitter: https://twitter.com/swan_match
-    github: https://github.com/swanmatch
-    website: https://royal-keyboard-works.square.site/
-    avatar: https://avatars.githubusercontent.com/u/6962187?v=4
-    bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
-- category: misc
-  time: '18:00 - 18:20'
-  title: Free Time
-  title_ja: 休憩・自由時間・キーボード交流会
 - category: lt
-  time: '18:20 - 19:20'
-  title: Lightning Talks
+  time: '17:50 - 18:40'
+  title: Sema-Pitches
   talks:
   - title: Something very nice title of talk
     speaker:
@@ -60,16 +56,20 @@
       name: Name Name
       url: https://twitter.com/KeebKaigi/
       avatar: https://pbs.twimg.com/profile_images/1640328211698688001/g0RPtRI0_400x400.jpg
+- category: misc
+  time: '18:40 - 19:00'
+  title: Free Time
+  title_ja: 休憩・自由時間・キーボード交流会
 - category: talk
   time: '19:00 - 19:20'
   title: Something very nice title of talk
   speaker:
-    id: tenderlove
-    name: Aaron Patterson
-    twitter: https://twitter.com/tenderlove
-    github: https://github.com/tenderlove
-    website: http://tenderlovemaking.com/
-    avatar: https://avatars.githubusercontent.com/u/3124?v=4
+    id: foostan
+    name: Kosuke Adachi
+    twitter: https://twitter.com/foostan
+    github: https://github.com/foostan
+    website: https://fstn.hateblo.jp/
+    avatar: https://avatars.githubusercontent.com/u/736191?v=4
     bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
 - category: talk
   time: '19:20 - 19:40'
@@ -86,10 +86,10 @@
   time: '19:40 - 20:00'
   title: Something very nice title of talk
   speaker:
-    id: foostan
-    name: Kosuke Adachi
-    twitter: https://twitter.com/foostan
-    github: https://github.com/foostan
-    website: https://fstn.hateblo.jp/
-    avatar: https://avatars.githubusercontent.com/u/736191?v=4
+    id: tenderlove
+    name: Aaron Patterson
+    twitter: https://twitter.com/tenderlove
+    github: https://github.com/tenderlove
+    website: http://tenderlovemaking.com/
+    avatar: https://avatars.githubusercontent.com/u/3124?v=4
     bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
