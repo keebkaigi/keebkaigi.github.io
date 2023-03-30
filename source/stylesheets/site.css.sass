@@ -9,7 +9,8 @@ $link-color: #FFF
 $hover-color: #f9f693
 $text-color: #FFF
 $mq-width: 700px
-$footer-height: 240px
+$footer-height: 250px
+$sponsor-logo-width: 20rem
 
 // Mixin
 
@@ -222,70 +223,85 @@ a
   +mq
     margin-top: 4rem
 
-.sponsor__main
-  margin-bottom: 4rem
+.sponsor__heading
+  font-size: 1.6rem
+  margin-bottom: 0
 
-.sponsor__main-label
-  font-size: 1.2rem
-  margin-bottom: 1rem
-
-.sponsor__main-logo
-  font-size: 1.8rem
-
-.sponsor__main-logo-image
-  width: 20rem
-
-.sponsor__sub-list
+.sponsor__list
   list-style: none
   padding: 0
   display: flex
-  justify-content: center
-  margin-bottom: 2rem
+  width: $mq-width
+  margin: 0 auto
+  flex-wrap: wrap
+  justify-content: space-between
 
   +mq
-    flex-direction: column
+    display: block
+    width: 100%
 
-.sponsor__sub
-  display: flex
-  margin-right: 10rem
-  align-items: center
+.sponsor__logo
+  flex: 0 0 $sponsor-logo-width
+  margin-top: 4rem
 
-  &:last-child
-    margin-right: 0
+.sponsor__logo-image
+  width: 18rem
 
-  +mq
-    margin-right: 0
-    align-self: center
-    margin-bottom: 2rem
+  @media screen and (max-width: 400px)
+    width: 80vw
 
-.sponsor__sub-label
-  font-size: 0.8rem
-  margin-right: 1rem
+  &.is-monstarlab
+    width: 20rem
+    transform: translateY(1.2rem)
 
-.sponsor__sub-logo-image
-  height: 1.8rem
+    +mq
+      transform: translateY(0)
+
+    @media screen and (max-width: 400px)
+      width: 85vw
+
+  &.is-talpkeyboard
+    width: 17rem
+
+    @media screen and (max-width: 400px)
+      width: 70vw
+
+  &.is-esa
+    width: 13rem
+    transform: translateY(1.2rem)
+
+    +mq
+      transform: translateY(0)
+
+    @media screen and (max-width: 400px)
+      width: 55vw
 
 // .team
 
 .team
-  margin-top: 6rem
-
-  +mq
-    margin-top: 3rem
+  margin: 8rem auto 0
 
 .team__logo
-  width: 16rem
+  width: 20rem
   margin: 0 auto -0.3rem
 
 .team__year
-  font-size: 1.4rem
+  font-size: 1.6rem
   letter-spacing: 0.5rem
   font-family: 'Saira Stencil One', sans-serif
-  margin: 0 0 0.5rem
+  margin: 0 0 1rem
 
-.team__label
+.team__heading
+  font-size: 1.2rem
+  margin: 2rem 0
+
+.team__role
+  margin-top: 2rem
+
+.team__role-name
   font-size: 0.8rem
-  transform: translateX(-0.2rem)
+  margin-bottom: 0.6rem
+  font-weight: 400
 
 .team__members-list
   list-style: none
@@ -294,24 +310,37 @@ a
   display: flex
   justify-content: center
   flex-wrap: wrap
+  margin: 0 auto
+
+  +mq
+    display: block
 
 .team__member
-  margin-right: 0.5rem
+  font-size: 1rem
+  margin-left: 3rem
 
-  &:after
-    content: ","
+  &:first-child
+    margin-left: 0
 
-  &:last-child
-    &:after
-      content: ''
+  +mq
+    margin-left: 0
+    margin-bottom: 0.8rem
 
-    &:before
-      white-space: pre-wrap
-      content: 'and '
+.team__supporter
+  margin: 4rem auto 3rem
 
-.team__licence
+.team__supporter-label
+  font-size: 0.7rem
+  margin-bottom: 0.8rem
+  font-weight: 400
+
+.team__supporter-logo-image
+  height: 1.8rem
+
+.team__license
   font-size: 0.6rem
-  font-weight: normal
+  font-weight: 400
+  text-align: center
 
 // .teaser
 
@@ -358,6 +387,7 @@ a
   z-index: 1
   margin-top: 3rem
   animation: gaming-matsumoto-castle 2s linear infinite
+  position: relative
 
   &:hover
     animation: gaming-matsumoto-castle 0.3s linear infinite

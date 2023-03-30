@@ -40,27 +40,9 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
     %p.teaser__message.is-en= d.teaser.message.en
     %p.teaser__message= d.teaser.message.ja
     %p.teaser__message_2= d.teaser.message_2
-  .sponsor
-    .sponsor__main
-      .sponsor__main-label Sponsor
-      .sponsor__main-logo
-        = link_to d.sponsors.main.url,
-          title: d.sponsors.main.name_ja,
-          target: '_blank' do
-          = image_tag("sponsors/#{d.sponsors.main.name}.svg",
-            class: 'sponsor__main-logo-image')
-    %ul.sponsor__sub-list
-      - d.sponsors.sub.each do |sponsor|
-        %li.sponsor__sub
-          .sponsor__sub-label
-            = sponsor.role
-          .sponsor__sub-logo
-            = link_to image_tag("sponsors/#{sponsor.name}.svg",
-              class: 'sponsor__sub-logo-image',
-              alt: sponsor.name_ja),
-              sponsor.url,
-              title: sponsor.name_ja,
-              target: '_blank'
+
+  = partial('partials/sponsors')
+
   .team
     .team__logo
       = image_tag('logo-white.svg',
@@ -68,14 +50,27 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
         alt: d.general.event_name)
     .team__year
       = d.general.year
-    .team__label
+    %h3.team__heading
       Team
-    %ul.team__members-list
-      - d.team.members.each do |member|
-        %li.team__member<>
-          = link_to "@#{member}",
-            "https://twitter.com/#{member}",
-            target: '_blank'
-    .team__licence
-      = data.global.licence
+    - d.team.each do |role|
+      .team__role
+        %h4.team__role-name= role[0].capitalize
+        %ul.team__members-list
+          - role[1].each do |member|
+            %li.team__member<>
+              = link_to "@#{member}",
+                "https://twitter.com/#{member}",
+                target: '_blank'
+    .team__supporter
+      .team__supporter-label
+        in association with
+      .team__supporter-logo
+        = link_to image_tag("sponsors/ruby-no-kai.svg",
+          class: 'team__supporter-logo-image',
+          alt: '日本Rubyの会'),
+          'https://ruby-no-kai.org/',
+          title: '日本Rubyの会',
+          target: '_blank'
+  .team__license
+    = data.global.license
 .footer

@@ -1,14 +1,16 @@
-main:
-  role: Sponsor
-  name: monstarlab
+- name: monstarlab
   name_ja: 株式会社モンスターラボ
   url: https://monstar-lab.com/
-sub:
-- role: Support
-  name: ruby-no-kai
-  name_ja: 日本Rubyの会
-  url: https://ruby-no-kai.org/
-- role: Design Sponsor
-  name: esa
+  logo: monstarlab.svg
+- name: yushakobo
+  name_ja: 遊舎工房
+  url: https://yushakobo.jp/
+  logo: yushakobo.png
+- name: talpkeyboard
+  name_ja: TALPKEYBOARD
+  url: https://talpkeyboard.net/
+  logo: talpkeyboard.svg
+- name: esa
   name_ja: 合同会社esa
   url: https://esa.io/
+  logo: esa.svg
