@@ -23,7 +23,7 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
         = d.general.year
       .hero__city
         %span.hero__text
-          = d.general.venue.city
+          = d.venue.city
       .hero__datetime
         .hero__date
           = d.general.date
@@ -36,6 +36,24 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
           target: '_blank'
         = '-'
         = d.general.rubykaigi.date
+      .hero__venue
+        = link_to d.venue.url,
+          title: d.venue.name,
+          class: 'hero__venue-link',
+          target: '_blank' do
+          %i.fa-solid.fa-location-dot.hero__venue-icon
+          %span.hero__venue-name= d.venue.name
+          %span.hero__venue-name-ja= d.venue.name_ja
+          = d.venue.city
+          = d.venue.prefecture
+          = ','
+          = d.venue.country
+        .hero__venue-google-map
+          = link_to d.venue.address,
+            d.venue.map_url,
+            title: 'View on Google Map',
+            target: '_blank',
+            class: 'hero__venue-google-map-link'
   .teaser
     %p.teaser__message.is-en= d.teaser.message.en
     %p.teaser__message= d.teaser.message.ja
