@@ -25,5 +25,6 @@
     %title= current_page.data.title || data.global.title
     = stylesheet_link_tag "site"
     = javascript_include_tag "site"
+    %script{:crossorigin => "anonymous", :src => "https://kit.fontawesome.com/10be153277.js"}
   %body
     = yield
