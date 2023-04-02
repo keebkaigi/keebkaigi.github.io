@@ -367,8 +367,10 @@ a
   flex: 0 0 $size
   margin-right: 1rem
   background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
+  background-size: 400% 400%
   border-radius: 8px
   position: relative
+  animation: gaming-avatar 6s linear infinite
 
   +mq
     size: 30px
@@ -396,7 +398,7 @@ a
 
   &:hover
     .schedule__small-avatar
-      animation: gaming-small-avatar 0.3s linear infinite
+      animation: gaming-avatar 0.3s linear infinite
 
 .schedule__small-speaker-id
   font-weight: 400
