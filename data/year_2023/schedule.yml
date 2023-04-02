@@ -19,7 +19,7 @@
     bio: I am a keyboard designer who loves unique layout and full color LEDs. I also create infinite possibilities.
 - category: Keeb Talk
   time: '17:30 - 17:50'
-  title: TBD
+  title: TBD #Your Awesome Talk Title Goes Here
   speaker:
     id: takai
     name: Naoto TAKAI
@@ -27,7 +27,7 @@
     github: https://github.com/takai
     website: https://keys.recompile.net/
     avatar: https://avatars.githubusercontent.com/u/9104?v=4
-    bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
+    bio: # Share your snazzy profile description in 60-120 chars
 - category: lt
   time: '17:50 - 18:40'
   title: Sema-Pitches
@@ -62,7 +62,7 @@
   title_ja: 休憩・自由時間・キーボード交流会
 - category: Keeb Talk
   time: '19:00 - 19:20'
-  title: Something very nice title of talk
+  title: TBD #Your Awesome Talk Title Goes Here
   speaker:
     id: foostan
     name: Kosuke Adachi
@@ -70,10 +70,10 @@
     github: https://github.com/foostan
     website: https://fstn.hateblo.jp/
     avatar: https://avatars.githubusercontent.com/u/736191?v=4
-    bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
+    bio: # Share your snazzy profile description in 60-120 chars
 - category: Keeb Talk
   time: '19:20 - 19:40'
-  title: Something very nice title of talk
+  title: TBD #Your Awesome Talk Title Goes Here
   speaker:
     id: hasumikin
     name: Hitoshi HASUMI
@@ -81,10 +81,10 @@
     github: https://github.com/hasumikin
     website: https://hasumikin.com/about/
     avatar: https://avatars.githubusercontent.com/u/8454208?v=4
-    bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
+    bio: # Share your snazzy profile description in 60-120 chars
 - category: Keeb Talk
   time: '19:40 - 20:00'
-  title: Something very nice title of talk
+  title: TBD #Your Awesome Talk Title Goes Here
   speaker:
     id: tenderlove
     name: Aaron Patterson
@@ -92,4 +92,4 @@
     github: https://github.com/tenderlove
     website: http://tenderlovemaking.com/
     avatar: https://avatars.githubusercontent.com/u/3124?v=4
-    bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
+    bio: # Share your snazzy profile description in 60-120 chars
