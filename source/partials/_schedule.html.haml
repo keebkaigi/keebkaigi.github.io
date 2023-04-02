@@ -1,0 +1,64 @@
+.schedule
+  %h2.schedule__heading Schedule
+  %ul.schedule__table
+    - data.year_2023.schedule.each do |item|
+      %li.schedule__item
+        .schedule__time
+          = item.time
+        .schedule__content
+          - if item.category == 'misc'
+            %h3.schedule__title
+              = item.title
+              %span.schedule__title-ja= item.title_ja
+          - if item.category == 'lt'
+            .schedule__lt-wrap
+              .schedule__title--lt= item.title
+              %ul.schedule__lt
+                %span.schedule__lt-tbd TBD
+                -# item.talks.each do |lt|
+                  %li.schedule__lt-item
+                    .schedule__lt-avatar
+                      = image_tag(lt.speaker.avatar,
+                        alt: lt.speaker.id,
+                        class: 'schedule__lt-avatar-image')
+                    .schedule__lt-content
+                      .schedule__lt-title
+                        = lt.title
+                      .schedule__lt-speaker
+                        = link_to lt.speaker.url do
+                          = lt.speaker.name
+                          %span.schedule__lt-speaker-id= "@#{lt.speaker.id}"
+          - if item.category == 'talk'
+            .schedule__talk
+              .schedule__talk-avatar
+                = image_tag(item.speaker.avatar,
+                alt: item.speaker.id,
+                class: 'schedule__talk-avatar-image')
+              .schedule__talk-content
+                %h3.schedule__talk-title
+                  = item.title
+                .schedule__talk-speaker
+                  %span.schedule__talk-speaker-name
+                    = item.speaker.name
+                  = link_to item.speaker.twitter,
+                    title:  item.speaker.id,
+                    target: '_blank',
+                    class:  'schedule__talk-speaker-id' do
+                    = "@#{item.speaker.id}"
+                  = link_to item.speaker.twitter,
+                    title:  item.speaker.twitter,
+                    target: '_blank',
+                    class:  'schedule__speaker-sns is-twitter' do
+                    %i.fa-brands.fa-twitter
+                  = link_to item.speaker.github,
+                    title:  item.speaker.github,
+                    target: '_blank',
+                    class:  'schedule__speaker-sns is-github' do
+                    %i.fa-brands.fa-github
+                  = link_to item.speaker.website,
+                    title:  item.speaker.website,
+                    target: '_blank',
+                    class:  'schedule__speaker-sns is-website' do
+                    %i.fa-solid.fa-link
+                .schedule__bio
+                  = item.speaker.bio
