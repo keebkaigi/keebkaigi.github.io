@@ -22,6 +22,8 @@
     website: https://royal-keyboard-works.square.site/
     avatar: https://avatars.githubusercontent.com/u/6962187?v=4
     bio: I am a keyboard designer who loves unique layout and full color LEDs. I also create infinite possibilities.
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
 - category: Keeb Talk
   time: '17:30 - 17:50'
   title: (His Awesome Talk Title Goes Here)
@@ -33,6 +35,8 @@
     website: https://keys.recompile.net/
     avatar: https://avatars.githubusercontent.com/u/9104?v=4
     bio: (His cool profile text will be posted here (60-140 chars).)
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
 - category: Sema-Pitches
   time: '17:50 - 18:40'
   title: Sema-Pitches
@@ -80,6 +84,8 @@
     website: https://fstn.hateblo.jp/
     avatar: https://avatars.githubusercontent.com/u/736191?v=4
     bio: (His cool profile text will be posted here (60-140 chars).)
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
 - category: Keeb Talk
   time: '19:20 - 19:40'
   title: (His Awesome Talk Title Goes Here)
@@ -91,6 +97,8 @@
     website: https://hasumikin.com/about/
     avatar: https://avatars.githubusercontent.com/u/8454208?v=4
     bio: (His cool profile text will be posted here (60-140 chars).)
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
 - category: Keeb Talk
   time: '19:40 - 20:00'
   title: (His Awesome Talk Title Goes Here)
@@ -102,3 +110,5 @@
     website: http://tenderlovemaking.com/
     avatar: https://avatars.githubusercontent.com/u/3124?v=4
     bio: (His cool profile text will be posted here (60-140 chars).)
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
