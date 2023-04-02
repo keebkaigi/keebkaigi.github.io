@@ -1,11 +1,16 @@
 - category: misc
   time: '16:30'
   title: Door Open
-  title_ja: 開場
-- category: misc
-  time: '17:00'
+
+- category: opening
+  time: '17:00 - 17:10'
   title: Opening
-  title_ja: イベント開始
+  title_ja: 開会
+  speaker:
+    id: kakutani
+    name: Shintaro Kakutani
+    url: https://twitter.com/kakutani
+    avatar: https://pbs.twimg.com/profile_images/643337414874824704/vx_RRStR_400x400.jpg
 - category: Keeb Talk
   time: '17:10 - 17:30'
   title: Me, Keyboard, and RubyKaigi 2023
