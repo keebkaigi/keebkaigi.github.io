@@ -290,6 +290,7 @@ a
 .schedule__item
   display: flex
   margin-bottom: 4rem
+  align-items: flex-start
 
 .schedule__time
   flex: 0 0 10rem
@@ -394,11 +395,17 @@ a
 .schedule__lt-speaker-id
   font-weight: 400
 
-.schedule__talk
+.schedule__talk-heading
+  font-size: 0.9rem
+
+.schedule__talk-container
+
+  margin-top: 0.5rem
   display: flex
 
   +mq
     flex-direction: column
+
 
 .schedule__talk-avatar
   background: image_url('avatar-keeb.svg'), linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
@@ -434,7 +441,7 @@ a
   background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
-  margin: 0.2rem 0 1rem
+  margin: 0.4rem 0 0.5rem
 
   +mq
     font-size: 1.4rem

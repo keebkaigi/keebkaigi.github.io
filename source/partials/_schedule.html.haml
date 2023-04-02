@@ -28,37 +28,40 @@
                         = link_to lt.speaker.url do
                           = lt.speaker.name
                           %span.schedule__lt-speaker-id= "@#{lt.speaker.id}"
-          - if item.category == 'talk'
+          - if item.category == 'Keeb Talk'
             .schedule__talk
-              .schedule__talk-avatar
-                = image_tag(item.speaker.avatar,
-                alt: item.speaker.id,
-                class: 'schedule__talk-avatar-image')
-              .schedule__talk-content
-                %h3.schedule__talk-title
-                  = item.title
-                .schedule__talk-speaker
-                  %span.schedule__talk-speaker-name
-                    = item.speaker.name
-                  = link_to item.speaker.twitter,
-                    title:  item.speaker.id,
-                    target: '_blank',
-                    class:  'schedule__talk-speaker-id' do
-                    = "@#{item.speaker.id}"
-                  = link_to item.speaker.twitter,
-                    title:  item.speaker.twitter,
-                    target: '_blank',
-                    class:  'schedule__speaker-sns is-twitter' do
-                    %i.fa-brands.fa-twitter
-                  = link_to item.speaker.github,
-                    title:  item.speaker.github,
-                    target: '_blank',
-                    class:  'schedule__speaker-sns is-github' do
-                    %i.fa-brands.fa-github
-                  = link_to item.speaker.website,
-                    title:  item.speaker.website,
-                    target: '_blank',
-                    class:  'schedule__speaker-sns is-website' do
-                    %i.fa-solid.fa-link
-                .schedule__bio
-                  = item.speaker.bio
+              .schedule__talk-container
+                .schedule__talk-avatar
+                  = image_tag(item.speaker.avatar,
+                  alt: item.speaker.id,
+                  class: 'schedule__talk-avatar-image')
+                .schedule__talk-content
+                  .schedule__talk-heading
+                    = item.category
+                  %h3.schedule__talk-title
+                    = item.title
+                  .schedule__talk-speaker
+                    %span.schedule__talk-speaker-name
+                      = item.speaker.name
+                    = link_to item.speaker.twitter,
+                      title:  item.speaker.id,
+                      target: '_blank',
+                      class:  'schedule__talk-speaker-id' do
+                      = "@#{item.speaker.id}"
+                    = link_to item.speaker.twitter,
+                      title:  item.speaker.twitter,
+                      target: '_blank',
+                      class:  'schedule__speaker-sns is-twitter' do
+                      %i.fa-brands.fa-twitter
+                    = link_to item.speaker.github,
+                      title:  item.speaker.github,
+                      target: '_blank',
+                      class:  'schedule__speaker-sns is-github' do
+                      %i.fa-brands.fa-github
+                    = link_to item.speaker.website,
+                      title:  item.speaker.website,
+                      target: '_blank',
+                      class:  'schedule__speaker-sns is-website' do
+                      %i.fa-solid.fa-link
+                  .schedule__bio
+                    = item.speaker.bio

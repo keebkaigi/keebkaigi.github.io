@@ -6,7 +6,7 @@
   time: '17:00'
   title: Opening
   title_ja: イベント開始
-- category: talk
+- category: Keeb Talk
   time: '17:10 - 17:30'
   title: Me, Keyboard, and RubyKaigi 2023
   speaker:
@@ -17,7 +17,7 @@
     website: https://royal-keyboard-works.square.site/
     avatar: https://avatars.githubusercontent.com/u/6962187?v=4
     bio: I am a keyboard designer who loves unique layout and full color LEDs. I also create infinite possibilities.
-- category: talk
+- category: Keeb Talk
   time: '17:30 - 17:50'
   title: TBD
   speaker:
@@ -60,7 +60,7 @@
   time: '18:40 - 19:00'
   title: Free Time
   title_ja: 休憩・自由時間・キーボード交流会
-- category: talk
+- category: Keeb Talk
   time: '19:00 - 19:20'
   title: Something very nice title of talk
   speaker:
@@ -71,7 +71,7 @@
     website: https://fstn.hateblo.jp/
     avatar: https://avatars.githubusercontent.com/u/736191?v=4
     bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
-- category: talk
+- category: Keeb Talk
   time: '19:20 - 19:40'
   title: Something very nice title of talk
   speaker:
@@ -82,7 +82,7 @@
     website: https://hasumikin.com/about/
     avatar: https://avatars.githubusercontent.com/u/8454208?v=4
     bio: Please write a cool profile description around 60-120 characters, just like rubyistokei.
-- category: talk
+- category: Keeb Talk
   time: '19:40 - 20:00'
   title: Something very nice title of talk
   speaker:
