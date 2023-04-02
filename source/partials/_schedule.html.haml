@@ -63,7 +63,7 @@
                 = link_to item.speaker.twitter,
                   title:  item.speaker.id,
                   target: '_blank',
-                  class:  'schedule__talk-avatar' do
+                  class:  "schedule__talk-avatar is-#{item.speaker.id}" do
                   = image_tag(item.speaker.avatar,
                   alt: item.speaker.id,
                   class: 'schedule__talk-avatar-image')

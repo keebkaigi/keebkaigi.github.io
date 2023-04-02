@@ -86,10 +86,13 @@ a
 
 @keyframes gaming-avatar
   0%
-    background-position: 0 0
+    background-position: 0 50%
+
+  50%
+    background-position: 100% 50%
 
   100%
-    background-position: $avatar-large 0
+    background-position: 0% 50%
 
 // bg
 
@@ -414,7 +417,8 @@ a
 
 
 .schedule__talk-avatar
-  +infinite-gradient
+  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 40%, #F92174 65%, #D067FF 70%, #39B54A 100%)
+  background-size: 400% 400%
   $size: 160px
   width: $size
   height: $size
@@ -422,13 +426,13 @@ a
   margin-right: 1.5rem
   border-radius: 20px
   position: relative
-  animation: gaming-avatar 4s linear infinite
+  animation: gaming-avatar 4s ease infinite
 
   +mq
     margin-bottom: 1rem
 
   &:hover
-    animation: gaming-avatar 0.2s linear infinite
+    animation: gaming-avatar 0.3s ease infinite
 
   &:after
     content: ''
@@ -441,6 +445,18 @@ a
     left: 0
     background-image: image_url('avatar-keeb.svg')
     background-repeat: no-repeat
+
+  &.is-takai
+    animation-delay: 1s
+
+  &.is-foostan
+    animation-delay: 2s
+
+  &.is-hasumikin
+    animation-delay: 3s
+
+  &.is-tenderlove
+    animation-delay: 4s
 
 .schedule__talk-avatar-image
   $size: 100px
