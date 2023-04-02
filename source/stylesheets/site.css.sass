@@ -16,6 +16,7 @@ $enter-width: 175px
 $enter-height: 75px
 $timetable-width: 900px
 $avatar-small: 42px
+$avatar-large: 160px
 
 // Mixin
 =infinite-gradient
@@ -82,6 +83,13 @@ a
 
   100%
     background-position: $avatar-small 0
+
+@keyframes gaming-avatar
+  0%
+    background-position: 0 0
+
+  100%
+    background-position: $avatar-large 0
 
 // bg
 
@@ -406,17 +414,33 @@ a
 
 
 .schedule__talk-avatar
-  background: image_url('avatar-keeb.svg'), linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
-  background-repeat: no-repeat
+  +infinite-gradient
   $size: 160px
   width: $size
   height: $size
   flex: 0 0 $size
   margin-right: 1.5rem
   border-radius: 20px
+  position: relative
+  animation: gaming-avatar 4s linear infinite
 
   +mq
     margin-bottom: 1rem
+
+  &:hover
+    animation: gaming-avatar 0.2s linear infinite
+
+  &:after
+    content: ''
+    display: block
+    $size: 160px
+    width: $size
+    height: $size
+    position: absolute
+    top: 0
+    left: 0
+    background-image: image_url('avatar-keeb.svg')
+    background-repeat: no-repeat
 
 .schedule__talk-avatar-image
   $size: 100px
