@@ -24,7 +24,7 @@
     bio: I am a keyboard designer who loves unique layout and full color LEDs. I also create infinite possibilities.
 - category: Keeb Talk
   time: '17:30 - 17:50'
-  title: TBD #Your Awesome Talk Title Goes Here
+  title: Title TBA #Your Awesome Talk Title Goes Here
   speaker:
     id: takai
     name: Naoto TAKAI
@@ -71,7 +71,7 @@
   title_ja: キーボード交流タイム
 - category: Keeb Talk
   time: '19:00 - 19:20'
-  title: TBD #Your Awesome Talk Title Goes Here
+  title: Title TBA #Your Awesome Talk Title Goes Here
   speaker:
     id: foostan
     name: Kosuke Adachi
@@ -82,7 +82,7 @@
     bio: # Share your snazzy profile description in 60-120 chars
 - category: Keeb Talk
   time: '19:20 - 19:40'
-  title: TBD #Your Awesome Talk Title Goes Here
+  title: Title TBA #Your Awesome Talk Title Goes Here
   speaker:
     id: hasumikin
     name: Hitoshi HASUMI
@@ -93,7 +93,7 @@
     bio: # Share your snazzy profile description in 60-120 chars
 - category: Keeb Talk
   time: '19:40 - 20:00'
-  title: TBD #Your Awesome Talk Title Goes Here
+  title: Title TBA #Your Awesome Talk Title Goes Here
   speaker:
     id: tenderlove
     name: Aaron Patterson
