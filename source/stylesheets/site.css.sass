@@ -15,6 +15,7 @@ $footer-height: 240px
 $enter-width: 175px
 $enter-height: 75px
 $timetable-width: 900px
+$avatar-small: 42px
 
 // Mixin
 =infinite-gradient
@@ -74,6 +75,13 @@ a
 
   100%
     background-position: $enter-width 0
+
+@keyframes gaming-small-avatar
+  0%
+    background-position: 0 0
+
+  100%
+    background-position: $avatar-small 0
 
 // bg
 
@@ -342,11 +350,14 @@ a
     margin-bottom: 0
 
 .schedule__small-avatar
-  $size: 36px
+  $size: 42px
   width: $size
   height: $size
   flex: 0 0 $size
   margin-right: 1rem
+  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
+  border-radius: 8px
+  position: relative
 
   +mq
     size: 30px
@@ -360,6 +371,9 @@ a
   width: $size
   height: $size
   border-radius: 6px
+  position: relative
+  top: 3px
+  left: 3px
 
 .schedule__small-content
   font-size: 1.2rem
@@ -368,6 +382,10 @@ a
 .schedule__small-speaker-link
   display: flex
   align-items: center
+
+  &:hover
+    .schedule__small-avatar
+      animation: gaming-small-avatar 0.3s linear infinite
 
 .schedule__small-speaker-id
   font-weight: 400
