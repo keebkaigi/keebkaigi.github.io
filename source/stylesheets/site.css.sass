@@ -335,13 +335,16 @@ a
   font-size: 1.6rem
   margin: 0
   line-height: 1.4
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+
+.schedule__title-en
+  margin-right: 1rem
 
 .schedule__title-ja
-  font-size: 1rem
-  margin-left: 0.5rem
-
-  +mq
-    display: block
+  font-size: 1.2rem
+  transform: translateY(0.1rem)
 
 .schedule__lt
   list-style: none
@@ -400,10 +403,16 @@ a
     .schedule__small-avatar
       animation: gaming-avatar 0.3s linear infinite
 
+.schedule__small-speaker-right
+  display: flex
+  flex-wrap: wrap
+
+.schedule__small-speaker-name
+  margin-right: 0.4rem
+
 .schedule__small-speaker-id
   font-weight: 400
   font-size: 1rem
-  margin-left: 0.4rem
 
 .schedule__talk-heading
   font-size: 0.8rem
@@ -555,8 +564,15 @@ a
 .schedule__opening
   display: flex
 
+  +mq
+    display: block
+
 .schedule__opening-speaker
   margin-left: 2rem
+
+  +mq
+    margin-left: 0
+    margin-top: 1rem
 
 // .sponsor
 

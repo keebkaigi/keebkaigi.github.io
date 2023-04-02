@@ -13,28 +13,30 @@
 
           - if item.category == 'misc'
             %h3.schedule__title
-              = item.title
-              %span.schedule__title-ja= item.title_ja
+              .schedule__title-en= item.title
+              .schedule__title-ja= item.title_ja
 
           - if item.category == 'opening'
             .schedule__opening
               %h3.schedule__title
-                = item.title
-                %span.schedule__title-ja= item.title_ja
+                .schedule__title-en= item.title
+                .schedule__title-ja= item.title_ja
               .schedule__opening-speaker
                 = link_to item.speaker.url, target: '_blank', class: 'schedule__small-speaker-link' do
                   .schedule__small-avatar
                     = image_tag(item.speaker.avatar,
                       alt: item.speaker.id,
                       class: 'schedule__small-avatar-image')
-                  .schedule__small-content
-                    = item.speaker.name
-                    %span.schedule__small-speaker-id= "@#{item.speaker.id}"
+                  .schedule__small-speaker-right
+                    .schedule__small-speaker-name
+                      = item.speaker.name
+                    .schedule__small-speaker-id
+                      = "@#{item.speaker.id}"
 
           - if item.category == 'Sema-Pitches'
             .schedule__title
-              = item.title
-              %span.schedule__title-ja= item.title_ja
+              .schedule__title-en= item.title
+              .schedule__title-ja= item.title_ja
             .schedule__lt-description
               %p= item.description
               %p= item.description_ja
@@ -48,9 +50,11 @@
                         = image_tag(speaker.avatar,
                           alt: speaker.id,
                           class: 'schedule__small-avatar-image')
-                      .schedule__small-content
-                        = speaker.name
-                        %span.schedule__small-speaker-id= "@#{speaker.id}"
+                      .schedule__small-speaker-right
+                        .schedule__small-speaker-name
+                          = speaker.name
+                        .schedule__small-speaker-id
+                          = "@#{speaker.id}"
                 = link_to item.submission.url, target: '_blank', class: 'schedule__sema-pitches-submission' do
                   = item.submission.text
                   %i.fa-solid.fa-chevron-right.schedule__sema-pitches-submission-icon
