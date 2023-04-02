@@ -70,12 +70,12 @@
                   %h3.schedule__talk-title
                     = item.title
                   .schedule__talk-speaker
-                    %span.schedule__talk-speaker-name
-                      = item.speaker.name
                     = link_to item.speaker.twitter,
                       title:  item.speaker.id,
                       target: '_blank',
                       class:  'schedule__talk-speaker-id' do
+                      %span.schedule__talk-speaker-name
+                        = item.speaker.name
                       = "@#{item.speaker.id}"
                     = link_to item.speaker.twitter,
                       title:  item.speaker.twitter,
