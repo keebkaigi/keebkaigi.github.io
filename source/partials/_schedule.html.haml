@@ -10,28 +10,39 @@
         .schedule__time
           = item.time
         .schedule__content
+
           - if item.category == 'misc'
             %h3.schedule__title
               = item.title
               %span.schedule__title-ja= item.title_ja
-          - if item.category == 'lt'
-            .schedule__lt-wrap
-              .schedule__title--lt= item.title
+
+          - if item.category == 'Sema-Pitches'
+            .schedule__title
+              = item.title
+              %span.schedule__title-ja= item.title_ja
+            .schedule__lt-description
+              %p= item.description
+              %p= item.description_ja
+
+            -# 狭ピッチ演者リスト(4名) & 公募フォームへのリンク
               %ul.schedule__lt
-                %span.schedule__lt-tbd TBD
-                -# item.talks.each do |lt|
-                  %li.schedule__lt-item
-                    .schedule__lt-avatar
-                      = image_tag(lt.speaker.avatar,
-                        alt: lt.speaker.id,
-                        class: 'schedule__lt-avatar-image')
-                    .schedule__lt-content
-                      .schedule__lt-title
-                        = lt.title
-                      .schedule__lt-speaker
-                        = link_to lt.speaker.url do
-                          = lt.speaker.name
-                          %span.schedule__lt-speaker-id= "@#{lt.speaker.id}"
+                - item.speakers.each do |speaker|
+                  %li.schedule__lt-speaker
+                    = link_to speaker.url, target: '_blank', class: 'schedule__small-speaker-link' do
+                      .schedule__small-avatar
+                        = image_tag(speaker.avatar,
+                          alt: speaker.id,
+                          class: 'schedule__small-avatar-image')
+                      .schedule__small-content
+                        = speaker.name
+                        %span.schedule__small-speaker-id= "@#{speaker.id}"
+                = link_to item.submission.url, target: '_blank', class: 'schedule__sema-pitches-submission' do
+                  = item.submission.text
+                  %i.fa-solid.fa-chevron-right.schedule__sema-pitches-submission-icon
+                  %i.fa-solid.fa-chevron-right.schedule__sema-pitches-submission-icon
+                  %span.schedule__sema-pitches-submission-form
+                    = item.submission.title
+
           - if item.category == 'Keeb Talk'
             .schedule__talk
               .schedule__talk-container
