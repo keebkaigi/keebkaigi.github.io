@@ -1,0 +1,104 @@
+.schedule
+  %h2.schedule__heading Schedule
+  %p.schedule__note
+    = 'Most talks are planned to be in Japanese, but we think we can "communicate" through keyboards️ (just like Ruby works too!).'
+    %br
+    = ' If you\'re interested in keebs, you\'ll be just fine, so join us!! 😉'
+  %ul.schedule__table
+    - data.year_2023.schedule.each do |item|
+      %li.schedule__item
+        .schedule__time
+          = item.time
+        .schedule__content
+
+          - if item.category == 'misc'
+            %h3.schedule__title
+              .schedule__title-en= item.title
+              .schedule__title-ja= item.title_ja
+
+          - if item.category == 'opening'
+            .schedule__opening
+              %h3.schedule__title
+                .schedule__title-en= item.title
+                .schedule__title-ja= item.title_ja
+              .schedule__opening-speaker
+                = link_to item.speaker.url, target: '_blank', class: 'schedule__small-speaker-link' do
+                  .schedule__small-avatar
+                    = image_tag(item.speaker.avatar,
+                      alt: item.speaker.id,
+                      class: 'schedule__small-avatar-image')
+                  .schedule__small-speaker-right
+                    .schedule__small-speaker-name
+                      = item.speaker.name
+                    .schedule__small-speaker-id
+                      = "@#{item.speaker.id}"
+
+          - if item.category == 'Sema-Pitches'
+            .schedule__title
+              .schedule__title-en= item.title
+              .schedule__title-ja= item.title_ja
+            .schedule__lt-description
+              %p= item.description
+              %p= item.description_ja
+
+            -# 狭ピッチ演者リスト4名 & 公募フォームへのリンク（未公開）
+              %ul.schedule__lt
+                - item.speakers.each do |speaker|
+                  %li.schedule__lt-speaker
+                    = link_to speaker.url, target: '_blank', class: 'schedule__small-speaker-link' do
+                      .schedule__small-avatar
+                        = image_tag(speaker.avatar,
+                          alt: speaker.id,
+                          class: 'schedule__small-avatar-image')
+                      .schedule__small-speaker-right
+                        .schedule__small-speaker-name
+                          = speaker.name
+                        .schedule__small-speaker-id
+                          = "@#{speaker.id}"
+                = link_to item.submission.url, target: '_blank', class: 'schedule__sema-pitches-submission' do
+                  = item.submission.text
+                  %i.fa-solid.fa-chevron-right.schedule__sema-pitches-submission-icon
+                  %i.fa-solid.fa-chevron-right.schedule__sema-pitches-submission-icon
+                  %span.schedule__sema-pitches-submission-form
+                    = item.submission.title
+
+          - if item.category == 'Keeb Talk'
+            .schedule__talk
+              .schedule__talk-container
+                = link_to item.speaker.twitter,
+                  title:  item.speaker.id,
+                  target: '_blank',
+                  class:  "schedule__talk-avatar is-#{item.speaker.id}" do
+                  = image_tag(item.speaker.avatar,
+                  alt: item.speaker.id,
+                  class: 'schedule__talk-avatar-image')
+                .schedule__talk-content
+                  .schedule__talk-heading
+                    = item.category
+                  %h3.schedule__talk-title
+                    = item.title
+                  .schedule__talk-speaker
+                    = link_to item.speaker.twitter,
+                      title:  item.speaker.id,
+                      target: '_blank',
+                      class:  'schedule__talk-speaker-id' do
+                      %span.schedule__talk-speaker-name
+                        = item.speaker.name
+                      = "@#{item.speaker.id}"
+                    = link_to item.speaker.twitter,
+                      title:  item.speaker.twitter,
+                      target: '_blank',
+                      class:  'schedule__speaker-sns is-twitter' do
+                      %i.fa-brands.fa-twitter
+                    = link_to item.speaker.github,
+                      title:  item.speaker.github,
+                      target: '_blank',
+                      class:  'schedule__speaker-sns is-github' do
+                      %i.fa-brands.fa-github
+                    = link_to item.speaker.website,
+                      title:  item.speaker.website,
+                      target: '_blank',
+                      class:  'schedule__speaker-sns is-website' do
+                      %i.fa-solid.fa-link
+                  .schedule__bio
+                    = item.speaker.bio

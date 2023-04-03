@@ -11,9 +11,14 @@ $text-color: #FFF
 $mq-width: 700px
 $footer-height: 250px
 $sponsor-logo-width: 20rem
+$footer-height: 240px
+$enter-width: 175px
+$enter-height: 75px
+$timetable-width: 900px
+$avatar-small: 42px
+$avatar-large: 160px
 
 // Mixin
-
 =infinite-gradient
   background: linear-gradient(to right, #39B54A 0%, #FCC02E 10%, #f25350 30%, #F92174 50%, #D067FF 80%, #39B54A 100%)
 
@@ -27,7 +32,7 @@ body
   background-color: $bg-color
   color: $text-color
   font-family: 'Saira', 'Zen Kaku Gothic New', sans-serif
-  font-weight: bold
+  font-weight: 700
   text-align: center
   letter-spacing: 0.05rem
   margin: 0
@@ -64,6 +69,30 @@ a
 
   100%
     background-position: 100vw 0
+
+@keyframes gaming-enter
+  0%
+    background-position: 0 0
+
+  100%
+    background-position: $enter-width 0
+
+@keyframes gaming-small-avatar
+  0%
+    background-position: 0 0
+
+  100%
+    background-position: $avatar-small 0
+
+@keyframes gaming-avatar
+  0%
+    background-position: 0 50%
+
+  50%
+    background-position: 100% 50%
+
+  100%
+    background-position: 0% 50%
 
 // bg
 
@@ -241,12 +270,333 @@ a
   font-size: 0.8rem
   margin-top: 0.5rem
 
+.hero__registration
+  margin-top: 2.5rem
+
+.hero__registration-button
+  +infinite-gradient
+  display: block
+  margin: 0 auto
+  width: $enter-width
+  height: $enter-height
+  mask-image: url("/images/button-enter.svg")
+  mask-repeat: no-repeat
+  mask-size: cover
+  animation: gaming-enter 2s linear infinite
+  transition-duration: 0.3s
+
+  &:hover
+    transform: translateY(0.3rem)
+    animation: gaming-enter 0.2s linear infinite
+
+.hero__registration-not-available
+  margin: 3rem auto 0
+  border: 1px solid $text-color
+  border-radius: 10px
+  max-width: 600px
+  padding: 0 1rem
+
+.hero__registration-not-available-en
+  font-size: 1.1rem
+  margin-bottom: 0
+
+.hero__registration-not-available-ja
+  margin-top: 0.5rem
+  font-size: 0.9rem
+
+// .schedule
+
+.schedule
+  margin-top: 4rem
+
+.schedule__note
+  font-size: 0.9rem
+  font-weight: 400
+  line-height: 1.8
+  margin-bottom: 3rem
+
+.schedule__heading
+  font-size: 2rem
+  letter-spacing: 0.3rem
+  margin-bottom: 3rem
+
+.schedule__table
+  max-width: $timetable-width
+  margin: 0 auto
+  padding: 0
+  list-style: none
+  text-align: left
+
+.schedule__item
+  display: flex
+  margin-bottom: 4rem
+  align-items: flex-start
+
+.schedule__time
+  flex: 0 0 10rem
+  text-align: right
+  margin-right: 2rem
+  transform: translateY(5px)
+
+  +mq
+    font-size: 0.8rem
+    flex: 0 0 6rem
+    margin-right: 1rem
+
+.schedule__content
+  flex: 100
+
+.schedule__title
+  font-size: 1.6rem
+  margin: 0
+  line-height: 1.4
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+
+.schedule__title-en
+  margin-right: 1rem
+
+.schedule__title-ja
+  font-size: 1.2rem
+  transform: translateY(0.1rem)
+
+.schedule__lt
+  list-style: none
+  padding: 0
+  margin: 0
+  flex: 1 0 0
+
+.schedule__lt-description
+  font-weight: 400
+  font-size: 0.9rem
+  margin-bottom: 1rem
+
+.schedule__lt-speaker
+  margin: 1rem 0
+
+  &:last-child
+    margin-bottom: 0
+
+.schedule__small-avatar
+  $size: 42px
+  width: $size
+  height: $size
+  flex: 0 0 $size
+  margin-right: 1rem
+  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
+  background-size: 400% 400%
+  border-radius: 8px
+  position: relative
+  animation: gaming-avatar 6s linear infinite
+
+  +mq
+    size: 30px
+    width: $size
+    height: $size
+    flex: 0 0 $size
+    margin-right: 10px
+
+.schedule__small-avatar-image
+  $size: 36px
+  width: $size
+  height: $size
+  border-radius: 6px
+  position: relative
+  top: 3px
+  left: 3px
+
+.schedule__small-content
+  font-size: 1.2rem
+  flex: 1 0 0
+
+.schedule__small-speaker-link
+  display: flex
+  align-items: center
+
+  &:hover
+    .schedule__small-avatar
+      animation: gaming-avatar 0.3s linear infinite
+
+.schedule__small-speaker-right
+  display: flex
+  flex-wrap: wrap
+
+.schedule__small-speaker-name
+  margin-right: 0.4rem
+
+.schedule__small-speaker-id
+  font-weight: 400
+  font-size: 1rem
+
+.schedule__talk-heading
+  font-size: 0.8rem
+  letter-spacing: 0.2rem
+
+.schedule__talk-container
+
+  margin-top: 0.5rem
+  display: flex
+
+  +mq
+    flex-direction: column
+
+
+.schedule__talk-avatar
+  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 40%, #F92174 65%, #D067FF 70%, #39B54A 100%)
+  background-size: 400% 400%
+  $size: 160px
+  width: $size
+  height: $size
+  flex: 0 0 $size
+  margin-right: 1.5rem
+  border-radius: 20px
+  position: relative
+  animation: gaming-avatar 4s ease infinite
+
+  +mq
+    margin-bottom: 1rem
+
+  &:hover
+    animation: gaming-avatar 0.3s ease infinite
+    transform: translateY(1rem)
+
+    +mq
+      transform: translateY(0.5rem)
+
+  &:after
+    content: ''
+    display: block
+    $size: 160px
+    width: $size
+    height: $size
+    position: absolute
+    top: 0
+    left: 0
+    background-image: image_url('avatar-keeb.svg')
+    background-repeat: no-repeat
+
+  &.is-takai
+    animation-delay: 1s
+
+  &.is-foostan
+    animation-delay: 2s
+
+  &.is-hasumikin
+    animation-delay: 3s
+
+  &.is-tenderlove
+    animation-delay: 4s
+
+.schedule__talk-avatar-image
+  $size: 100px
+  width: $size
+  height: $size
+  background-color: white
+  border-radius: 10px
+  position: relative
+  top: 12px
+  left: 16px
+  border: 4px solid $bg-color
+
+.schedule__talk-content
+  flex: 100
+
+.schedule__talk-title
+  display: inline-block
+  font-size: 1.6rem
+  line-height: 1.4
+  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
+  background-size: 120% 120%
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  margin: 0.6rem 0 0.4rem
+  animation: gaming-avatar 1.5s ease infinite
+
+  +mq
+    font-size: 1.4rem
+    margin: 0.4rem 0
+
+.schedule__talk-speaker
+  margin-bottom: 0.8rem
+  line-height: 2
+
+.schedule__talk-speaker-name
+  font-size: 1.2rem
+  font-weight: 800
+  margin-right: 0.6rem
+
+.schedule__talk-speaker-id
+  font-weight: 400
+  font-size: 1rem
+  margin-right: 1rem
+
+  +mq
+    display: block
+    margin-bottom: 0.5rem
+
+.schedule__speaker-sns
+  display: inline-block
+  $size: 1.6rem
+  width: $size
+  height: $size
+  line-height: $size
+  background-color: white
+  border-radius: 4px
+  color: $bg-color
+  font-size: 1rem
+  text-align: center
+  margin-right: 0.8rem
+
+  i
+    transform: translateY(1px)
+
+  &:hover, &:focus
+    color: $bg-color
+    background-color: $hover-color
+
+  &.is-website
+    font-size: 0.8rem
+    i
+      transform: translateX(1px)
+
+.schedule__bio
+  font-weight: 400
+  font-size: 0.9rem
+  line-height: 1.4
+
+.schedule__sema-pitches-submission
+  font-size: 1.4rem
+  display: block
+  margin-top: 2rem
+
+.schedule__sema-pitches-submission-form
+  font-weight: 400
+  font-size: 0.9rem
+  margin-left: 1rem
+  text-decoration: underline
+
+.schedule__sema-pitches-submission-icon
+  font-size: 0.8rem
+  letter-spacing: -0.5rem
+
+.schedule__opening
+  display: flex
+
+  +mq
+    display: block
+
+.schedule__opening-speaker
+  margin-left: 2rem
+
+  +mq
+    margin-left: 0
+    margin-top: 1rem
+
 // .sponsor
 
 .sponsor
   margin-top: 8rem
-  +mq
-    margin-top: 4rem
 
 .sponsor__heading
   font-size: 1.6rem

@@ -1,0 +1,114 @@
+- category: misc
+  time: '16:30'
+  title: Door Open
+  title_ja: 開場
+- category: opening
+  time: '17:00 - 17:10'
+  title: Opening
+  title_ja: 開会
+  speaker:
+    id: kakutani
+    name: Shintaro Kakutani
+    url: https://twitter.com/kakutani
+    avatar: https://pbs.twimg.com/profile_images/643337414874824704/vx_RRStR_400x400.jpg
+- category: Keeb Talk
+  time: '17:10 - 17:30'
+  title: Me, Keyboard, and RubyKaigi 2023
+  speaker:
+    id: swan_match
+    name: Takuma Shirotori
+    twitter: https://twitter.com/swan_match
+    github: https://github.com/swanmatch
+    website: https://royal-keyboard-works.square.site/
+    avatar: https://avatars.githubusercontent.com/u/6962187?v=4
+    bio: He is a keyboard designer who loves unique layouts and full-color LEDs. He also creates 'Infinite Possibilities'.
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+- category: Keeb Talk
+  time: '17:30 - 17:50'
+  title: Building the Perfect Custom Keyboard
+  speaker:
+    id: takai
+    name: Naoto TAKAI
+    twitter: https://twitter.com/recompile_keys
+    github: https://github.com/takai
+    website: https://keys.recompile.net/
+    avatar: https://avatars.githubusercontent.com/u/9104?v=4
+    bio: He is a keyboard designer and custom keyboard enthusiast. He created the Nomu30, Choco60, and other designs under his brand, Recompile Keys.
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+- category: Sema-Pitches
+  time: '17:50 - 18:40'
+  title: Sema-Pitches
+  title_ja: '"狭ピッチ"トーク'
+  description: |
+    In this slot, we'll be using a lightning talk-style format. With back-to-back presentations,
+    each speaker will have a strict 5 minutes to share their passions.
+    Details are coming soon!!q
+  description_ja: |
+    いわゆる「ライトニングトーク」形式で、各スピーカーは持ち時間5分で各々のキーボードにかける思いを語っていただきます。
+    詳細は追ってお知らせしますので刮目して待て!!q
+  submission:
+    text: ...and You!
+    title: 'KeebKaigi 2023 "Sema-Pitches" Submission Form'
+    url: https://forms.gle/GnprAEPtKzjNz4uW9
+  speakers:
+  - d: kota_syan
+    name: かわかみ
+    url: https://twitter.com/kota_syan
+    avatar: https://pbs.twimg.com/profile_images/1421682409968336901/wLDrUvl5_400x400.jpg
+  - id: achamixx
+    name: あちゃ
+    url: https://twitter.com/achamixx
+    avatar: https://pbs.twimg.com/profile_images/1205771710944858113/OBkdrLXG_400x400.jpg
+  - id: yadaita
+    name: yadaita
+    url: https://twitter.com/yadaita
+    avatar: https://pbs.twimg.com/profile_images/378800000561709251/efc8828aff9cb20e8e922923de9e878b_400x400.jpeg
+  - id: asonas
+    name: あそなす
+    url: https://twitter.com/asonas
+    avatar: https://pbs.twimg.com/profile_images/1489032359/__________2011-08-11_9.48.06_400x400.png
+- category: misc
+  time: '18:40 - 19:00'
+  title: Networking Break
+  title_ja: キーボード交流タイム
+- category: Keeb Talk
+  time: '19:00 - 19:20'
+  title: (His Awesome Talk Title Goes Here)
+  speaker:
+    id: foostan
+    name: Kosuke Adachi
+    twitter: https://twitter.com/foostan
+    github: https://github.com/foostan
+    website: https://fstn.hateblo.jp/
+    avatar: https://avatars.githubusercontent.com/u/736191?v=4
+    bio: (His cool profile text will be posted here (60-140 chars).)
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+- category: Keeb Talk
+  time: '19:20 - 19:40'
+  title: (His Awesome Talk Title Goes Here)
+  speaker:
+    id: hasumikin
+    name: Hitoshi HASUMI
+    twitter: https://twitter.com/hasumikin
+    github: https://github.com/hasumikin
+    website: https://hasumikin.com/about/
+    avatar: https://avatars.githubusercontent.com/u/8454208?v=4
+    bio: (His cool profile text will be posted here (60-140 chars).)
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+- category: Keeb Talk
+  time: '19:40 - 20:00'
+  title: (His Awesome Talk Title Goes Here)
+  speaker:
+    id: tenderlove
+    name: Aaron Patterson
+    twitter: https://twitter.com/tenderlove
+    github: https://github.com/tenderlove
+    website: http://tenderlovemaking.com/
+    avatar: https://avatars.githubusercontent.com/u/3124?v=4
+    bio: (His cool profile text will be posted here (60-140 chars).)
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)

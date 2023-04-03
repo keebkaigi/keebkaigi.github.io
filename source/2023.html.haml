@@ -54,11 +54,21 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
             title: 'View on Google Map',
             target: '_blank',
             class: 'hero__venue-google-map-link'
-  .teaser
-    %p.teaser__message.is-en= d.teaser.message.en
-    %p.teaser__message= d.teaser.message.ja
-    %p.teaser__message_2= d.teaser.message_2
+      .hero__registration-not-available
+        %p.hero__registration-not-available-en
+          = d.general.registration.not_available.en
+        %p.hero__registration-not-available-ja
+          = d.general.registration.not_available.ja
+      -# ENTERキー: 募集開始したら表示
+        = link_to d.general.registration,
+          title: 'Registration',
+          class: 'hero__registration-button',
+          target: '_blank' do
+          %i.fa-solid.fa-arrow-turn-down-left
+          %span.hero__text= 'ENTER'
 
+  = partial('partials/schedule')
+  -# = partial('partials/teaser')
   = partial('partials/sponsors')
 
   .team
