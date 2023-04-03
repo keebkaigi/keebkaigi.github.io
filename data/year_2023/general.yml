@@ -9,13 +9,13 @@ rubykaigi:
   url: https://rubykaigi.org/2023/
   date: Day 0
 registration:
-  url: # Peatix の URL をここにお願いします
-  description: Join Us Now!!
+  url: https://keebkaigi2023.peatix.com/
+  description: 🎬 Apr 4, 10 AM!
   not_available:
     en: Registration is (still) in the works! it'll be ready soon~
     ja: 参加登録ページは鋭意準備中です（やってるよ!!q）
 live_streaming:
-  heading: Live Streaming on YouTube
+  heading: We're planning to live streaming this meetup on YouTube!
   streamer:
     name: Daihuku Keyboard
     id: Daihuku0015
