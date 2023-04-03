@@ -55,11 +55,16 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
             target: '_blank',
             class: 'hero__venue-google-map-link'
       .hero__registration
+        .hero__registration-description-container
+          .hero__registration-description
+            %span.hero__registration-description-text
+              = d.general.registration.description
         = link_to d.general.registration.url,
           title: 'Registration',
           class: 'hero__registration-button',
           target: '_blank' do
-          %i.fa-solid.fa-arrow-turn-down-left
+          .hero__registration-description-icon
+            %i.fa-solid.fa-arrow-turn-down-left
           %span.hero__text= 'ENTER'
       .hero__live
         %h3.hero__live-heading

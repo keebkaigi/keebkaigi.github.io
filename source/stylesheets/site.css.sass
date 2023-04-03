@@ -98,6 +98,22 @@ a
   100%
     background-position: 0% 50%
 
+@keyframes bounce
+  0%
+    top: 0
+    height: 2.2rem
+    line-height: 2.2rem
+
+  50%
+    top: 0.7rem
+    height: 2rem
+    line-height: 2rem
+
+  100%
+    top: 0
+    height: 2.2rem
+    line-height: 2.2rem
+
 // bg
 
 .bg
@@ -275,7 +291,7 @@ a
   margin-top: 0.5rem
 
 .hero__registration
-  margin-top: 3rem
+  margin-top: 2rem
 
 .hero__registration-button
   +infinite-gradient
@@ -292,6 +308,43 @@ a
   &:hover
     transform: translateY(0.3rem)
     animation: gaming-enter 0.2s linear infinite
+
+.hero__registration-description-container
+  height: 3.7rem
+  position: relative
+
+.hero__registration-description
+  font-size: 0.9rem
+  margin: 0 auto 1.5rem
+  width: 8rem
+  height: 2rem
+  border-radius: 2rem
+  background-color: $text-color
+  color: $bg-color
+  letter-spacing: 0
+  position: relative
+  animation: bounce 1s ease-in-out infinite
+  &:after
+    $size: 0.5rem
+    $left: 4rem
+    $color: $text-color
+    position: absolute
+    content: ""
+    display: block
+    border: $size solid $color
+    border-bottom: $size solid transparent
+    border-left: $size solid transparent
+    border-right: $size solid transparent
+    bottom: -1 * $size * 2
+    left: $left
+    transform: translateX(-0.5rem)
+
+.hero__registration-description-text
+
+.hero__registration-description-icon
+  display: block
+  font-size: 1rem
+  line-height: 1
 
 .hero__registration-not-available
   margin: 3rem auto 0

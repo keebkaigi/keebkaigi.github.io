@@ -10,6 +10,7 @@ rubykaigi:
   date: Day 0
 registration:
   url: # Peatix の URL をここにお願いします
+  description: Join Us Now!!
   not_available:
     en: Registration is (still) in the works! it'll be ready soon~
     ja: 参加登録ページは鋭意準備中です（やってるよ!!q）
