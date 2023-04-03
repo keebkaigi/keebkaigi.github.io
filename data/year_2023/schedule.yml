@@ -26,7 +26,7 @@
       (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
 - category: Keeb Talk
   time: '17:30 - 17:50'
-  title: (His Awesome Talk Title Goes Here)
+  title: Building the Perfect Custom Keyboard
   speaker:
     id: takai
     name: Naoto TAKAI
@@ -34,7 +34,7 @@
     github: https://github.com/takai
     website: https://keys.recompile.net/
     avatar: https://avatars.githubusercontent.com/u/9104?v=4
-    bio: (His cool profile text will be posted here (60-140 chars).)
+    bio: He is a keyboard designer and custom keyboard enthusiast. He created the Nomu30, Choco60, and other designs under his brand, Recompile Keys.
     abstract: |
       (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
 - category: Sema-Pitches
