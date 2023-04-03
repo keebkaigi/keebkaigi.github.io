@@ -69,6 +69,14 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
 
   = partial('partials/schedule')
   -# = partial('partials/teaser')
+  .twitter
+    %h2.h2
+      = link_to 'https://twitter.com/search?q=%23keebkaigi&f=live', target: '_blank' do
+        %i.fa-brands.fa-twitter
+        = data.global.hashtag
+    .twitter__widget
+      %a.twitter-timeline{:href => "https://twitter.com/KeebKaigi?ref_src=twsrc%5Etfw", :height => '600px'} Tweets by KeebKaigi
+      %script{:async => "", :charset => "utf-8", :src => "https://platform.twitter.com/widgets.js"}
   = partial('partials/sponsors')
 
   .team
