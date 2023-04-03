@@ -727,7 +727,7 @@ a
   width: $mq-width
   margin: 0 auto
   flex-wrap: wrap
-  justify-content: space-around
+  justify-content: space-between
 
   +mq
     display: block
@@ -761,10 +761,6 @@ a
 
   &.is-esa
     width: 13rem
-    transform: translateY(1.2rem)
-
-    +mq
-      transform: translateY(0)
 
     @media screen and (max-width: 400px)
       width: 55vw
@@ -774,6 +770,12 @@ a
 
     @media screen and (max-width: 400px)
       width: 70vw
+
+  &.is-suzuri
+    width: 15rem
+
+    @media screen and (max-width: 400px)
+      width: 65vw
 
 // .team
 
