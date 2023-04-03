@@ -142,7 +142,7 @@ a
 .content
   position: relative
   z-index: 1
-  padding: 10vh 1rem 0
+  padding: 4rem 1rem 0
 
   +mq
     padding: 1rem
@@ -250,7 +250,7 @@ a
   font-size: 0.9rem
 
 .hero__venue
-  margin-top: 2rem
+  margin-top: 1.5rem
 
 .hero__venue-icon
   margin-right: 0.4rem
@@ -275,7 +275,7 @@ a
   margin-top: 0.5rem
 
 .hero__registration
-  margin-top: 2.5rem
+  margin-top: 3rem
 
 .hero__registration-button
   +infinite-gradient
@@ -307,6 +307,66 @@ a
 .hero__registration-not-available-ja
   margin-top: 0.5rem
   font-size: 0.9rem
+
+.hero__live
+  margin-top: 3rem
+
+.hero__live-heading
+  font-size: 1.3rem
+  margin-bottom: 0.8rem
+
+.hero__live-streamer
+  display: flex
+  flex-wrap: wrap
+  margin: 0 auto
+  justify-content: center
+  align-items: center
+  font-size: 1.2rem
+
+.hero__live-streamer-link
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  margin-right: 1rem
+
+  &:hover
+    .hero__live-streamer-avatar
+      animation: gaming-avatar 0.3s linear infinite
+
+.hero__live-streamer-by
+  margin-right: 0.6rem
+
+.hero__live-streamer-avatar
+  height: $avatar-small
+  width: $avatar-small
+  position: relative
+  flex: 0 0 $avatar-small
+  margin-right: 0.6rem
+  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
+  background-size: 400% 400%
+  border-radius: 8px
+  animation: gaming-avatar 6s linear infinite
+
+.hero__live-streamer-avatar-image
+  height: $avatar-small - 6px
+  width: $avatar-small - 6px
+  position: absolute
+  border-radius: 6px
+  top: 3px
+  left: 3px
+
+.hero__live-streamer-twitter-link
+  font-weight: 400
+  font-size: 1rem
+
+.hero__live-text
+  margin-top: 0.8rem
+  font-family: 'Zen Kaku Gothic New', sans-serif
+  font-size: 0.8rem
+  line-height: 2
+
+  a
+    text-decoration: underline dotted
 
 // .schedule
 
