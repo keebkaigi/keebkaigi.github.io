@@ -316,8 +316,10 @@ a
 .hero__registration-description
   font-size: 0.9rem
   margin: 0 auto 1.5rem
-  width: 9rem
+  display: inline-block
+  width: auto
   height: 2rem
+  padding: 0 1rem
   border-radius: 2rem
   background-color: $text-color
   color: $bg-color
@@ -326,7 +328,7 @@ a
   animation: bounce 1s ease-in-out infinite
   &:after
     $size: 0.5rem
-    $left: 4.5rem
+    $left: 50%
     $color: $text-color
     position: absolute
     content: ""
