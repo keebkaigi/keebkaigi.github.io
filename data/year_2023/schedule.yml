@@ -44,10 +44,8 @@
   description: |
     In this slot, we'll be using a lightning talk-style format. With back-to-back presentations,
     each speaker will have a strict 5 minutes to share their passions.
-    Details are coming soon!!q
   description_ja: |
     いわゆる「ライトニングトーク」形式で、各スピーカーは持ち時間5分で各々のキーボードにかける思いを語っていただきます。
-    詳細は追ってお知らせしますので刮目して待て!!q
   submission:
     text: ...and You!
     title: 'KeebKaigi 2023 "Sema-Pitches" Submission Form'
