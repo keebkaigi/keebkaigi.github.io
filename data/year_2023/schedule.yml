@@ -53,7 +53,7 @@
     title: 'KeebKaigi 2023 "Sema-Pitches" Submission Form'
     url: https://forms.gle/GnprAEPtKzjNz4uW9
   speakers:
-  - d: kota_syan
+  - id: kota_syan
     name: かわかみ
     url: https://twitter.com/kota_syan
     avatar: https://pbs.twimg.com/profile_images/1421682409968336901/wLDrUvl5_400x400.jpg
