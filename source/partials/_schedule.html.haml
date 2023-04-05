@@ -41,26 +41,25 @@
               %p= item.description
               %p= item.description_ja
 
-            -# 狭ピッチ演者リスト4名 & 公募フォームへのリンク（未公開）
-              %ul.schedule__lt
-                - item.speakers.each do |speaker|
-                  %li.schedule__lt-speaker
-                    = link_to speaker.url, target: '_blank', class: 'schedule__small-speaker-link' do
-                      .schedule__small-avatar
-                        = image_tag(speaker.avatar,
-                          alt: speaker.id,
-                          class: 'schedule__small-avatar-image')
-                      .schedule__small-speaker-right
-                        .schedule__small-speaker-name
-                          = speaker.name
-                        .schedule__small-speaker-id
-                          = "@#{speaker.id}"
-                = link_to item.submission.url, target: '_blank', class: 'schedule__sema-pitches-submission' do
-                  = item.submission.text
-                  %i.fa-solid.fa-chevron-right.schedule__sema-pitches-submission-icon
-                  %i.fa-solid.fa-chevron-right.schedule__sema-pitches-submission-icon
-                  %span.schedule__sema-pitches-submission-form
-                    = item.submission.title
+            %ul.schedule__lt
+              - item.speakers.each do |speaker|
+                %li.schedule__lt-speaker
+                  = link_to speaker.url, target: '_blank', class: 'schedule__small-speaker-link' do
+                    .schedule__small-avatar
+                      = image_tag(speaker.avatar,
+                        alt: speaker.id,
+                        class: 'schedule__small-avatar-image')
+                    .schedule__small-speaker-right
+                      .schedule__small-speaker-name
+                        = speaker.name
+                      .schedule__small-speaker-id
+                        = "@#{speaker.id}"
+            = link_to item.submission.url, target: '_blank', class: 'schedule__sema-pitches-submission' do
+              = item.submission.text
+              %i.fa-solid.fa-chevron-right.schedule__sema-pitches-submission-icon
+              %i.fa-solid.fa-chevron-right.schedule__sema-pitches-submission-icon
+              %span.schedule__sema-pitches-submission-form
+                = item.submission.title
 
           - if item.category == 'Keeb Talk'
             .schedule__talk
