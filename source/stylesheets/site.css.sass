@@ -83,12 +83,12 @@ a
 
 @keyframes gaming-small-avatar
   0%
-    background-position: 0 0
+    backgrond-position: 0 0
 
   100%
     background-position: $avatar-small 0
 
-@keyframes gaming-avatar
+@keyframes gaming-diagonal
   0%
     background-position: 0 50%
 
@@ -387,7 +387,7 @@ a
 
   &:hover
     .hero__live-streamer-avatar
-      animation: gaming-avatar 0.3s linear infinite
+      animation: gaming-diagonal 0.3s linear infinite
 
 .hero__live-streamer-by
   margin-right: 0.6rem
@@ -401,7 +401,7 @@ a
   background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
   background-size: 400% 400%
   border-radius: 8px
-  animation: gaming-avatar 6s linear infinite
+  animation: gaming-diagonal 6s linear infinite
 
 .hero__live-streamer-avatar-image
   height: $avatar-small - 6px
@@ -508,7 +508,7 @@ a
   background-size: 400% 400%
   border-radius: 8px
   position: relative
-  animation: gaming-avatar 6s linear infinite
+  animation: gaming-diagonal 6s linear infinite
 
   +mq
     size: 30px
@@ -536,7 +536,7 @@ a
 
   &:hover
     .schedule__small-avatar
-      animation: gaming-avatar 0.3s linear infinite
+      animation: gaming-diagonal 0.3s linear infinite
 
 .schedule__small-speaker-right
   display: flex
@@ -572,13 +572,13 @@ a
   margin-right: 1.5rem
   border-radius: 20px
   position: relative
-  animation: gaming-avatar 4s ease infinite
+  animation: gaming-diagonal 4s ease infinite
 
   +mq
     margin-bottom: 1rem
 
   &:hover
-    animation: gaming-avatar 0.3s ease infinite
+    animation: gaming-diagonal 0.3s ease infinite
     transform: translateY(1rem)
 
     +mq
@@ -631,7 +631,7 @@ a
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
   margin: 0.6rem 0 0.4rem
-  animation: gaming-avatar 1.5s ease infinite
+  animation: gaming-diagonal 1.5s ease infinite
 
   +mq
     font-size: 1.4rem
