@@ -44,7 +44,7 @@
             %ul.schedule__lt
               - item.speakers.each do |speaker|
                 %li.schedule__lt-speaker
-                  = link_to speaker.url, target: '_blank', class: 'schedule__small-speaker-link' do
+                  = link_to speaker.twitter, target: '_blank', class: 'schedule__small-speaker-link' do
                     .schedule__small-avatar
                       = image_tag(speaker.avatar,
                         alt: speaker.id,

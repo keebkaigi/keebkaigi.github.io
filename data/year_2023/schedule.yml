@@ -53,31 +53,41 @@
   speakers:
   - id: yadaita
     name: yadaita
-    url: https://twitter.com/yadaita
+    twitter: https://twitter.com/yadaita
+    github:
+    website:
     avatar: https://pbs.twimg.com/profile_images/378800000561709251/efc8828aff9cb20e8e922923de9e878b_400x400.jpeg
     title: (Wonderful Pitch Title Goes Here)
     bio: (great profile text goes here in ~80 chars)
   - id: F_YUUCHI
     name: ゆーち
-    url: https://twitter.com/F_YUUCHI
+    twitter: https://twitter.com/F_YUUCHI
+    github:
+    website:
     avatar: https://pbs.twimg.com/profile_images/1124089482712686592/BbhKKt8k_400x400.jpg
     title: (Wonderful Pitch Title Goes Here)
     bio: (great profile text goes here in ~80 chars)
   - id: kota_syan
     name: かわかみ
-    url: https://twitter.com/kota_syan
+    twitter: https://twitter.com/kota_syan
+    github:
+    website:
     avatar: https://pbs.twimg.com/profile_images/1421682409968336901/wLDrUvl5_400x400.jpg
     title: (Wonderful Pitch Title Goes Here)
     bio: (great profile text goes here in ~80 chars)
   - id: achamixx
     name: あちゃ
-    url: https://twitter.com/achamixx
+    twitter: https://twitter.com/achamixx
+    github:
+    website:
     avatar: https://pbs.twimg.com/profile_images/1205771710944858113/OBkdrLXG_400x400.jpg
     title: (Wonderful Pitch Title Goes Here)
     bio: (great profile text goes here in ~80 chars)
   - id: asonas
     name: あそなす
-    url: https://twitter.com/asonas
+    twitter: https://twitter.com/asonas
+    github:
+    website:
     avatar: https://pbs.twimg.com/profile_images/1489032359/__________2011-08-11_9.48.06_400x400.png
     title: (Wonderful Pitch Title Goes Here)
     bio: (great profile text goes here in ~80 chars)
