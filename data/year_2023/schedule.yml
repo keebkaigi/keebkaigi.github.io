@@ -54,11 +54,11 @@
   - id: yadaita
     name: yadaita
     twitter: https://twitter.com/yadaita
-    github:
+    github: https://github.com/yada-ITA
     website:
     avatar: https://pbs.twimg.com/profile_images/378800000561709251/efc8828aff9cb20e8e922923de9e878b_400x400.jpeg
-    title: (Wonderful Pitch Title Goes Here)
-    bio: (great profile text goes here in ~80 chars)
+    title: OLEDに癒しを求めてみた（仮）
+    bio: くまモン好きのRubyist
   - id: F_YUUCHI
     name: ゆーち
     twitter: https://twitter.com/F_YUUCHI
