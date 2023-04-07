@@ -14,19 +14,11 @@
   name_ja: 京都小松法律事務所
   url: https://www.bengo4.com/kyoto/a_26100/g_26104/l_344005/
   logo: kyoto-komatsu-law-firm.svg
-- name: suzuri
-  name_ja: SUZURI by GMOペパボ株式会社
-  url: https://suzuri.jp/
-  logo: suzuri.svg
-- name: route06
-  name_ja: 株式会社ROUTE06
-  url: https://route06.co.jp/
-  logo: route06.png
-- name: booth
-  name_ja: BOOTH by ピクシブ株式会社
-  url: https://booth.pm/
-  logo: booth.svg
 - name: esa
   name_ja: 合同会社esa
   url: https://esa.io/
   logo: esa.svg
+- name: suzuri
+  name_ja: SUZURI by GMOペパボ株式会社
+  url: https://suzuri.jp/
+  logo: suzuri.svg
