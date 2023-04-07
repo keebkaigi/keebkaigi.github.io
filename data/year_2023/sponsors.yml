@@ -22,10 +22,10 @@
   name_ja: 株式会社ROUTE06
   url: https://route06.co.jp/
   logo: route06.png
-- name: booth
-  name_ja: BOOTH by ピクシブ株式会社
-  url: https://booth.pm/
-  logo: booth.svg
+# - name: booth
+  # name_ja: BOOTH by ピクシブ株式会社
+  # url: https://booth.pm/
+  # logo: booth.svg
 - name: esa
   name_ja: 合同会社esa
   url: https://esa.io/
