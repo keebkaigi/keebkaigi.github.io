@@ -62,11 +62,11 @@
   - id: F_YUUCHI
     name: ゆーち
     twitter: https://twitter.com/F_YUUCHI
-    github:
+    github: https://github.com/kata0510
     website:
     avatar: https://pbs.twimg.com/profile_images/1124089482712686592/BbhKKt8k_400x400.jpg
-    title: (Wonderful Pitch Title Goes Here)
-    bio: (great profile text goes here in ~80 chars)
+    title: TBD
+    bio: I'm Site Reliability Engineer, Maker, Keyboard Designer, DJ, VJ
   - id: kota_syan
     name: かわかみ
     twitter: https://twitter.com/kota_syan
