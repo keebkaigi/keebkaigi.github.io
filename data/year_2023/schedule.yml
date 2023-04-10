@@ -97,7 +97,7 @@
   title_ja: キーボード交流タイム
 - category: Keeb Talk
   time: '19:00 - 19:20'
-  title: (His Awesome Talk Title Goes Here)
+  title: Crafting the Endgame Keyboard
   speaker:
     id: foostan
     name: Kosuke Adachi
@@ -105,9 +105,9 @@
     github: https://github.com/foostan
     website: https://fstn.hateblo.jp/
     avatar: https://avatars.githubusercontent.com/u/736191?v=4
-    bio: (His cool profile text will be posted here (60-140 chars).)
+    bio: As a keyboard designer and software engineer, he is passionate about crafting compact keyboards with distinct concepts. His creations include Corne, Cornelius, and more.
     abstract: |
-      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+      This presentation introduces the approach of keyboard design, exploring three distinct concepts - a DIY split keyboard, a high-end design philosophy with a focus on keystroke feeling, and a unique and flexible 3D design. Discover the inspiration behind each design and introduce its unique features and purposes.
 - category: Keeb Talk
   time: '19:20 - 19:40'
   title: (His Awesome Talk Title Goes Here)
