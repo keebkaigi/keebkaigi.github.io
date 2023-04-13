@@ -1,9 +1,9 @@
 - category: misc
-  time: '16:30'
+  time: '16:00'
   title: Door Open
   title_ja: 開場
 - category: opening
-  time: '17:00 - 17:10'
+  time: '16:50 - 17:00'
   title: Opening
   title_ja: 開会
   speaker:
@@ -12,7 +12,7 @@
     url: https://twitter.com/kakutani
     avatar: https://pbs.twimg.com/profile_images/643337414874824704/vx_RRStR_400x400.jpg
 - category: Keeb Talk
-  time: '17:10 - 17:30'
+  time: '17:00 - 17:20'
   title: Me, Keyboard, and RubyKaigi 2023
   speaker:
     id: swan_match
@@ -25,7 +25,7 @@
     abstract: |
       (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
 - category: Keeb Talk
-  time: '17:30 - 17:50'
+  time: '17:20 - 17:40'
   title: Building the Perfect Custom Keyboard
   speaker:
     id: takai
@@ -38,7 +38,7 @@
     abstract: |
       (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
 - category: Sema-Pitches
-  time: '17:50 - 18:40'
+  time: '17:40 - 18:40'
   title: Sema-Pitches
   title_ja: '"狭ピッチ"トーク'
   description: |
