@@ -70,11 +70,11 @@
   - id: kota_syan
     name: かわかみ
     twitter: https://twitter.com/kota_syan
-    github:
-    website:
+    github: https://github.com/asya81/
+    website: https://asya81.hatenablog.com/
     avatar: https://pbs.twimg.com/profile_images/1421682409968336901/wLDrUvl5_400x400.jpg
-    title: (Wonderful Pitch Title Goes Here)
-    bio: (great profile text goes here in ~80 chars)
+    title: 初めての自作キーボード 失敗から学んだこと（仮）
+    bio: プログラミング学習中の初心者Rubyist。自作キーボードも1台目を組み立てたばかり🔰
   - id: achamixx
     name: あちゃ
     twitter: https://twitter.com/achamixx
