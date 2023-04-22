@@ -1,9 +1,9 @@
 - category: misc
-  time: '16:00'
+  time: '15:30'
   title: Door Open
   title_ja: 開場
 - category: opening
-  time: '16:50 - 17:00'
+  time: '16:30 - 16:40'
   title: Opening
   title_ja: 開会
   speaker:
@@ -12,7 +12,7 @@
     url: https://twitter.com/kakutani
     avatar: https://pbs.twimg.com/profile_images/643337414874824704/vx_RRStR_400x400.jpg
 - category: Keeb Talk
-  time: '17:00 - 17:20'
+  time: '16:40 - 17:00'
   title: Me, Keyboard, and RubyKaigi 2023
   speaker:
     id: swan_match
@@ -25,7 +25,7 @@
     abstract: |
       (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
 - category: Keeb Talk
-  time: '17:20 - 17:40'
+  time: '17:00 - 17:20'
   title: Building the Perfect Custom Keyboard
   speaker:
     id: takai
@@ -37,8 +37,12 @@
     bio: He is a keyboard designer and custom keyboard enthusiast. He created the Nomu30, Choco60, and other designs under his brand, Recompile Keys.
     abstract: |
       (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+- category: misc
+  time: '17:20 - 17:35'
+  title: Networking Break
+  title_ja: キーボード交流タイム
 - category: Sema-Pitches
-  time: '17:40 - 18:40'
+  time: '17:35 - 18:35'
   title: Sema-Pitches
   title_ja: '"狭ピッチ"トーク'
   description: |
@@ -91,8 +95,17 @@
     avatar: https://pbs.twimg.com/profile_images/1489032359/__________2011-08-11_9.48.06_400x400.png
     title: 'DIY Keyboard: Endgame'
     bio: I'm Software Engineer, Photographer, DJ, Maker.
+- category: opening
+  time: '18:35 - 18:45'
+  title: "Sefl-Made Keyboards in Japan"
+  title_ja: ": A Quick Tour"
+  speaker:
+    id: takkanm
+    name: Takkan M
+    url: https://twitter.com/takkanm
+    avatar: https://pbs.twimg.com/profile_images/1827812012/m_zombi_softcream_400x400.jpg
 - category: misc
-  time: '18:40 - 19:00'
+  time: '18:45 - 19:00'
   title: Networking Break
   title_ja: キーボード交流タイム
 - category: Keeb Talk
