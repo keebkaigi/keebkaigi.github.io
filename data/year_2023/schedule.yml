@@ -95,6 +95,54 @@
     avatar: https://pbs.twimg.com/profile_images/1489032359/__________2011-08-11_9.48.06_400x400.png
     title: 'DIY Keyboard: Endgame'
     bio: I'm Software Engineer, Photographer, DJ, Maker.
+  - id: shugomaeda
+    name: Shugo Maeda
+    twitter: https://twitter.com/shugomaeda
+    github: https://github.com/shugo
+    website: https://github.com/shugo/textbringer/
+    avatar: https://pbs.twimg.com/profile_images/1859883694/klx125_400x400.jpg
+    title: 'Why are number keys important?'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: Fendo181
+    name: Futoshi Endo
+    twitter: https://twitter.com/Fendo181
+    github: https://github.com/Fendo181
+    website: https://www.fendo181.me/
+    avatar: https://pbs.twimg.com/profile_images/810672893516345344/KHiyBKJl_400x400.jpg
+    title: 'Introduction to Typing Practice'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: kirikak2
+    name: Toshio Maki
+    twitter: https://twitter.com/Kirika_K2
+    github: https://github.com/kirikak2
+    website:
+    avatar: https://pbs.twimg.com/profile_images/580902542/Twitter_ICON_400x400.jpg
+    title: 'Do PRK_FIRMWARE Dream of MIDI implementation?'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: eightbitraptor
+    name: Matt Valentine-House
+    twitter: https://twitter.com/eightbitraptor
+    github: https://github.com/eightbitraptor
+    website:
+    avatar: https://avatars.githubusercontent.com/u/31869?v=4
+    title: 'Keyboard design for newbies.'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: kurotaky
+    name: kurotaky
+    twitter: https://twitter.com/kurotaky
+    github: https://github.com/kurotaky
+    website:
+    avatar: https://pbs.twimg.com/profile_images/1646307217656926208/XTmYaNRa_400x400.jpg
+    title: 'The story of repairing my junk keyboard with The kinT keyboard controller'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: yujiyokoo
+    name: Yuji Yokoo
+    twitter: https://twitter.com/yujiyokoo
+    github: https://github.com/yujiyokoo
+    website: https://yujiyokoo.dev
+    avatar: https://avatars.githubusercontent.com/u/583965?v=4
+    title: 'The story of repairing my junk keyboard with The kinT keyboard controller'
+    bio:  (great profile text goes here in ~80 chars)
 - category: opening
   time: '18:35 - 18:45'
   title: "Sefl-Made Keyboards in Japan"
