@@ -63,54 +63,6 @@
     avatar: https://pbs.twimg.com/profile_images/378800000561709251/efc8828aff9cb20e8e922923de9e878b_400x400.jpeg
     title: OLEDに癒しを求めてみた（仮）
     bio: くまモン好きのRubyist
-  - id: F_YUUCHI
-    name: ゆーち
-    twitter: https://twitter.com/F_YUUCHI
-    github: https://github.com/kata0510
-    website:
-    avatar: https://pbs.twimg.com/profile_images/1124089482712686592/BbhKKt8k_400x400.jpg
-    title: TBD
-    bio: I'm Site Reliability Engineer, Maker, Keyboard Designer, DJ, VJ
-  - id: kota_syan
-    name: かわかみ
-    twitter: https://twitter.com/kota_syan
-    github:
-    website:
-    avatar: https://pbs.twimg.com/profile_images/1421682409968336901/wLDrUvl5_400x400.jpg
-    title: (Wonderful Pitch Title Goes Here)
-    bio: (great profile text goes here in ~80 chars)
-  - id: achamixx
-    name: あちゃ
-    twitter: https://twitter.com/achamixx
-    github:
-    website:
-    avatar: https://pbs.twimg.com/profile_images/1205771710944858113/OBkdrLXG_400x400.jpg
-    title: (Wonderful Pitch Title Goes Here)
-    bio: (great profile text goes here in ~80 chars)
-  - id: asonas
-    name: あそなす
-    twitter: https://twitter.com/asonas
-    github: https://github.com/asonas
-    website: https://ason.as
-    avatar: https://pbs.twimg.com/profile_images/1489032359/__________2011-08-11_9.48.06_400x400.png
-    title: 'DIY Keyboard: Endgame'
-    bio: I'm Software Engineer, Photographer, DJ, Maker.
-  - id: shugomaeda
-    name: Shugo Maeda
-    twitter: https://twitter.com/shugomaeda
-    github: https://github.com/shugo
-    website: https://github.com/shugo/textbringer/
-    avatar: https://pbs.twimg.com/profile_images/1859883694/klx125_400x400.jpg
-    title: 'Why are number keys important?'
-    bio:  (great profile text goes here in ~80 chars)
-  - id: Fendo181
-    name: Futoshi Endo
-    twitter: https://twitter.com/Fendo181
-    github: https://github.com/Fendo181
-    website: https://www.fendo181.me/
-    avatar: https://pbs.twimg.com/profile_images/810672893516345344/KHiyBKJl_400x400.jpg
-    title: 'Introduction to Typing Practice'
-    bio:  (great profile text goes here in ~80 chars)
   - id: kirikak2
     name: Toshio Maki
     twitter: https://twitter.com/Kirika_K2
@@ -118,14 +70,6 @@
     website:
     avatar: https://pbs.twimg.com/profile_images/580902542/Twitter_ICON_400x400.jpg
     title: 'Do PRK_FIRMWARE Dream of MIDI implementation?'
-    bio:  (great profile text goes here in ~80 chars)
-  - id: eightbitraptor
-    name: Matt Valentine-House
-    twitter: https://twitter.com/eightbitraptor
-    github: https://github.com/eightbitraptor
-    website:
-    avatar: https://avatars.githubusercontent.com/u/31869?v=4
-    title: 'Keyboard design for newbies.'
     bio:  (great profile text goes here in ~80 chars)
   - id: kurotaky
     name: kurotaky
@@ -135,6 +79,22 @@
     avatar: https://pbs.twimg.com/profile_images/1646307217656926208/XTmYaNRa_400x400.jpg
     title: 'The story of repairing my junk keyboard with The kinT keyboard controller'
     bio:  (great profile text goes here in ~80 chars)
+  - id: kota_syan
+    name: かわかみ
+    twitter: https://twitter.com/kota_syan
+    github:
+    website:
+    avatar: https://pbs.twimg.com/profile_images/1421682409968336901/wLDrUvl5_400x400.jpg
+    title: (Wonderful Pitch Title Goes Here)
+    bio: (great profile text goes here in ~80 chars)
+  - id: shugomaeda
+    name: Shugo Maeda
+    twitter: https://twitter.com/shugomaeda
+    github: https://github.com/shugo
+    website: https://github.com/shugo/textbringer/
+    avatar: https://pbs.twimg.com/profile_images/1859883694/klx125_400x400.jpg
+    title: 'Why are number keys important?'
+    bio:  (great profile text goes here in ~80 chars)
   - id: yujiyokoo
     name: Yuji Yokoo
     twitter: https://twitter.com/yujiyokoo
@@ -143,6 +103,46 @@
     avatar: https://avatars.githubusercontent.com/u/583965?v=4
     title: 'The story of repairing my junk keyboard with The kinT keyboard controller'
     bio:  (great profile text goes here in ~80 chars)
+  - id: Fendo181
+    name: Futoshi Endo
+    twitter: https://twitter.com/Fendo181
+    github: https://github.com/Fendo181
+    website: https://www.fendo181.me/
+    avatar: https://pbs.twimg.com/profile_images/810672893516345344/KHiyBKJl_400x400.jpg
+    title: 'Introduction to Typing Practice'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: achamixx
+    name: あちゃ
+    twitter: https://twitter.com/achamixx
+    github:
+    website:
+    avatar: https://pbs.twimg.com/profile_images/1205771710944858113/OBkdrLXG_400x400.jpg
+    title: (Wonderful Pitch Title Goes Here)
+    bio: (great profile text goes here in ~80 chars)
+  - id: eightbitraptor
+    name: Matt Valentine-House
+    twitter: https://twitter.com/eightbitraptor
+    github: https://github.com/eightbitraptor
+    website:
+    avatar: https://avatars.githubusercontent.com/u/31869?v=4
+    title: 'Keyboard design for newbies.'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: F_YUUCHI
+    name: ゆーち
+    twitter: https://twitter.com/F_YUUCHI
+    github: https://github.com/kata0510
+    website:
+    avatar: https://pbs.twimg.com/profile_images/1124089482712686592/BbhKKt8k_400x400.jpg
+    title: TBD
+    bio: I'm Site Reliability Engineer, Maker, Keyboard Designer, DJ, VJ
+  - id: asonas
+    name: あそなす
+    twitter: https://twitter.com/asonas
+    github: https://github.com/asonas
+    website: https://ason.as
+    avatar: https://pbs.twimg.com/profile_images/1489032359/__________2011-08-11_9.48.06_400x400.png
+    title: 'DIY Keyboard: Endgame'
+    bio: I'm Software Engineer, Photographer, DJ, Maker.
 - category: opening
   time: '18:35 - 18:45'
   title: "Sefl-Made Keyboards in Japan"
