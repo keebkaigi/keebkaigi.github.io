@@ -1,9 +1,9 @@
 - category: misc
-  time: '16:30'
+  time: '15:30'
   title: Door Open
   title_ja: 開場
 - category: opening
-  time: '17:00 - 17:10'
+  time: '16:30 - 16:40'
   title: Opening
   title_ja: 開会
   speaker:
@@ -12,7 +12,7 @@
     url: https://twitter.com/kakutani
     avatar: https://pbs.twimg.com/profile_images/643337414874824704/vx_RRStR_400x400.jpg
 - category: Keeb Talk
-  time: '17:10 - 17:30'
+  time: '16:40 - 17:00'
   title: Me, Keyboard, and RubyKaigi 2023
   speaker:
     id: swan_match
@@ -25,7 +25,7 @@
     abstract: |
       (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
 - category: Keeb Talk
-  time: '17:30 - 17:50'
+  time: '17:00 - 17:20'
   title: Building the Perfect Custom Keyboard
   speaker:
     id: takai
@@ -37,8 +37,12 @@
     bio: He is a keyboard designer and custom keyboard enthusiast. He created the Nomu30, Choco60, and other designs under his brand, Recompile Keys.
     abstract: |
       (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+- category: misc
+  time: '17:20 - 17:35'
+  title: Networking Break
+  title_ja: キーボード交流タイム
 - category: Sema-Pitches
-  time: '17:50 - 18:40'
+  time: '17:35 - 18:35'
   title: Sema-Pitches
   title_ja: '"狭ピッチ"トーク'
   description: |
@@ -59,14 +63,22 @@
     avatar: https://pbs.twimg.com/profile_images/378800000561709251/efc8828aff9cb20e8e922923de9e878b_400x400.jpeg
     title: OLEDに癒しを求めてみた（仮）
     bio: くまモン好きのRubyist
-  - id: F_YUUCHI
-    name: ゆーち
-    twitter: https://twitter.com/F_YUUCHI
-    github: https://github.com/kata0510
+  - id: kirikak2
+    name: Toshio Maki
+    twitter: https://twitter.com/Kirika_K2
+    github: https://github.com/kirikak2
     website:
-    avatar: https://pbs.twimg.com/profile_images/1124089482712686592/BbhKKt8k_400x400.jpg
-    title: TBD
-    bio: I'm Site Reliability Engineer, Maker, Keyboard Designer, DJ, VJ
+    avatar: https://pbs.twimg.com/profile_images/580902542/Twitter_ICON_400x400.jpg
+    title: 'Do PRK_FIRMWARE Dream of MIDI implementation?'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: kurotaky
+    name: kurotaky
+    twitter: https://twitter.com/kurotaky
+    github: https://github.com/kurotaky
+    website:
+    avatar: https://pbs.twimg.com/profile_images/1646307217656926208/XTmYaNRa_400x400.jpg
+    title: 'The story of repairing my junk keyboard with The kinT keyboard controller'
+    bio:  (great profile text goes here in ~80 chars)
   - id: kota_syan
     name: かわかみ
     twitter: https://twitter.com/kota_syan
@@ -75,6 +87,32 @@
     avatar: https://pbs.twimg.com/profile_images/1421682409968336901/wLDrUvl5_400x400.jpg
     title: 初めての自作キーボード 失敗から学んだこと（仮）
     bio: プログラミング学習中の初心者Rubyist。自作キーボードも1台目を組み立てたばかり🔰
+    title: (Wonderful Pitch Title Goes Here)
+    bio: (great profile text goes here in ~80 chars)
+  - id: shugomaeda
+    name: Shugo Maeda
+    twitter: https://twitter.com/shugomaeda
+    github: https://github.com/shugo
+    website: https://github.com/shugo/textbringer/
+    avatar: https://pbs.twimg.com/profile_images/1859883694/klx125_400x400.jpg
+    title: 'Why are number keys important?'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: yujiyokoo
+    name: Yuji Yokoo
+    twitter: https://twitter.com/yujiyokoo
+    github: https://github.com/yujiyokoo
+    website: https://yujiyokoo.dev
+    avatar: https://avatars.githubusercontent.com/u/583965?v=4
+    title: 'The story of repairing my junk keyboard with The kinT keyboard controller'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: Fendo181
+    name: Futoshi Endo
+    twitter: https://twitter.com/Fendo181
+    github: https://github.com/Fendo181
+    website: https://www.fendo181.me/
+    avatar: https://pbs.twimg.com/profile_images/810672893516345344/KHiyBKJl_400x400.jpg
+    title: 'Introduction to Typing Practice'
+    bio:  (great profile text goes here in ~80 chars)
   - id: achamixx
     name: あちゃ
     twitter: https://twitter.com/achamixx
@@ -83,6 +121,22 @@
     avatar: https://pbs.twimg.com/profile_images/1205771710944858113/OBkdrLXG_400x400.jpg
     title: (Wonderful Pitch Title Goes Here)
     bio: (great profile text goes here in ~80 chars)
+  - id: eightbitraptor
+    name: Matt Valentine-House
+    twitter: https://twitter.com/eightbitraptor
+    github: https://github.com/eightbitraptor
+    website:
+    avatar: https://avatars.githubusercontent.com/u/31869?v=4
+    title: 'Keyboard design for newbies.'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: F_YUUCHI
+    name: ゆーち
+    twitter: https://twitter.com/F_YUUCHI
+    github: https://github.com/kata0510
+    website:
+    avatar: https://pbs.twimg.com/profile_images/1124089482712686592/BbhKKt8k_400x400.jpg
+    title: TBD
+    bio: I'm Site Reliability Engineer, Maker, Keyboard Designer, DJ, VJ
   - id: asonas
     name: あそなす
     twitter: https://twitter.com/asonas
@@ -91,8 +145,17 @@
     avatar: https://pbs.twimg.com/profile_images/1489032359/__________2011-08-11_9.48.06_400x400.png
     title: 'DIY Keyboard: Endgame'
     bio: I'm Software Engineer, Photographer, DJ, Maker.
+- category: opening
+  time: '18:35 - 18:45'
+  title: "TBD"
+  title_ja: "(調整中)"
+  speaker:
+    id: takkanm
+    name: Mitsutaka Mimura
+    url: https://twitter.com/takkanm
+    avatar: https://pbs.twimg.com/profile_images/1827812012/m_zombi_softcream_400x400.jpg
 - category: misc
-  time: '18:40 - 19:00'
+  time: '18:45 - 19:00'
   title: Networking Break
   title_ja: キーボード交流タイム
 - category: Keeb Talk
