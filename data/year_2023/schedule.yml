@@ -173,7 +173,7 @@
       This presentation introduces the approach of keyboard design, exploring three distinct concepts - a DIY split keyboard, a high-end design philosophy with a focus on keystroke feeling, and a unique and flexible 3D design. Discover the inspiration behind each design and introduce its unique features and purposes.
 - category: Keeb Talk
   time: '19:20 - 19:40'
-  title: (His Awesome Talk Title Goes Here)
+  title: Pointing Device On The Partner Half
   speaker:
     id: hasumikin
     name: Hitoshi HASUMI
@@ -181,9 +181,9 @@
     github: https://github.com/hasumikin
     website: https://hasumikin.com/about/
     avatar: https://avatars.githubusercontent.com/u/8454208?v=4
-    bio: (His cool profile text will be posted here (60-140 chars).)
+    bio: Creater of PRK Firmware. Through the development of PRK, he aims to promote PicoRuby as a first-class language in microcontroller programming.
     abstract: |
-      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+      We will discuss a better way of communication between the right and left of a split-type keyboard. One person might want to put a touchpad on the partner half while another might want to put a joystick and a rotary encoder. How can we manage this?
 - category: Keeb Talk
   time: '19:40 - 20:00'
   title: (His Awesome Talk Title Goes Here)
