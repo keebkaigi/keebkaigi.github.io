@@ -106,9 +106,14 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
         %ul.team__members-list
           - role[1].each do |member|
             %li.team__member<>
-              = link_to "@#{member}",
-                "https://twitter.com/#{member}",
-                target: '_blank'
+              - if member.is_a? String
+                = link_to "@#{member}",
+                  "https://twitter.com/#{member}",
+                  target: '_blank'
+              - else
+                = link_to "@#{member.name}",
+                  member.url,
+                  target: '_blank'
     .team__supporter
       .team__supporter-label
         in association with
