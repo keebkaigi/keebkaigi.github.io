@@ -38,6 +38,10 @@
   name_ja: 永和システムマネジメント アジャイル事業部
   url:  https://agile.esm.co.jp/
   logo: esm.svg
+- name: itoc
+  name_ja: しまねソフト研究開発センター
+  url:  https://www.s-itoc.jp/
+  logo: itoc.png
 - name: esa
   name_ja: 合同会社esa
   url: https://esa.io/
