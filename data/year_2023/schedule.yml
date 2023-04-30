@@ -186,7 +186,7 @@
       We will discuss a better way of communication between the right and left of a split-type keyboard. One person might want to put a touchpad on the partner half while another might want to put a joystick and a rotary encoder. How can we manage this?
 - category: Keeb Talk
   time: '19:40 - 20:00'
-  title: (His Awesome Talk Title Goes Here)
+  title: Initial-V, Final Stage!
   speaker:
     id: tenderlove
     name: Aaron Patterson
@@ -194,6 +194,6 @@
     github: https://github.com/tenderlove
     website: http://tenderlovemaking.com/
     avatar: https://avatars.githubusercontent.com/u/3124?v=4
-    bio: (His cool profile text will be posted here (60-140 chars).)
+    bio: Ruby and Rails hacker working at Shopify.
     abstract: |
-      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+      Initial-V is a BMW shifter that has been converted to a custom keyboard for use with Vim.  We'll look at how the keyboard was designed and built, and see the keyboard in action too!
