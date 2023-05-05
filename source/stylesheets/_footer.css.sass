@@ -1,0 +1,19 @@
+// .footer
+
+.footer
+  +infinite-gradient
+  mask-image: url('/images/footer__numa.svg')
+  mask-repeat: repeat-x
+  mask-size: auto $footer-height
+  mask-position: center
+  width: 100%
+  height: $footer-height
+  position: relative
+  z-index: 1
+  margin-top: 3rem
+  animation: gaming-matsumoto-castle 2s linear infinite
+  position: relative
+
+  &:hover
+    animation: gaming-matsumoto-castle 0.3s linear infinite
+    cursor: crosshair

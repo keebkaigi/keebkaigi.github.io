@@ -1,0 +1,40 @@
+// bg
+
+.bg
+  width: 100%
+  height: 100vh
+  position: absolute
+  overflow: hidden
+  z-index: 0
+
+  +mq
+    position: relative
+    margin-top: 1rem
+    height: 40vw
+
+=bg-keeb
+  +infinite-gradient
+
+  width: 27vw
+  height: 22.5vw
+  position: absolute
+  top: 16vh
+  mask-repeat: no-repeat
+  mask-size: cover
+
+  +mq
+    width: 48vw
+    height: 40vw
+    top: 0
+
+.bg__keeb-left
+  +bg-keeb
+
+  left: -2vw
+  mask-image: url("/images/bg__keeb-left.svg")
+
+.bg__keeb-right
+  +bg-keeb
+
+  right: -2vw
+  mask-image: url("/images/bg__keeb-right.svg")

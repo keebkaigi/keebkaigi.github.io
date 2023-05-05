@@ -1,0 +1,259 @@
+// .hero
+
+.hero
+  position: relative
+  z-index: 1
+
+.hero__content
+  position: relative
+  padding-bottom: 3rem
+  z-index: 2
+
+  +mq
+    padding-bottom: 2rem
+
+.hero__tagline
+  font-size: 1.2rem
+  font-weight: bold
+  letter-spacing: 0.2em
+  margin-bottom: 2rem
+
+  +mq
+    font-size: 1.1rem
+    letter-spacing: 0.1rem
+    margin-bottom: 1.2rem
+
+.hero__logo
+  +infinite-gradient
+
+  width: 50vw
+  height: 12.5vw
+  position: relative
+  left: 0.8rem
+  margin: 0 auto 0.2rem
+  mask-image: url("/images/logo.svg")
+  mask-repeat: no-repeat
+  mask-size: cover
+  animation: gaming-logo 2s linear infinite
+
+  &:hover
+    animation: gaming-logo 0.3s linear infinite
+    cursor: crosshair
+
+  +mq
+    width: 88vw
+    height: 22vw
+    left: 0
+    animation: gaming-logo-mq 2s linear infinite
+
+    &:hover
+      animation: gaming-logo-mq 0.3s linear infinite
+
+.hero__text
+  opacity: 0
+
+.hero__year
+  font-size: 2.6rem
+  letter-spacing: 0.5em
+  font-family: 'Saira Stencil One', sans-serif
+  margin-bottom: 0.8rem
+
+  +mq
+    font-size: 1.8rem
+
+.hero__city
+  +infinite-gradient
+
+  width: 15rem
+  height: 3rem
+  margin: 0 auto 1.2rem
+  mask-image: url("/images/matsumoto.svg")
+  mask-repeat: no-repeat
+  mask-size: cover
+
+  +mq
+    width: 12.5rem
+    height: 2.5rem
+    margin: 0 auto 1rem
+
+.hero__datetime
+  display: flex
+  align-items: baseline
+  font-weight: bold
+  justify-content: center
+
+  +mq
+    flex-direction: column
+    margin-bottom: 0.5rem
+
+.hero__date
+  font-size: 1.8rem
+  margin-right: 1rem
+
+  +mq
+    align-self: center
+
+.hero__time
+  +mq
+    align-self: center
+
+.hero__rubykaigi
+  font-size: 0.9rem
+
+.hero__venue
+  margin-top: 1.5rem
+
+.hero__venue-icon
+  margin-right: 0.4rem
+  transform: translateY(-1px)
+
+.hero__venue-link
+  font-size: 1.2rem
+  font-weight: 500
+
+.hero__venue-name
+  font-size: 1.4rem
+  font-weight: 600
+
+.hero__venue-name-ja
+  font-size: 1rem
+  font-weight: bold
+
+.hero__venue-google-map
+  display: block
+  font-family: 'Zen Kaku Gothic New', sans-serif
+  font-size: 0.8rem
+  margin-top: 0.5rem
+
+.hero__registration
+  margin-top: 2rem
+
+.hero__registration-button
+  +infinite-gradient
+  display: block
+  margin: 0 auto
+  width: $enter-width
+  height: $enter-height
+  mask-image: url("/images/button-enter.svg")
+  mask-repeat: no-repeat
+  mask-size: cover
+  animation: gaming-enter 2s linear infinite
+  transition-duration: 0.3s
+
+  &:hover
+    transform: translateY(0.3rem)
+    animation: gaming-enter 0.2s linear infinite
+
+.hero__registration-description-container
+  height: 3.7rem
+  position: relative
+
+.hero__registration-description
+  font-size: 0.9rem
+  margin: 0 auto 1.5rem
+  display: inline-block
+  width: auto
+  height: 2rem
+  padding: 0 1rem
+  border-radius: 2rem
+  background-color: $text-color
+  color: $bg-color
+  letter-spacing: 0
+  position: relative
+  animation: bounce 1s ease-in-out infinite
+  &:after
+    $size: 0.5rem
+    $left: 50%
+    $color: $text-color
+    position: absolute
+    content: ""
+    display: block
+    border: $size solid $color
+    border-bottom: $size solid transparent
+    border-left: $size solid transparent
+    border-right: $size solid transparent
+    bottom: -1 * $size * 2
+    left: $left
+    transform: translate(-0.5rem, -1px)
+
+.hero__registration-description-text
+
+.hero__registration-description-icon
+  display: block
+  font-size: 1rem
+  line-height: 1
+
+.hero__registration-not-available
+  margin: 3rem auto 0
+  border: 1px solid $text-color
+  border-radius: 10px
+  max-width: 600px
+  padding: 0 1rem
+
+.hero__registration-not-available-en
+  font-size: 1.1rem
+  margin-bottom: 0
+
+.hero__registration-not-available-ja
+  margin-top: 0.5rem
+  font-size: 0.9rem
+
+.hero__live
+  margin-top: 3rem
+
+.hero__live-heading
+  font-size: 1.2rem
+  margin-bottom: 0.8rem
+
+.hero__live-streamer
+  display: flex
+  flex-wrap: wrap
+  margin: 0 auto
+  justify-content: center
+  align-items: center
+  font-size: 1.2rem
+
+.hero__live-streamer-link
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  margin-right: 1rem
+
+  &:hover
+    .hero__live-streamer-avatar
+      animation: gaming-diagonal 0.3s linear infinite
+
+.hero__live-streamer-by
+  margin-right: 0.6rem
+
+.hero__live-streamer-avatar
+  height: $avatar-small
+  width: $avatar-small
+  position: relative
+  flex: 0 0 $avatar-small
+  margin-right: 0.6rem
+  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
+  background-size: 400% 400%
+  border-radius: 8px
+  animation: gaming-diagonal 6s linear infinite
+
+.hero__live-streamer-avatar-image
+  height: $avatar-small - 6px
+  width: $avatar-small - 6px
+  position: absolute
+  border-radius: 6px
+  top: 3px
+  left: 3px
+
+.hero__live-streamer-twitter-link
+  font-weight: 400
+  font-size: 1rem
+
+.hero__live-text
+  margin-top: 0.8rem
+  font-family: 'Zen Kaku Gothic New', sans-serif
+  font-size: 0.8rem
+  line-height: 2
+
+  a
+    text-decoration: underline dotted
