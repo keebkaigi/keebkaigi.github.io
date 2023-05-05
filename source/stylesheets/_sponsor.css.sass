@@ -1,0 +1,93 @@
+// .sponsor
+
+.sponsor
+  margin-top: 8rem
+
+.sponsor__heading
+  font-size: 1.6rem
+  margin-bottom: 0
+
+.sponsor__list
+  list-style: none
+  padding: 0
+  display: flex
+  width: $mq-width
+  margin: 0 auto
+  flex-wrap: wrap
+  justify-content: space-between
+
+  +mq
+    display: block
+    width: 100%
+
+.sponsor__logo
+  flex: 0 0 $sponsor-logo-width
+  margin-top: 4rem
+
+.sponsor__logo-image
+  width: 18rem
+
+  @media screen and (max-width: 400px)
+    width: 80vw
+
+  &.is-monstarlab
+    width: 20rem
+    transform: translateY(1.2rem)
+
+    +mq
+      transform: translateY(0)
+
+    @media screen and (max-width: 400px)
+      width: 85vw
+
+  &.is-talpkeyboard
+    width: 17rem
+
+    @media screen and (max-width: 400px)
+      width: 70vw
+
+  &.is-kyoto-komatsu-law-firm
+    width: 16rem
+
+    @media screen and (max-width: 400px)
+      width: 70vw
+
+  &.is-suzuri
+    width: 15rem
+
+    @media screen and (max-width: 400px)
+      width: 65vw
+
+  &.is-booth
+    transform: translateY(1.4rem)
+
+    @media screen and (max-width: 700px)
+      transform: translateY(0)
+
+  &.is-lamdanote
+    width: 9rem
+
+    @media screen and (max-width: 400px)
+      width: 45vw
+
+  &.is-kcs-carrot
+    width: 17rem
+
+  &.is-esm
+    width: 13rem
+
+  &.is-itoc
+    width: 12rem
+    transform: translateY(-1rem)
+
+    @media screen and (max-width: 400px)
+      width: 50vw
+      transform: translateY(0)
+
+  &.is-esa
+    width: 13rem
+    transform: translateY(1.6rem)
+
+    @media screen and (max-width: 400px)
+      width: 55vw
+      transform: translateY(0)
