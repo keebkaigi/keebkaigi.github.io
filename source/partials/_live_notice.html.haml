@@ -1,0 +1,23 @@
+.hero__live
+  %h3.hero__live-heading
+    = data.year_2023.general.live_streaming.heading
+  .hero__live-streamer
+    .hero__live-streamer-by by
+    = link_to data.year_2023.general.live_streaming.streamer.youtube, class: 'hero__live-streamer-link', target: '_blank' do
+      .hero__live-streamer-avatar
+        = image_tag data.year_2023.general.live_streaming.streamer.avatar,
+          class: 'hero__live-streamer-avatar-image',
+          alt: data.year_2023.general.live_streaming.streamer.name
+      .hero__live-streamer-right
+        .hero__live-streamer-name
+          = data.year_2023.general.live_streaming.streamer.name
+      = link_to data.year_2023.general.live_streaming.streamer.twitter,
+        class: 'hero__live-streamer-twitter-link',
+        target: '_blank' do
+        = "@#{data.year_2023.general.live_streaming.streamer.id}"
+  %p.hero__live-text
+    = '当日はキーボード動画でおなじみの'
+    = link_to 'Daihuku Keyboard さんのチャンネル', 'https://www.youtube.com/c/daihukukeyboard', target: '_blank'
+    = 'からオンライン配信予定です。'
+    %br
+    = '現地参加できない方も YouTube 配信をお楽しみに！'
