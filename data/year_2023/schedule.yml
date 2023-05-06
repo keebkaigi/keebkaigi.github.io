@@ -87,8 +87,6 @@
     avatar: https://pbs.twimg.com/profile_images/1421682409968336901/wLDrUvl5_400x400.jpg
     title: 初めての自作キーボード 失敗から学んだこと（仮）
     bio: プログラミング学習中の初心者Rubyist。自作キーボードも1台目を組み立てたばかり🔰
-    title: (Wonderful Pitch Title Goes Here)
-    bio: (great profile text goes here in ~80 chars)
   - id: shugomaeda
     name: Shugo Maeda
     twitter: https://twitter.com/shugomaeda
@@ -120,7 +118,7 @@
     website: https://diary.achamixx.com/
     avatar: https://pbs.twimg.com/profile_images/1205771710944858113/OBkdrLXG_400x400.jpg
     title: I would like to be obsessed with ”self-made keyboards”
-    bio: I'm tech PR. I love group photos. Let's #keebfriends together!
+    bio: "I'm tech PR. I love group photos. Let's #keebfriends together!"
   - id: eightbitraptor
     name: Matt Valentine-House
     twitter: https://twitter.com/eightbitraptor
