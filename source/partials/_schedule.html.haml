@@ -37,23 +37,43 @@
             .schedule__title
               .schedule__title-en= item.title
               .schedule__title-ja= item.title_ja
-            .schedule__lt-description
+            .schedule__sema-description
               %p= item.description
               %p= item.description_ja
 
-            %ul.schedule__lt
+            %ul.schedule__sema
               - item.speakers.each do |speaker|
-                %li.schedule__lt-speaker
+                %li.schedule__sema-speaker
                   = link_to speaker.twitter, target: '_blank', class: 'schedule__small-speaker-link' do
-                    .schedule__small-avatar
+                    .schedule__sema-avatar
                       = image_tag(speaker.avatar,
                         alt: speaker.id,
                         class: 'schedule__small-avatar-image')
-                    .schedule__small-speaker-right
-                      .schedule__small-speaker-name
-                        = speaker.name
-                      .schedule__small-speaker-id
-                        = "@#{speaker.id}"
+                    .schedule__sema-right
+                      %h4.schedule__sema-title
+                        = speaker.title
+                      .schedule__sema-speaker-profile
+                        .schedule__small-speaker-name
+                          = speaker.name
+                        .schedule__small-speaker-id
+                          = "@#{speaker.id}"
+                        = link_to speaker.twitter,
+                          title:  speaker.twitter,
+                          target: '_blank',
+                          class:  'schedule__sema-sns is-twitter' do
+                          %i.fa-brands.fa-twitter
+                        = link_to speaker.github,
+                          title:  speaker.github,
+                          target: '_blank',
+                          class:  'schedule__sema-sns is-github' do
+                          %i.fa-brands.fa-github
+                        = link_to speaker.website,
+                          title:  speaker.website,
+                          target: '_blank',
+                          class:  'schedule__sema-sns is-website' do
+                          %i.fa-solid.fa-link
+                      .schedule__sema-speaker-bio
+                        = speaker.bio
 
           - if item.category == 'Keeb Talk'
             .schedule__talk
