@@ -24,7 +24,7 @@
               .schedule__opening-speaker
                 = link_to item.speaker.url, target: '_blank', class: 'schedule__small-speaker-link' do
                   .schedule__small-avatar
-                    = image_tag(item.speaker.avatar,
+                    = image_tag("avatars/#{item.speaker.avatar}",
                       alt: item.speaker.id,
                       class: 'schedule__small-avatar-image')
                   .schedule__small-speaker-right
@@ -46,7 +46,7 @@
                 %li.schedule__sema-speaker
                   .schedule__sema-avatar
                     = link_to speaker.twitter, target: '_blank', class: 'schedule__sema-speaker-link' do
-                      = image_tag(speaker.avatar,
+                      = image_tag("avatars/#{speaker.avatar}",
                         alt: speaker.id,
                         class: 'schedule__sema-avatar-image')
                   .schedule__sema-right
@@ -83,7 +83,7 @@
                   title:  item.speaker.id,
                   target: '_blank',
                   class:  "schedule__talk-avatar is-#{item.speaker.id}" do
-                  = image_tag(item.speaker.avatar,
+                  = image_tag("avatars/#{item.speaker.avatar}",
                   alt: item.speaker.id,
                   class: 'schedule__talk-avatar-image')
                 .schedule__talk-content
