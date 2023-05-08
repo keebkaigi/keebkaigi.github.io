@@ -5,7 +5,7 @@
     .hero__live-streamer-by by
     = link_to data.year_2023.general.live_streaming.streamer.youtube, class: 'hero__live-streamer-link', target: '_blank' do
       .hero__live-streamer-avatar
-        = image_tag data.year_2023.general.live_streaming.streamer.avatar,
+        = image_tag "avatars/#{data.year_2023.general.live_streaming.streamer.avatar}",
           class: 'hero__live-streamer-avatar-image',
           alt: data.year_2023.general.live_streaming.streamer.name
       .hero__live-streamer-right
