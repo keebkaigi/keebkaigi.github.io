@@ -1,0 +1,16 @@
+%section.live#live
+  %h2.h2
+    = link_to data.year_2023.live.url, target: '_blank' do
+      = data.year_2023.live.title
+  .live__screen
+    %iframe{:allow => "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+      :allowfullscreen => "",
+      :frameborder => "0",
+      :height => "315",
+      :src => data.year_2023.live.embed_src,
+      :title => "YouTube video player", :width => "560"}
+  = partial ('partials/live_streamer')
+  %p.hero__live-text
+    = 'キーボード動画でおなじみの'
+    = link_to 'Daihuku Keyboard さんのチャンネル', 'https://www.youtube.com/c/daihukukeyboard', target: '_blank'
+    = 'からオンライン配信中です！'
