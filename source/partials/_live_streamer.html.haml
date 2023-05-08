@@ -1,0 +1,14 @@
+.live-streamer
+  .live-streamer__by by
+  = link_to data.year_2023.general.live_streaming.streamer.youtube, class: 'live-streamer__link', target: '_blank' do
+    .live-streamer__avatar
+      = image_tag "avatars/#{data.year_2023.general.live_streaming.streamer.avatar}",
+        class: 'live-streamer__avatar-image',
+        alt: data.year_2023.general.live_streaming.streamer.name
+    .live-streamer__right
+      .live-streamer__name
+        = data.year_2023.general.live_streaming.streamer.name
+    = link_to data.year_2023.general.live_streaming.streamer.twitter,
+      class: 'live-streamer__twitter-link',
+      target: '_blank' do
+      = "@#{data.year_2023.general.live_streaming.streamer.id}"
