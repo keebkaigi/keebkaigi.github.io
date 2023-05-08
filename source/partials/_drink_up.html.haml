@@ -1,6 +1,9 @@
 %section.section.drink-up#drink-up
   %h2.h2
-    = data.year_2023.drink_up.title
+    = link_to data.year_2023.drink_up.registration_url,
+      target: '_blank' do
+      = data.year_2023.drink_up.title
+      %i.fa-solid.fa-caret-right.h2__caret
   .drink-up__time
     = data.year_2023.drink_up.start_at
     = "-"
