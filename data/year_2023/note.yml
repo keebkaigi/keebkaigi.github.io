@@ -1,0 +1,22 @@
+title: Note for Attendees
+body_en_html: |
+  We are not responsible for damage or loss of keyboards or valuables brought in.
+  Please take care of your own belongings.
+  <br />
+  <br />
+  KeebKaigi 2023 follows the same policies as our related event, RubyKaigi 2023.
+  Make sure to review these key policies
+body_ja_html: |
+  持ち込まれたキーボードや貴重品の破損・紛失等には責任を負いかねます。各自管理をお願いします。
+  <br />
+  <br />
+  KeebKaigi 2023 は関連カンファレンスである RubyKaigi 2023 のポリシーに準じて開催されます。
+  下記のポリシーをかならずご確認ください。
+anti_harassment_policy:
+  title_en: Anti-harassment policy, accessibility policy
+  title_ja: アンチハラスメントポリシー、アクセシビリティポリシー
+  url: https://rubykaigi.org/2023/policies/
+covid_19_policy:
+  title_en: COVID-19 Policy
+  title_ja: COVID-19 に関するポリシーと対応方針について
+  url: https://rubykaigi.org/2023/covid-19/

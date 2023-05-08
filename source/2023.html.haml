@@ -11,7 +11,7 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
 .bg
   .bg__keeb-left
   .bg__keeb-right
-.content
+.content#top
   .hero
     .hero__content
       .hero__tagline
@@ -54,25 +54,26 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
             title: 'View on Google Map',
             target: '_blank',
             class: 'hero__venue-google-map-link'
-      .hero__registration
-        .hero__registration-description-container
-          .hero__registration-description
-            %span.hero__registration-description-text
-              = d.general.registration.description
+      .registration
+        -# .hero__registration-description-container
+        -#   .hero__registration-description
+        -#     %span.hero__registration-description-text
+        -#       = d.general.registration.description
         = link_to d.general.registration.url,
           title: 'Registration',
-          class: 'hero__registration-button',
+          class: 'registration__button',
           target: '_blank' do
-          .hero__registration-description-icon
-            %i.fa-solid.fa-arrow-turn-down-left
-          %span.hero__text= 'ENTER'
+          %span.registration__text= 'Registration Closed'
       = partial('partials/live_notice')
 
   = partial('partials/schedule')
+  = partial('partials/note')
+  = partial('partials/drink_up')
   = partial('partials/twitter')
+  = partial('partials/swag')
   = partial('partials/sponsors')
 
-  .team
+  %section.section.team#team
     .team__logo
       = image_tag('logo-white.svg',
         class: 'team__logo-image',

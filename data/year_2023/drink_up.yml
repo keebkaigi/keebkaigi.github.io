@@ -1,0 +1,15 @@
+title: 🍺 Drink Up
+venue:
+  name: OLDROCK
+  name_ja: オールドロック
+  url: https://pub-oldrock.com/
+  address_en: Todoriki Building 1F East, 2-3-20, Chuo, Matsumoto 390-0811, Japan
+  address_ja: 〒390-0811 松本市中央2-3-20 トドリキビル１F東
+  description_html: |
+    This is a semi-stand-up buffet-style event including local cuisine of Shinshu such as Basashi(horse sashimi) and Sanzoku-Yaki.
+    <br />
+    The all-you-can-drink menu includes Matsumoto craft beer (Matsumoto Brewery 1 liquid variety, type to be determined).
+  map_url: https://goo.gl/maps/xez1T3hMWmE8gNfn6
+start_at: '8:30 pm'
+end_at: '23:00 pm'
+registration_url: https://keebkaigi2023-drinkup.peatix.com/

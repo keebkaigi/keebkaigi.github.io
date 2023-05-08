@@ -1,0 +1,28 @@
+%section.section.drink-up#drink-up
+  %h2.h2
+    = link_to data.year_2023.drink_up.registration_url,
+      target: '_blank' do
+      = data.year_2023.drink_up.title
+      %i.fa-solid.fa-caret-right.h2__caret
+  .drink-up__time
+    = data.year_2023.drink_up.start_at
+    = "-"
+    = data.year_2023.drink_up.end_at
+  %h3.drink-up__venue
+    = link_to data.year_2023.drink_up.venue.url,
+      target: '_blank' do
+      = data.year_2023.drink_up.venue.name
+      %span.drink-up__venue-name-ja= data.year_2023.drink_up.venue.name_ja
+  .drink-up__address-en
+    = link_to data.year_2023.drink_up.venue.map_url,
+      target: '_blank' do
+      %i.fa-solid.fa-location-dot.drink-up__venue-icon
+      = data.year_2023.drink_up.venue.address_en
+  .drink-up__address-ja
+    = data.year_2023.drink_up.venue.address_ja
+  .registration
+    = link_to data.year_2023.drink_up.registration_url,
+      title: 'Registration',
+      class: 'registration__button',
+      target: '_blank' do
+      %span.registration__text= 'Registration Closed'
