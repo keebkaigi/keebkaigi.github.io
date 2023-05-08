@@ -1,0 +1,20 @@
+%section.section.swag#swag
+  %h2.h2
+    = link_to data.year_2023.swag.url,
+      target: '_blank' do
+      = data.year_2023.swag.title
+      %i.fa-solid.fa-caret-right.h2__caret
+  %ul.swag__examples
+    - data.year_2023.swag.items.each do |item|
+      %li.swag__item
+        = link_to data.year_2023.swag.url,
+          class: 'swag__link',
+          target: '_blank' do
+          = image_tag("swag/#{item}.jpg",
+            alt: item,
+            class: 'swag__image')
+  .swag__suzuri-link
+    = link_to data.year_2023.swag.url,
+      target: '_blank' do
+      = data.year_2023.swag.page_title
+      %i.fa-solid.fa-caret-right.swag__caret
