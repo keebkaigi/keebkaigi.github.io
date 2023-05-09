@@ -80,13 +80,13 @@
     title: 'The story of repairing my junk keyboard with The kinT keyboard controller'
     bio:  (great profile text goes here in ~80 chars)
   - id: kota_syan
-    name: かわかみ
+    name: kawakami
     twitter: https://twitter.com/kota_syan
     github: https://github.com/asya81/
     website: https://asya81.hatenablog.com/
-    avatar: kota_syan.jpeg
-    title: 初めての自作キーボード 失敗から学んだこと（仮）
-    bio: プログラミング学習中の初心者Rubyist。自作キーボードも1台目を組み立てたばかり🔰
+    avatar: kota_syan.png
+    title: My First DIY Keyboard
+    bio: Beginner karate-ka Rubyist. Just built the first keyboard🔰
   - id: shugomaeda
     name: Shugo Maeda
     twitter: https://twitter.com/shugomaeda
