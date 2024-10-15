@@ -14,17 +14,17 @@
     %meta(name='twitter:site' content="@#{data.global.twitter}")
     %meta(name='description' content="#{current_page.data.description || data.global.description}")
     %meta(name='keywords' content="#{current_page.data.keywords || data.global.keywords}")
-    %link{href: image_path('favicon.ico'), rel: "icon", sizes: "any"}
-    %link{href: image_path('icon.svg'), rel: "icon", type: "image/svg+xml"}
-    %link{href: image_path('apple-touch-icon.png'), rel: "apple-touch-icon", sizes: "180x180"}
-    %link{href: image_path('favicon-32x32.png'), rel: "icon", sizes: "32x32", type: "image/png"}
-    %link{href: image_path('favicon-16x16.png'), rel: "icon", sizes: "16x16", type: "image/png"}
+    %link{href: image_path('2023/favicon.ico'), rel: "icon", sizes: "any"}
+    %link{href: image_path('2023/icon.svg'), rel: "icon", type: "image/svg+xml"}
+    %link{href: image_path('2023/apple-touch-icon.png'), rel: "apple-touch-icon", sizes: "180x180"}
+    %link{href: image_path('2023/favicon-32x32.png'), rel: "icon", sizes: "32x32", type: "image/png"}
+    %link{href: image_path('2023/favicon-16x16.png'), rel: "icon", sizes: "16x16", type: "image/png"}
     %link{href: image_path('site.webmanifest'), rel: "manifest"}
     %meta{content: "#000000", name: "theme-color"}
     / Use the title from a page's frontmatter if it has one
     %title= current_page.data.title || data.global.title
-    = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
+    = stylesheet_link_tag "2023/site", nocache: true
+    = javascript_include_tag "2023", nocache: true
     %script{:crossorigin => "anonymous", :src => "https://kit.fontawesome.com/10be153277.js"}
   %body
     = yield

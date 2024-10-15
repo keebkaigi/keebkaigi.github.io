@@ -48,6 +48,8 @@ activate :directory_indexes
 #   activate :minify_javascript
 # end
 
+page '/2023.html', layout: '2023'
+
 set :haml, { :format => :html5 }
 
 redirect "index.html", to: "2023.html"
