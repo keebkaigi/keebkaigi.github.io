@@ -2,10 +2,12 @@ title: KeebWorld Conference 2024
 tagline: A “Kaigi” for DIY Keyboard enthusiasts
 event_name: KeebWorld Conference 2024
 year: '2024'
+city: 松江
 month: '12'
 day: '07'
 weekday: 土
-time: 14:00 - 17:30
+start_time: '14:00'
+end_time: '17:30'
 rubyworld:
   name: RubyWorld Conference 2024
   url: https://2024.rubyworld-conf.org/

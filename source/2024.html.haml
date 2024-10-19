@@ -1,0 +1,88 @@
+---
+title: 'KeebWorld Conference 2024 松江'
+url: https://keebkaigi.org/2024
+tagline: A “Kaigi” for DIY Keyboard enthusiasts
+description: A “Kaigi” for DIY keyboard enthusiasts to be held in Matsue, Shimane, Japan
+keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebkaigi, 分割キーボード, PRK Firmware
+---
+
+- d = data.year_2024
+
+.hero
+  .hero__bg
+    .hero__logo
+      = image_tag("2024/hero__logo.svg",
+        class: 'hero__logo-image',
+        alt: d.general.event_name)
+    .hero__content
+      .hero__logo-sub
+        .hero__year
+          = d.general.year
+        .hero__city
+          = d.general.city
+      .hero__datetime
+        %span.hero__date= "#{d.general.year} - #{d.general.month} - #{d.general.day}"
+        %span.hero__weekday= "（#{d.general.weekday}）"
+        %span.hero__time= "#{d.general.start_time} - #{d.general.end_time}"
+      .hero__rubyworld
+        = link_to d.general.rubyworld.name,
+          d.general.rubyworld.url,
+          title: d.general.rubyworld.name,
+          target: '_blank'
+        = '-'
+        = d.general.rubyworld.date
+      .hero__venue
+        = link_to d.general.venue.url,
+          title: d.general.venue.name,
+          class: 'hero__venue-link',
+          target: '_blank' do
+          %span.hero__venue-name-ja= d.venue.name
+        %i.fa-solid.fa-location-dot.hero__venue-icon
+        .hero__venue-google-map
+          = link_to d.general.venue.address,
+            d.general.venue.map_url,
+            title: 'View on Google Map',
+            target: '_blank',
+            class: 'hero__venue-google-map-link'
+
+  -# = partial('partials/2024/note')
+
+.keynotes
+  %h2.keynotes__heading
+    Speakers
+  - d.keynotes.each do |speaker|
+    .keynotes__speakers
+      = link_to "https://twitter.com/#{speaker.id}", class: 'keynotes__speaker-link' do
+        .keynotes__avatar
+          = image_tag(speaker.avatar,
+            class: 'keynotes__avatar-image',
+            alt: speaker.id)
+        %h3.keynotes__name= speaker.name
+        %p.keynotes__name-en= speaker.name_en
+        %p.keynotes__id= "@#{speaker.id}"
+
+.teaser
+  = partial('partials/2024/teaser')
+
+.footer
+  .team#team
+    .team__logo
+      = image_tag('2023/logo-white.svg',
+        class: 'team__logo-image',
+        alt: d.general.event_name)
+    .team__year
+      = d.general.year
+    %h3.team__heading
+      Team
+    - d.team.each do |role|
+      .team__role
+        %h4.team__role-name= role[0].capitalize
+        %ul.team__members-list
+          - role[1].each do |member|
+            %li.team__member<>
+              = link_to "@#{member}",
+                "https://twitter.com/#{member}",
+                target: '_blank'
+    .team__license
+      = data.global.license
+  = partial('partials/2024/twitter')
