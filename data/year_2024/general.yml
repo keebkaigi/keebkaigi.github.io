@@ -1,0 +1,25 @@
+title: KeebWorld Conference 2024
+tagline: A “Kaigi” for DIY Keyboard enthusiasts
+event_name: KeebWorld Conference 2024
+year: '2024'
+month: '12'
+day: '07'
+weekday: 土
+time: 14:00 - 17:30
+rubyworld:
+  name: RubyWorld Conference 2024
+  url: https://2024.rubyworld-conf.org/
+  date: Day 3
+registration:
+  url:
+  description:
+venue:
+  name: 松江オープンソースラボ
+  url: https://www.city.matsue.lg.jp/soshikikarasagasu/shinsangyousouzouka/rcm/labo/14133.html
+  address: 〒690-0003 島根県松江市朝日町478-18 2F
+  map_url: https://maps.app.goo.gl/NhP92Cc6RhjFaNwh6
+teaser:
+  message: |
+    詳細は追ってお知らせする予定ですが、事前に参加登録が必要となります。
+    <br />
+    興味のある方は、ご自身の予定の確認と松江行きの旅程を調整しておいてください。
