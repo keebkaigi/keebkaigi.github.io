@@ -49,6 +49,7 @@ activate :directory_indexes
 # end
 
 page '/2023.html', layout: '2023'
+page '/2024.html', layout: '2024'
 
 set :haml, { :format => :html5 }
 
