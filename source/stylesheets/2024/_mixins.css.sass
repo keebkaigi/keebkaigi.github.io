@@ -1,0 +1,19 @@
+// Mixin
+
+=infinite-gradient
+  background: linear-gradient(to right, #39B54A 0%, #FCC02E 10%, #f25350 30%, #F92174 50%, #D067FF 80%, #39B54A 100%)
+
+=sunset-gradient
+  background-color: hsla(271,33%,41%,1)
+  background-image: radial-gradient(at 1% 99%, hsla(200,90%,61%,0.5) 0px, transparent 20%),
+  radial-gradient(at 5% 0%, hsla(200,70%,61%,0.5) 0px, transparent 15%),
+  radial-gradient(at 2% 44%, hsla(25,90%,61%,1) 0px, transparent 50%),
+  radial-gradient(at 34% 51%, hsla(20,80%,51%,0.5) 0px, transparent 0%),
+  radial-gradient(at 69% 54%, hsla(39,80%,71%,1) 0px, transparent 50%),
+  radial-gradient(at 85% 0%, hsla(207,100%,51%,0.7) 0px, transparent 50%),
+  radial-gradient(at 39% 93%, hsla(0,80%,71%,1) 0px, transparent 50%),
+  radial-gradient(at 91% 81%, hsla(37,100%,51%,1) 0px, transparent 100%)
+
+=mq
+  @media (max-width: $mq-width)
+    @content
