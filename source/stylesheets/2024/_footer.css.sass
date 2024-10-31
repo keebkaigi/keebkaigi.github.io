@@ -1,0 +1,39 @@
+// .footer
+
+.footer
+  +shinjiko-gradient
+  width: 100%
+  position: relative
+  margin-top: 3rem
+  padding: 5rem 0
+  position: relative
+  display: flex
+  color: white
+  text-align: center
+
+  a
+    color: white
+
+  &:before
+    content: ''
+    width: 45vw
+    height: 50vh
+    position: absolute
+    top: 0
+    left: -100px
+    background-image: url('/images/2024/footer__bg--left.svg')
+    background-repeat: repeat-x
+    background-position: right top
+    background-size: 650px
+
+  &:after
+    content: ''
+    width: 45vw
+    height: 50vh
+    position: absolute
+    top: 0
+    right: -50px
+    background-image: url('/images/2024/footer__bg--right.svg')
+    background-repeat: repeat-x
+    background-position: left top
+    background-size: 650px
