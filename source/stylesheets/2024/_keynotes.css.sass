@@ -3,12 +3,6 @@ $keynotes__avatar-size: 260px
 $keynotes__min-width: 400px
 $route2: 1.4142
 
-=keebworld-gradient-vertical
-  background: linear-gradient(to bottom, #fac774 0%, #ec8956 30%, #aa6f83 60%, #7682bd 100%)
-
-=keebworld-gradient-horizontal
-  background: linear-gradient(to right, #fac774 0%, #ec8956 30%, #aa6f83 60%, #7682bd 100%)
-
 .keynotes__speakers
   display: flex
   list-style: none
@@ -16,8 +10,16 @@ $route2: 1.4142
   padding: 0
   justify-content: space-between
 
+  +mq
+    display: block
+
 .keynotes__speaker
   min-width: $keynotes__min-width
+
+  +mq
+    min-width: 0
+    width: 100%
+    margin-bottom: 4rem
 
 @use "sass:math"
 
@@ -92,4 +94,4 @@ $route2: 1.4142
 
 .keynotes__more
   font-size: 2rem
-  margin: 3rem 0
+  margin: 3rem 0 0

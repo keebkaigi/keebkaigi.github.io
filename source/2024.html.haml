@@ -26,9 +26,11 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
             = d.general.year
           .hero__city
             = d.general.city
+        -# .hero__sijimi
         .hero__datetime
           %span.hero__date= "#{d.general.year} - #{d.general.month} - #{d.general.day}"
           %span.hero__weekday= "（#{d.general.weekday}）"
+          %br.hero__datetime-br
           %span.hero__time= "#{d.general.start_time} - #{d.general.end_time}"
         .hero__rubyworld
           = link_to d.general.rubyworld.name,
@@ -54,9 +56,10 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
   -# = partial('partials/2024/note')
 
 .main-container
+
   .keynotes.content
     %h2.keynotes__heading.heading
-      Speakers
+      Keynotes
     %ul.keynotes__speakers
       - d.keynotes.each do |speaker|
         %li.keynotes__speaker
@@ -75,30 +78,32 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
     %p.keynotes__more
       = '...and more!'
 
-  .teaser
-    = partial('partials/2024/teaser')
+  = partial('partials/2024/teaser')
 
   .twitter
     = partial('partials/2024/twitter')
 
 .footer
-  .team#team
-    .team__powered-by
-      Powered by
-    .team__logo
-      = image_tag('2023/logo-white.svg',
-        class: 'team__logo-image',
-        alt: d.general.event_name)
-    %h3.team__heading
-      Team
-    - d.team.each do |role|
-      .team__role
-        %h4.team__role-name= role[0].capitalize
-        %ul.team__members-list
-          - role[1].each do |member|
-            %li.team__member<>
-              = link_to "@#{member}",
-                "https://twitter.com/#{member}",
-                target: '_blank'
-    .team__license
-      = data.global.license
+  .footer__content
+    .footer__left
+      .footer__powered-by
+        Powered by
+      .footer__logo
+        = link_to 'https://keebkaigi.org/2023',
+          class: 'footer__logo-link',
+          target: '_blank' do
+          = image_tag('2024/footer__logo.svg',
+            class: 'footer__logo-image',
+            alt: 'KeebWorld Conference 2024')
+    .footer__right
+      - d.team.each do |role|
+        .footer__role
+          %h4.footer__role-name= role[0].capitalize
+          %ul.footer__members-list
+            - role[1].each do |member|
+              %li.footer__member<>
+                = link_to "@#{member}",
+                  "https://twitter.com/#{member}",
+                  target: '_blank'
+  .footer__license
+    = d.general.license

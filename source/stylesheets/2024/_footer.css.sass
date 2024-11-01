@@ -1,39 +1,121 @@
 // .footer
 
+$footer-logo-size: 16rem
+
 .footer
-  +shinjiko-gradient
+  margin-top: 6rem
+  position: relative
+  padding: 3rem 0 2rem 3rem
+  z-index: 1
+  overflow: hidden
   width: 100%
-  position: relative
-  margin-top: 3rem
-  padding: 5rem 0
-  position: relative
-  display: flex
-  color: white
-  text-align: center
-
-  a
-    color: white
-
-  &:before
-    content: ''
-    width: 45vw
-    height: 50vh
-    position: absolute
-    top: 0
-    left: -100px
-    background-image: url('/images/2024/footer__bg--left.svg')
-    background-repeat: repeat-x
-    background-position: right top
-    background-size: 650px
 
   &:after
     content: ''
-    width: 45vw
-    height: 50vh
+    width: 650px
+    height: 270px
     position: absolute
-    top: 0
-    right: -50px
-    background-image: url('/images/2024/footer__bg--right.svg')
-    background-repeat: repeat-x
-    background-position: left top
-    background-size: 650px
+    bottom: 0
+    right: 0
+    +keebworld-gradient-horizontal
+    mask-image: url("/images/2024/hero__bg--right.svg")
+    mask-repeat: no-repeat
+    mask-size: cover
+    z-index: 2
+
+.footer__content
+  display: flex
+  text-align: left
+  margin: 0 auto
+  position: relative
+  z-index: 3
+  // align-items: stretch
+  a
+    color: black
+
+  +mq
+    display: block
+
+.footer__left
+  flex: 360px 0 0
+  padding: 0 3rem 0 0
+  text-align: left
+
+.footer__right
+  flex: 60 0 0
+  border-left: 1px solid black
+  padding: 0 0 0 3rem
+
+.footer__powered-by
+  margin: 0 auto 0.5rem
+  font-size: 0.8rem
+  font-weight: 400
+
+.footer__logo-link
+  display: block
+  width: 360px
+  height: 90px
+  &:hover
+    cursor: pointer
+
+.footer__logo
+  width: 360px
+  height: 90px
+  +keebworld-gradient-horizontal
+  mask-image: url("/images/2024/logo-white.svg")
+  mask-repeat: no-repeat
+  mask-size: cover
+
+.footer__logo-image
+  width: 360px
+  height: 90px
+  opacity: 0
+
+.footer__heading
+  font-size: 1rem
+  margin: 0 0 2rem
+
+.footer__role
+  margin: 0 0 1.2rem 0
+
+  &:last-child
+    margin-bottom: 0
+
+.footer__role-name
+  font-size: 0.8rem
+  margin: 0 0 0.6rem 0
+  font-weight: 400
+
+.footer__members-list
+  list-style: none
+  padding: 0
+  margin: 0.8rem 0 0
+  display: flex
+
+.footer__member
+  font-size: 0.8rem
+  margin-left: 2rem
+
+  &:first-child
+    margin-left: 0
+
+  +mq
+    margin-left: 0
+    margin-bottom: 0.8rem
+
+.footer__supporter
+  margin: 4rem auto 3rem
+
+.footer__supporter-label
+  font-size: 0.7rem
+  margin-bottom: 0.8rem
+  font-weight: 400
+
+.footer__supporter-logo-image
+  height: 1.8rem
+
+.footer__license
+  text-align: left
+  font-size: 0.6rem
+  font-weight: 400
+  margin: 3rem 0 0 0

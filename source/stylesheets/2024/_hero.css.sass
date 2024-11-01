@@ -1,8 +1,13 @@
 // .hero
 
-$keeb-width-ratio: 3.9vw
-$keeb-width: $keeb-width-ratio * 9 //9
+$keeb-width-ratio: 4vw
+$keeb-width: $keeb-width-ratio * 9
 $keeb-height: $keeb-width-ratio * 5
+
+$keeb-width-ratio--mq: 50px
+$keeb-width--mq: $keeb-width-ratio--mq * 9
+$keeb-height--mq: $keeb-width-ratio--mq * 5
+$logo-width--mq: 300px
 
 .hero
   +shinjiko-gradient
@@ -23,6 +28,7 @@ $keeb-height: $keeb-width-ratio * 5
     background-repeat: repeat-x
     background-position: right bottom
     background-size: 650px
+    z-index: 2
 
   &:after
     content: ''
@@ -33,8 +39,9 @@ $keeb-height: $keeb-width-ratio * 5
     right: -50px
     background-image: url('/images/2024/hero__bg--right.svg')
     background-repeat: repeat-x
-    background-position: left bottom
+    background-position: left bottom -1px
     background-size: 650px
+    z-index: 2
 
 .hero__container
   position: relative
@@ -42,12 +49,16 @@ $keeb-height: $keeb-width-ratio * 5
   left: 0
   right: 0
   margin: auto
-  width: 96vw
+  width: 98vw
   // transform: translateX(-1vw)
   padding-bottom: 5rem
+  z-index: 3
+
+  +mq
+    width: 100%
 
 .hero__tagline
-  font-size: 0.8rem
+  font-size: 1rem
   font-weight: 400
   letter-spacing: 0.3rem
   color: white
@@ -58,15 +69,34 @@ $keeb-height: $keeb-width-ratio * 5
   background-repeat: no-repeat
   background-position: 0 top, 100% top
 
+  +mq
+    font-size: 0.8rem
+    padding: 2rem 0
+    letter-spacing: 0.2rem
+    background-image: none
+
+.hero__sijimi
+  $sijimi-size: 2.4rem
+  width: $sijimi-size
+  height: $sijimi-size
+  background-image: url('/images/2024/sijimi--white.svg')
+  background-repeat: no-repeat
+  margin: 3rem auto 1rem
+  transform: translateX(3px)
+
 .hero__logo
   position: relative
   top: 0
   left: 0
   right: 0
   height: $keeb-height
-  margin: -1rem auto 2rem
+  margin: -1rem auto
   display: flex
   justify-content: center
+
+  +mq
+    margin: -1rem auto
+    height: $keeb-height--mq
 
 .hero__logo-left
   width: $keeb-width
@@ -76,6 +106,11 @@ $keeb-height: $keeb-width-ratio * 5
   background-size: $keeb-width $keeb-height
   background-repeat: no-repeat
   background-position: left top
+  +mq
+    width: $keeb-width--mq
+    height: $keeb-height--mq
+    flex: 0 0 $keeb-width--mq
+    background-size: $keeb-width--mq $keeb-height--mq
 
 .hero__logo-center
   height: $keeb-height
@@ -84,6 +119,11 @@ $keeb-height: $keeb-width-ratio * 5
   background-repeat: no-repeat
   background-size: auto $keeb-height
   background-position: center top
+  +mq
+    width: $logo-width--mq
+    flex: 0 0 $logo-width--mq
+    height: $keeb-height--mq
+    background-size: auto $keeb-height--mq
 
 .hero__logo-right
   width: $keeb-width
@@ -93,6 +133,11 @@ $keeb-height: $keeb-width-ratio * 5
   background-size: $keeb-width $keeb-height
   background-repeat: no-repeat
   background-position: right top
+  +mq
+    height: $keeb-height--mq
+    width: $keeb-width--mq
+    flex: 0 0 $keeb-width--mq
+    background-size: $keeb-width--mq $keeb-height--mq
 
 .hero__text
   opacity: 0
@@ -106,7 +151,7 @@ $keeb-height: $keeb-width-ratio * 5
       text-shadow: 0px 0px 10px white
 
 .hero__logo-sub
-  margin: -4.5rem auto 1rem
+  margin: -2rem auto 1rem
   display: flex
   text-align: center
   color: white
@@ -116,6 +161,8 @@ $keeb-height: $keeb-width-ratio * 5
   line-height: 0.8
   position: relative
   left: 9px
+
+  +mq
 
 .hero__year
   font-size: 2.2rem
@@ -131,34 +178,42 @@ $keeb-height: $keeb-width-ratio * 5
   font-family: 'Zen Antique Soft', sans-serif
 
 .hero__datetime
-  display: flex
   align-items: baseline
   font-weight: bold
   justify-content: center
-  margin-top: 2rem
-
+  margin-top: 5rem
   +mq
-    flex-direction: column
-    margin-bottom: 0.5rem
+    line-height: 1.4
+    margin-bottom: 1rem
 
 .hero__date
   font-size: 1.8rem
   margin-right: 1rem
-
+  position: relative
   +mq
-    align-self: center
+    left: 1.2rem
+    margin-bottom: 1rem
 
 .hero__weekday
   margin-left: -1rem
+  +mq
+    margin-left: -0.5rem
 
 .hero__time
   margin-left: 1rem
   font-size: 1.8rem
   +mq
-    align-self: center
+    font-size: 1.4rem
 
-.hero__rubykaigi
+.hero__datetime-br
+  display: none
+  +mq
+    display: block
+
+.hero__rubyworld
   font-size: 0.9rem
+  +mq
+    font-size: 0.6rem
 
 .hero__venue
   margin-top: 2rem
