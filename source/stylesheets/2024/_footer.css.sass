@@ -5,12 +5,12 @@ $footer-logo-size: 16rem
 .footer
   margin-top: 6rem
   position: relative
-  padding: 3rem 0 2rem 3rem
   z-index: 1
   overflow: hidden
   width: 100%
+  display: flex
 
-  &:after
+  &:before
     content: ''
     width: 650px
     height: 270px
@@ -23,10 +23,15 @@ $footer-logo-size: 16rem
     mask-size: cover
     z-index: 2
 
+
+.footer__container
+  margin: 3rem 3rem 2rem 3rem
+  +mq
+    margin: 2rem 2rem 18rem 2rem
+
 .footer__content
   display: flex
   text-align: left
-  margin: 0 auto
   position: relative
   z-index: 3
   // align-items: stretch
@@ -45,6 +50,10 @@ $footer-logo-size: 16rem
   flex: 60 0 0
   border-left: 1px solid black
   padding: 0 0 0 3rem
+
+  +mq
+    border-left: 0
+    padding: 3rem 0 0
 
 .footer__powered-by
   margin: 0 auto 0.5rem
@@ -91,17 +100,14 @@ $footer-logo-size: 16rem
   padding: 0
   margin: 0.8rem 0 0
   display: flex
+  flex-wrap: wrap
 
 .footer__member
   font-size: 0.8rem
-  margin-left: 2rem
+  margin-right: 2rem
 
-  &:first-child
+  &:last-child
     margin-left: 0
-
-  +mq
-    margin-left: 0
-    margin-bottom: 0.8rem
 
 .footer__supporter
   margin: 4rem auto 3rem
@@ -119,3 +125,8 @@ $footer-logo-size: 16rem
   font-size: 0.6rem
   font-weight: 400
   margin: 3rem 0 0 0
+  position: relative
+  z-index: 4
+
+  +mq
+    margin: 1rem 0 0

@@ -78,32 +78,33 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
     %p.keynotes__more
       = '...and more!'
 
-  = partial('partials/2024/teaser')
+  .content= partial('partials/2024/teaser')
 
-  .twitter
+  .twitter.content
     = partial('partials/2024/twitter')
 
 .footer
-  .footer__content
-    .footer__left
-      .footer__powered-by
-        Powered by
-      .footer__logo
-        = link_to 'https://keebkaigi.org/2023',
-          class: 'footer__logo-link',
-          target: '_blank' do
-          = image_tag('2024/footer__logo.svg',
-            class: 'footer__logo-image',
-            alt: 'KeebWorld Conference 2024')
-    .footer__right
-      - d.team.each do |role|
-        .footer__role
-          %h4.footer__role-name= role[0].capitalize
-          %ul.footer__members-list
-            - role[1].each do |member|
-              %li.footer__member<>
-                = link_to "@#{member}",
-                  "https://twitter.com/#{member}",
-                  target: '_blank'
-  .footer__license
-    = d.general.license
+  .footer__container
+    .footer__content
+      .footer__left
+        .footer__powered-by
+          Powered by
+        .footer__logo
+          = link_to 'https://keebkaigi.org/2023',
+            class: 'footer__logo-link',
+            target: '_blank' do
+            = image_tag('2024/footer__logo.svg',
+              class: 'footer__logo-image',
+              alt: 'KeebWorld Conference 2024')
+      .footer__right
+        - d.team.each do |role|
+          .footer__role
+            %h4.footer__role-name= role[0].capitalize
+            %ul.footer__members-list
+              - role[1].each do |member|
+                %li.footer__member<>
+                  = link_to "@#{member}",
+                    "https://twitter.com/#{member}",
+                    target: '_blank'
+    .footer__license
+      = d.general.license

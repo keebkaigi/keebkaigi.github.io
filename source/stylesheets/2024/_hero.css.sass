@@ -1,10 +1,10 @@
 // .hero
 
-$keeb-width-ratio: 4vw
+$keeb-width-ratio: 4.1vw
 $keeb-width: $keeb-width-ratio * 9
 $keeb-height: $keeb-width-ratio * 5
 
-$keeb-width-ratio--mq: 50px
+$keeb-width-ratio--mq: 60px
 $keeb-width--mq: $keeb-width-ratio--mq * 9
 $keeb-height--mq: $keeb-width-ratio--mq * 5
 $logo-width--mq: 300px
@@ -121,6 +121,7 @@ $logo-width--mq: 300px
   background-position: center top
   +mq
     width: $logo-width--mq
+
     flex: 0 0 $logo-width--mq
     height: $keeb-height--mq
     background-size: auto $keeb-height--mq
@@ -143,15 +144,15 @@ $logo-width--mq: 300px
   opacity: 0
 
 .hero__content
-  color: white
+  color: black
   a
-    color: white
+    color: black
     &:hover
-      color: white
+      color: black
       text-shadow: 0px 0px 10px white
 
 .hero__logo-sub
-  margin: -2rem auto 1rem
+  margin: -1rem auto 1rem
   display: flex
   text-align: center
   color: white
@@ -163,26 +164,31 @@ $logo-width--mq: 300px
   left: 9px
 
   +mq
+    margin: -1rem auto 0
 
 .hero__year
-  font-size: 2.2rem
+  font-size: 2.8rem
   letter-spacing: 0.3em
   font-family: 'Saira Stencil One', sans-serif
   padding-right: 0.8rem
   margin-right: 1.4rem
-  border-right: 1px solid white
+  border-right: 1px solid black
+  color: black
 
 .hero__city
-  font-size: 1.9rem
+  font-size: 2.4rem
   letter-spacing: 0.4em
   font-family: 'Zen Antique Soft', sans-serif
+  color: black
 
 .hero__datetime
   align-items: baseline
   font-weight: bold
   justify-content: center
   margin-top: 5rem
+  color: black
   +mq
+    margin-top: 2rem
     line-height: 1.4
     margin-bottom: 1rem
 
@@ -212,6 +218,7 @@ $logo-width--mq: 300px
 
 .hero__rubyworld
   font-size: 0.9rem
+  color: black
   +mq
     font-size: 0.6rem
 
