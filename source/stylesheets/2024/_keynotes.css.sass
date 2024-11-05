@@ -1,0 +1,121 @@
+$keynotes__avatar-image-size: 120px
+$keynotes__avatar-size: 260px
+$keynotes__min-width: 400px
+$route2: 1.4142
+
+.keynotes__speakers
+  display: flex
+  list-style: none
+  margin: 0
+  padding: 0
+  justify-content: space-between
+
+  +mq
+    display: block
+
+.keynotes__speaker
+  min-width: $keynotes__min-width
+
+  +mq
+    min-width: 0
+    margin-bottom: 4rem
+
+.keynotes__avatar
+  +button-gradient
+  background-size: 200% 200%
+  background-position: 100% 100%
+  width: $keynotes__avatar-size
+  height: $keynotes__avatar-size
+  border-radius: 10px
+  text-align: center
+  box-sizing: border-box
+  padding: 50px
+  margin-bottom: 1.5rem
+  display: inline-block
+  position: relative
+  overflow: hidden
+  z-index: 1
+  transition: 0.5s ease
+
+  &:before
+    content: ''
+    width: 270px * $route2 + 10px
+    height: 270px * $route2 + 10px
+    border-top: 1px solid white
+    transform: rotate(45deg)
+    transform-origin: 0 0
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+
+  &:after
+    content: ''
+    width: 270px * $route2 + 10px
+    height: 270px * $route2 + 10px
+    border-top: 1px solid white
+    transform: rotate(-45deg)
+    transform-origin: 100% 0
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 2
+
+
+.keynotes__avatar-image
+  width: $keynotes__avatar-image-size
+  height: $keynotes__avatar-image-size
+  border: 20px solid white
+  border-radius: 6px
+  position: relative
+  z-index: 3
+  transition: 0.3s ease
+
+.keynotes__name
+  font-size: 2.5rem
+  font-family: 'Zen Antique Soft', serif
+  transform: scale(0.9, 1)
+  font-weight: normal
+  color: black
+  margin: 0 0 0.3rem
+
+.keynotes__name-en
+  font-size: 1rem
+  font-weight: 500
+  color: black
+  margin: 0 0 0.4rem
+
+.keynotes__id
+  font-size: 1.8rem
+  font-weight: 600
+  +infinite-gradient
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  margin: 0
+  background-size: 200% 200%
+  animation: gaming-diagonal 3s ease-in-out infinite
+  transition: 0.3s ease
+
+.keynotes__more
+  font-size: 2rem
+  margin: 3rem 0 0
+
+.keynotes__speaker-link
+  &:hover, &:focus, &:active
+    text-shadow: none
+    .keynotes__avatar
+      background-position: 0 0
+      transform: translateY(5px)
+    .keynotes__id
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      background-size: 200% 200%
+      animation: gaming-diagonal 0.5s ease-in-out infinite
+      transition: 0.3s ease
+    .keynotes__name, .keynotes__name-en
+      +infinite-gradient
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      background-size: 200% 200%
+      animation: gaming-diagonal 0.5s ease-in-out infinite
+      transition: 0.3s ease

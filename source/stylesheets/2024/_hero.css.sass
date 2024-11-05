@@ -1,0 +1,260 @@
+// .hero
+
+$keeb-width-ratio: 4.1vw
+$keeb-width: $keeb-width-ratio * 9
+$keeb-height: $keeb-width-ratio * 5
+
+$keeb-width-ratio--mq: 60px
+$keeb-width--mq: $keeb-width-ratio--mq * 9
+$keeb-height--mq: $keeb-width-ratio--mq * 5
+$logo-width--mq: 300px
+
+// * 初期状態で全ての要素を透明にしておく
+.hero__logo, .hero__tagline, .hero__content, .hero:before, .hero:after
+  opacity: 0
+  transform: translateY(20px) // 少し下からスライドイン
+  animation: fadeIn 1s forwards // フェードインのアニメーション
+
+.hero__tagline, .hero__content
+  transform: translateY(-20px)
+
+.hero
+  +shinjiko-gradient
+  position: relative
+  z-index: 1
+  width: 100vw
+  height: auto
+  overflow: hidden
+  background-size: 120% 120%, 200% 200%, 120% 120%, 100% 100%, 100% 100%, 120% 120%, 100% 100%, 120% 120%
+  animation: ripple 4s ease-in-out infinite
+
+  &:before
+    content: ''
+    width: 45vw
+    height: 50vh
+    position: absolute
+    bottom: -1px
+    left: -100px
+    background-image: url('/images/2024/hero__bg--left.svg')
+    background-repeat: repeat-x
+    background-position: right bottom
+    background-size: 650px
+    z-index: 2
+    animation-delay: 0
+
+  &:after
+    content: ''
+    width: 45vw
+    height: 50vh
+    position: absolute
+    bottom: 0
+    right: -50px
+    background-image: url('/images/2024/hero__bg--right.svg')
+    background-repeat: repeat-x
+    background-position: left bottom -1px
+    background-size: 650px
+    z-index: 2
+    animation-delay: 0
+
+.hero__container
+  position: relative
+  top: 5%
+  left: 0
+  right: 0
+  margin: auto
+  width: 98vw
+  // transform: translateX(-1vw)
+  padding-bottom: 5rem
+  z-index: 3
+
+  +mq
+    width: 100%
+
+.hero__tagline
+  font-size: 1rem
+  font-weight: 400
+  letter-spacing: 0.3rem
+  color: white
+  margin: 0
+  padding: 3rem 0
+  background-image: url('/images/2024/hero__bg--top-left.svg'), url('/images/2024/hero__bg--top-right.svg')
+  background-size: 400px
+  background-repeat: no-repeat
+  background-position: 0 top, 100% top
+  animation-delay: 0
+
+  +mq
+    font-size: 0.8rem
+    padding: 2rem 0
+    letter-spacing: 0.2rem
+    background-image: none
+
+.hero__sijimi
+  $sijimi-size: 2.4rem
+  // width: $sijimi-size
+  height: $sijimi-size
+  background-image: url('/images/2024/sijimi--white.svg')
+  background-repeat: no-repeat
+  margin: 3rem auto 1rem
+  transform: translateX(3px)
+
+.hero__logo
+  position: relative
+  top: 0
+  left: 0
+  right: 0
+  height: $keeb-height
+  margin: -1rem auto
+  display: flex
+  justify-content: center
+  animation-delay: 2s
+
+  +mq
+    margin: -1rem auto
+    height: $keeb-height--mq
+
+.hero__logo-left
+  width: $keeb-width
+  height: $keeb-height
+  flex: 0 0 $keeb-width
+  background-image: url('/images/2024/hero__logo-left.svg')
+  background-size: $keeb-width $keeb-height
+  background-repeat: no-repeat
+  background-position: left top
+  +mq
+    width: $keeb-width--mq
+    height: $keeb-height--mq
+    flex: 0 0 $keeb-width--mq
+    background-size: $keeb-width--mq $keeb-height--mq
+
+.hero__logo-center
+  height: $keeb-height
+  flex: 100
+  background-image: url('/images/2024/hero__logo-center.svg')
+  background-repeat: no-repeat
+  background-size: auto $keeb-height
+  background-position: center top
+  +mq
+    width: $logo-width--mq
+
+    flex: 0 0 $logo-width--mq
+    height: $keeb-height--mq
+    background-size: auto $keeb-height--mq
+
+.hero__logo-right
+  width: $keeb-width
+  height: $keeb-height
+  flex: 0 0 $keeb-width
+  background-image: url('/images/2024/hero__logo-right.svg')
+  background-size: $keeb-width $keeb-height
+  background-repeat: no-repeat
+  background-position: right top
+  +mq
+    height: $keeb-height--mq
+    width: $keeb-width--mq
+    flex: 0 0 $keeb-width--mq
+    background-size: $keeb-width--mq $keeb-height--mq
+
+.hero__text
+  opacity: 0
+
+.hero__content
+  color: black
+  animation-delay: 3s
+  a
+    color: black
+    &:hover
+      color: black
+      text-shadow: 0px 0px 10px white
+
+.hero__logo-sub
+  margin: -1rem auto 1rem
+  display: flex
+  text-align: center
+  color: white
+  justify-content: center
+  align-content: center
+  transform: scale(0.9, 1)
+  line-height: 0.8
+  position: relative
+  left: 9px
+
+  +mq
+    margin: -1rem auto 0
+
+.hero__year
+  font-size: 2.8rem
+  letter-spacing: 0.3em
+  font-family: 'Saira Stencil One', sans-serif
+  padding-right: 0.8rem
+  margin-right: 1.4rem
+  border-right: 1px solid black
+  color: black
+
+.hero__city
+  font-size: 2.4rem
+  letter-spacing: 0.4em
+  font-family: 'Zen Antique Soft', sans-serif
+  color: black
+
+.hero__datetime
+  align-items: baseline
+  font-weight: bold
+  justify-content: center
+  margin-top: 3rem
+  color: black
+  +mq
+    margin-top: 2rem
+    line-height: 1.4
+    margin-bottom: 1rem
+
+.hero__date
+  font-size: 1.8rem
+  margin-right: 1rem
+  position: relative
+  +mq
+    left: 1.2rem
+    margin-bottom: 1rem
+
+.hero__weekday
+  margin-left: -1rem
+  +mq
+    margin-left: -0.5rem
+
+.hero__time
+  margin-left: 1rem
+  font-size: 1.8rem
+  +mq
+    font-size: 1.4rem
+
+.hero__datetime-br
+  display: none
+  +mq
+    display: block
+
+.hero__rubyworld
+  font-size: 0.9rem
+  color: black
+  +mq
+    font-size: 0.6rem
+
+.hero__venue
+  margin-top: 2rem
+  color: black
+
+.hero__venue-icon
+  margin-right: 0.4rem
+  transform: translateY(-1px)
+
+.hero__venue-link
+  font-family: 'Zen Antique Soft', serif
+  font-size: 1.8rem
+  font-weight: 500
+  transform: scale(0.9, 1)
+  letter-spacing: -0.05em
+
+.hero__venue-google-map
+  display: block
+  font-family: 'Zen Kaku Gothic New', sans-serif
+  font-size: 0.8rem
+  margin-top: 0.5rem

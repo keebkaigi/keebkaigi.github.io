@@ -1,0 +1,35 @@
+// Mixin
+
+=infinite-gradient
+  background: linear-gradient(to right, #fac774 0%, #ec8956 20%, #aa6f83 40%, #7682bd 60%,#fac774 100%)
+
+=shinjiko-gradient
+  background-color: hsla(271,33%,41%,1)
+  background-image: radial-gradient(at 1% 99%, hsla(200,90%,61%,0.5) 0px, transparent 20%), //1: 左下の青
+  radial-gradient(at 5% 0%, hsla(200,70%,61%,0.5) 0px, transparent 20%), // 2: 左上の青
+  radial-gradient(at 2% 44%, hsla(25,90%,61%,1) 0px, transparent 40%), // 3: 左中央のオレンジ
+  radial-gradient(at 34% 51%, hsla(20,80%,81%,0.5) 0px, transparent 0%), // 4:どぎついので使ってない中央のオレンジ
+  radial-gradient(at 69% 54%, hsla(39,80%,71%,1) 0px, transparent 50%), // 5: 中央のイエロー上下がわかりやすい
+  radial-gradient(at 85% 0%, hsla(207,100%,51%,0.7) 0px, transparent 50%), // 6: 右上のブルー
+  radial-gradient(at 39% 93%, hsla(0,80%,71%,1) 0px, transparent 50%), // 7:下のピンク
+  radial-gradient(at 91% 81%, hsla(37,100%,51%,1) 0px, transparent 100%), // 8:全体のオレンジ　
+
+=keebworld-gradient-vertical
+  background: linear-gradient(to bottom, #fac774 0%, #ec8956 30%, #aa6f83 60%, #7682bd 100%)
+
+=keebworld-gradient-horizontal
+  background: linear-gradient(to right, #fac774 10%, #ec8956 40%, #aa6f83 60%, #7682bd 90%)
+
+=button-gradient
+  background: linear-gradient(to bottom, #fac774 10%, #ec8956 50%, #aa6f83 80%, #7682bd 100%)
+
+=text-gradient
+  background: linear-gradient(to right, #fac774 10%, #ec8956 50%, #aa6f83 80%, #7682bd 90%)
+
+=mq
+  @media (max-width: $mq-width)
+    @content
+
+=mq-sp
+  @media (max-width: $mq-width--sp)
+    @content
