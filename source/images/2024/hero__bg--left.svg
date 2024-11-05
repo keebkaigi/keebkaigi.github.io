@@ -20,11 +20,11 @@
 
       .hero__sijimi {
         animation: shake 3s ease-in-out infinite; /* 0.3秒で震えるアニメーションを無限ループ */
-        animation-delay: 4s;
+        animation-delay: 3s;
       }
 
       .hero__sijimi--01 {
-        animation-delay: 6s;
+        animation-delay: 4s;
       }
 
       @keyframes shake {
@@ -44,7 +44,6 @@
           opacity: 0.5;
           transform: translateX(-3px);
         }
-        /* 100%で元に戻るので、最後に0pxに戻る */
       }
 
     </style>
