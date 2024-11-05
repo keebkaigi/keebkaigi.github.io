@@ -22,7 +22,7 @@ $footer-logo-size: 16rem
     mask-repeat: no-repeat
     mask-size: cover
     z-index: 2
-    animation: footer-bg 5s linear infinite
+    animation: footer-bg 5s ease-in-out infinite
   a
     &:hover
       text-shadow: none
@@ -30,8 +30,8 @@ $footer-logo-size: 16rem
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
       background-size: 200% 200%
-      animation: gaming-diagonal 1s linear infinite
-      transition: 0.3s ease
+      animation: gaming-diagonal 1s ease infinite
+      transition: 0.3s ease-in-out
 
 .footer__container
   margin: 3rem 3rem 2rem 3rem
@@ -76,10 +76,10 @@ $footer-logo-size: 16rem
   mask-image: url("/images/2024/logo-white.svg")
   mask-repeat: no-repeat
   mask-size: cover
-  animation: footer-logo 3s linear infinite
-  transition: 0.3s ease
+  animation: footer-logo 3s ease-in-out infinite
+  transition: 0.3s ease-in-out
   &:hover
-    animation: footer-logo 0.3s linear infinite
+    animation: footer-logo 0.4s linear infinite
 
 .footer__logo-link
   display: block
