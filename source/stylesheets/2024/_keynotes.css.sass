@@ -88,12 +88,12 @@ $route2: 1.4142
 .keynotes__id
   font-size: 1.8rem
   font-weight: 600
-  +text-gradient
+  +infinite-gradient
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
   margin: 0
-  background-position: 100% 0
-  background-size: 200% 100%
+  background-size: 200% 200%
+  animation: gaming-diagonal 3s linear infinite
   transition: 0.3s ease
 
 .keynotes__more
@@ -107,4 +107,4 @@ $route2: 1.4142
       transform: translateY(5px)
     .keynotes__id
       text-shadow: none
-      background-position: 0 0
+      animation: gaming-diagonal 0.5s linear infinite
