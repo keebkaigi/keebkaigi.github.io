@@ -23,15 +23,15 @@
 
       .hero__sijimi {
         animation: shake 3s ease-in-out infinite; /* 0.3秒で震えるアニメーションを無限ループ */
-        animation-delay: 4.5s;
+        animation-delay: 3.5s;
       }
 
       .hero__sijimi--01 {
-        animation-delay: 5.5s;
+        animation-delay: 4.5s;
       }
 
       .hero__sijimi--02 {
-        animation-delay: 6.5s;
+        animation-delay: 5.5s;
       }
 
       @keyframes shake {
