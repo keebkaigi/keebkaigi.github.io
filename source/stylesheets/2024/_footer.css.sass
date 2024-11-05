@@ -17,11 +17,12 @@ $footer-logo-size: 16rem
     position: absolute
     bottom: 0
     right: 0
-    +keebworld-gradient-horizontal
+    +infinite-gradient
     mask-image: url("/images/2024/hero__bg--right.svg")
     mask-repeat: no-repeat
     mask-size: cover
     z-index: 2
+    animation: footer-bg 5s linear infinite
 
 
 .footer__container
@@ -60,24 +61,30 @@ $footer-logo-size: 16rem
   font-size: 0.8rem
   font-weight: 400
 
-.footer__logo-link
-  display: block
-  width: 360px
-  height: 90px
-  &:hover
-    cursor: pointer
-
 .footer__logo
-  width: 360px
-  height: 90px
-  +keebworld-gradient-horizontal
+  width: $footer-logo--width
+  height: $footer-logo--height
+  +infinite-gradient
   mask-image: url("/images/2024/logo-white.svg")
   mask-repeat: no-repeat
   mask-size: cover
+  animation: footer-logo 3s linear infinite
+  transition: 0.3s ease
+  &:hover
+    animation: footer-logo 0.3s linear infinite
+
+.footer__logo-link
+  display: block
+  width: $footer-logo--width
+  height: $footer-logo--height
+  &:hover
+    cursor: crosshair
+    .footer__logo
+      animation: infinite-gradient 0.3s linear infinite
 
 .footer__logo-image
-  width: 360px
-  height: 90px
+  width: $footer-logo--width
+  height: $footer-logo--height
   opacity: 0
 
 .footer__heading

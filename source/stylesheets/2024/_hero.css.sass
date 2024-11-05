@@ -9,6 +9,15 @@ $keeb-width--mq: $keeb-width-ratio--mq * 9
 $keeb-height--mq: $keeb-width-ratio--mq * 5
 $logo-width--mq: 300px
 
+// * 初期状態で全ての要素を透明にしておく
+.hero__logo, .hero__tagline, .hero__content, .hero:before, .hero:after
+  opacity: 0
+  transform: translateY(20px) // 少し下からスライドイン
+  animation: fadeIn 1s forwards // フェードインのアニメーション
+
+.hero__tagline, .hero__content
+  transform: translateY(-20px)
+
 .hero
   +shinjiko-gradient
   position: relative
@@ -16,6 +25,8 @@ $logo-width--mq: 300px
   width: 100vw
   height: auto
   overflow: hidden
+  background-size: 120% 120%, 200% 200%, 120% 120%, 100% 100%, 100% 100%, 120% 120%, 100% 100%, 120% 120%
+  animation: ripple 4s ease-in-out infinite
 
   &:before
     content: ''
@@ -29,6 +40,7 @@ $logo-width--mq: 300px
     background-position: right bottom
     background-size: 650px
     z-index: 2
+    animation-delay: 0
 
   &:after
     content: ''
@@ -42,6 +54,7 @@ $logo-width--mq: 300px
     background-position: left bottom -1px
     background-size: 650px
     z-index: 2
+    animation-delay: 0
 
 .hero__container
   position: relative
@@ -68,6 +81,7 @@ $logo-width--mq: 300px
   background-size: 400px
   background-repeat: no-repeat
   background-position: 0 top, 100% top
+  animation-delay: 0
 
   +mq
     font-size: 0.8rem
@@ -77,7 +91,7 @@ $logo-width--mq: 300px
 
 .hero__sijimi
   $sijimi-size: 2.4rem
-  width: $sijimi-size
+  // width: $sijimi-size
   height: $sijimi-size
   background-image: url('/images/2024/sijimi--white.svg')
   background-repeat: no-repeat
@@ -93,6 +107,7 @@ $logo-width--mq: 300px
   margin: -1rem auto
   display: flex
   justify-content: center
+  animation-delay: 2s
 
   +mq
     margin: -1rem auto
@@ -145,6 +160,7 @@ $logo-width--mq: 300px
 
 .hero__content
   color: black
+  animation-delay: 3s
   a
     color: black
     &:hover
@@ -185,7 +201,7 @@ $logo-width--mq: 300px
   align-items: baseline
   font-weight: bold
   justify-content: center
-  margin-top: 5rem
+  margin-top: 3rem
   color: black
   +mq
     margin-top: 2rem

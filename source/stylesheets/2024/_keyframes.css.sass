@@ -10,6 +10,49 @@
   0%
     background-position: right bottom
 
+@keyframes ripple
+  0%
+    background-position: 1% 99%, 5% 0%, 2% 44%, 34% 51%, 69% 54%, 85% 0%, 39% 93%, 91% 81%
+    background-size: 120% 120%, 200% 200%, 120% 120%, 100% 100%, 100% 100%, 120% 120%, 100% 100%, 120% 120%
+  50%
+    background-position: 1% 99%, 5% 30%, 22% 64%, 54% 71%, 69% 4%, 85% 0%, 9% 93%, 21% 61%
+    background-size: 100% 100%, 400% 400%, 100% 100%, 120% 120%, 150% 150%, 100% 100%, 200% 200%, 100% 100%
+  100%
+    background-position: 1% 99%, 5% 0%, 2% 44%, 34% 51%, 69% 54%, 85% 0%, 39% 93%, 91% 81%
+    background-size: 120% 120%, 200% 200%, 120% 120%, 100% 100%, 100% 100%, 120% 120%, 100% 100%, 120% 120%
+
+@keyframes fadeIn
+  to
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes footer-logo
+  0%
+    background-position: 0 0
+
+  100%
+    background-position: $footer-logo--width 0
+
+@keyframes footer-bg
+  0%
+    background-position: 0 0
+
+  100%
+    background-position: 650px 0
+
+@keyframes gaming-diagonal
+  0%
+    background-position: 0 50%
+
+  50%
+    background-position: 100% 50%
+
+  100%
+    background-position: 0% 50%
+
+
+
+// ↓ あとで消す
 
 @keyframes gaming-logo
   0%
@@ -45,16 +88,6 @@
 
   100%
     background-position: $avatar-small 0
-
-@keyframes gaming-diagonal
-  0%
-    background-position: 0 50%
-
-  50%
-    background-position: 100% 50%
-
-  100%
-    background-position: 0% 50%
 
 @keyframes bounce
   0%
