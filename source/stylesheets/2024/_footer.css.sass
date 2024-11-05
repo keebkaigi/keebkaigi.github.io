@@ -60,20 +60,26 @@ $footer-logo-size: 16rem
   font-size: 0.8rem
   font-weight: 400
 
+.footer__logo
+  width: 360px
+  height: 90px
+  +infinite-gradient
+  mask-image: url("/images/2024/logo-white.svg")
+  mask-repeat: no-repeat
+  mask-size: cover
+  animation: infinite-gradient 3s linear infinite
+  transition: 0.3s ease
+  &:hover
+    animation: infinite-gradient 0.3s linear infinite
+
 .footer__logo-link
   display: block
   width: 360px
   height: 90px
   &:hover
-    cursor: pointer
-
-.footer__logo
-  width: 360px
-  height: 90px
-  +keebworld-gradient-horizontal
-  mask-image: url("/images/2024/logo-white.svg")
-  mask-repeat: no-repeat
-  mask-size: cover
+    cursor: crosshair
+    .footer__logo
+      animation: infinite-gradient 0.3s linear infinite
 
 .footer__logo-image
   width: 360px
