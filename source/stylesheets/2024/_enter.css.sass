@@ -1,6 +1,6 @@
 // .enter
 
-$enter-size: 280px
+$enter-size: 300px
 $enter-icon__width: 85px
 $enter-icon__height: 20px
 
@@ -25,7 +25,8 @@ $enter-icon__height: 20px
   transition: 0.5s ease
 
 .enter__inner
-  padding-top: 45px
+  padding-top: 50px
+  transform: translateX(2px)
 
 .enter__text
   font-size: 1.8rem
@@ -50,7 +51,7 @@ $enter-icon__height: 20px
   position: relative
   z-index: 1
   background-color: white
-  border-radius: 16px
+  border-radius: 18px
 
   &:hover, &:focus, &:active
     text-shadow: none
@@ -66,6 +67,9 @@ $enter-icon__height: 20px
       transition: 0.3s ease
     .enter__icon
       +button-gradient
+      background-size: 200% 200%
       mask-image: url("/images/2024/enter-icon.svg")
       mask-repeat: no-repeat
       mask-size: cover
+      animation: gaming-diagonal 0.5s ease-in-out infinite
+      transition: 0.3s ease
