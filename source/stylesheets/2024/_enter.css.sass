@@ -1,0 +1,71 @@
+// .enter
+
+$enter-size: 280px
+$enter-icon__width: 85px
+$enter-icon__height: 20px
+
+.enter
+  width: 100%
+  text-align: center
+  margin-top: -50px
+
+.enter__button-bg
+  position: absolute
+  top: 0
+  left: 0
+  display: block
+  width: $enter-size
+  height: $enter-size
+  +button-gradient
+  mask-image: url("/images/2024/enter.svg")
+  mask-repeat: no-repeat
+  mask-size: $enter-size
+  background-size: 200% 200%
+  background-position: 100% 100%
+  transition: 0.5s ease
+
+.enter__inner
+  padding-top: 45px
+
+.enter__text
+  font-size: 1.8rem
+  letter-spacing: 0.1rem
+  position: relative
+  z-index: 2
+
+.enter__icon
+  display: inline-block
+  width: $enter-icon__width
+  height: $enter-icon__height
+  background-image: url('/images/2024/enter-icon.svg')
+  background-size: $enter-icon__width $enter-icon__height
+  background-repeat: no-repeat
+
+.enter__button
+  display: block
+  width: $enter-size
+  height: $enter-size
+  margin: 0 auto
+  color: black
+  position: relative
+  z-index: 1
+  background-color: white
+  border-radius: 16px
+
+  &:hover, &:focus, &:active
+    text-shadow: none
+    transform: translateY(5px)
+    .enter__button-bg
+      background-position: 0 0
+    .enter__text
+      +infinite-gradient
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      background-size: 200% 200%
+      animation: gaming-diagonal 0.5s ease-in-out infinite
+      transition: 0.3s ease
+    .enter__icon
+      +button-gradient
+      mask-image: url("/images/2024/enter-icon.svg")
+      mask-repeat: no-repeat
+      mask-size: cover

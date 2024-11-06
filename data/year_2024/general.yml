@@ -20,10 +20,11 @@ venue:
   url: https://www.city.matsue.lg.jp/soshikikarasagasu/shinsangyousouzouka/rcm/labo/14133.html
   address: 〒690-0003 島根県松江市朝日町478-18 2F
   map_url: https://maps.app.goo.gl/NhP92Cc6RhjFaNwh6
+enter:
+  url: https://example.com
 teaser:
   message: |
     詳細は追ってお知らせする予定ですが、事前に参加登録が必要となります。
     <br />
     興味のある方は、ご自身の予定の確認と松江行きの旅程を調整しておいてください。
-
 license: This work by KeebKaigi Team is licensed under a Creative Commons Attribution 4.0 Unported License.
