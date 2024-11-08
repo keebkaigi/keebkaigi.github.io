@@ -1,40 +1,28 @@
 // .enter
 
-$enter-size: 300px
-$enter__width: 260px
-$enter__height: 220px
-$enter-icon__width: 85px
-$enter-icon__height: 20px
-
 .enter
   width: 100%
   text-align: center
   margin-top: -50px
 
-.enter__button-bg
-  position: absolute
-  top: 0
-  left: 0
-  display: block
+.enter__inner
   width: $enter__width
   height: $enter__height
-  +button-gradient
-  mask-image: url("/images/2024/enter.svg")
-  mask-repeat: no-repeat
-  mask-size: $enter__width $enter__height
-  background-size: 200% 200%
-  background-position: 100% 100%
-  transition: 0.5s ease
-
-.enter__inner
   padding-top: 46px
   transform: translateX(2px)
+  background-image: url('/images/2024/enter__inner.svg')
+  background-size: $enter__width $enter__height
+  background-repeat: no-repeat
+  position: relative
+  left: -2px
+  transition: 0.3s ease
 
 .enter__text
-  font-size: 1.9rem
-  // letter-spacing: 0.1rem
+  font-size: 1.7rem
   position: relative
+  left: 5px
   z-index: 2
+  transition: 0.3s ease
 
 .enter__icon
   display: inline-block
@@ -43,36 +31,34 @@ $enter-icon__height: 20px
   background-image: url('/images/2024/enter-icon.svg')
   background-size: $enter-icon__width $enter-icon__height
   background-repeat: no-repeat
+  position: relative
+  left: 5px
 
 .enter__button
   display: block
   width: $enter__width
   height: $enter__height
   margin: 0 auto
-  color: black
+  color: white
   position: relative
   z-index: 1
-  background-color: white
-  border-radius: 14px
-  border: 1px solid white
+  +infinite-gradient
+  background-size: 100%
+  mask-image: url("/images/2024/enter__bg.svg")
+  mask-repeat: no-repeat
+  mask-size: cover
+  animation: enter 4s linear infinite
+  transition: 0.3s ease
 
   &:hover, &:focus, &:active
     text-shadow: none
     transform: translateY(5px)
-    .enter__button-bg
-      background-position: 0 0
+    box-shadow: 0px 0px 30px white
+    animation: enter 0.5s linear infinite
+    background-color:rgba(255,255,255, 1)
+    background-blend-mode:lighten
+    .enter__inner
     .enter__text
-      +infinite-gradient
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-      background-size: 200% 200%
-      animation: gaming-diagonal 0.5s ease-in-out infinite
-      transition: 0.3s ease
+      text-shadow: 0 0 20px white
+      color: white
     .enter__icon
-      +button-gradient
-      background-size: 200% 200%
-      mask-image: url("/images/2024/enter-icon.svg")
-      mask-repeat: no-repeat
-      mask-size: cover
-      animation: gaming-diagonal 0.5s ease-in-out infinite
-      transition: 0.3s ease
