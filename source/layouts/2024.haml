@@ -24,7 +24,6 @@
     / Use the title from a page's frontmatter if it has one
     %title= current_page.data.title || data.global.title
     = stylesheet_link_tag "2024/site", nocache: true
-    = javascript_include_tag "2024", nocache: true
     %script{:crossorigin => "anonymous", :src => "https://kit.fontawesome.com/10be153277.js"}
   %body
     = yield

@@ -89,13 +89,10 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
       .footer__left
         .footer__powered-by
           Powered by
-        .footer__logo
-          = link_to 'https://keebkaigi.org/2023',
-            class: 'footer__logo-link',
-            target: '_blank' do
-            = image_tag('2024/footer__logo.svg',
-              class: 'footer__logo-image',
-              alt: 'KeebWorld Conference 2024')
+        = link_to 'https://keebkaigi.org/2023',
+          class: 'footer__logo-link',
+          target: '_blank' do
+          .footer__logo
       .footer__right
         - d.team.each do |role|
           .footer__role
