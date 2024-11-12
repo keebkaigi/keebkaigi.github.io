@@ -27,4 +27,9 @@ teaser:
     詳細は追ってお知らせする予定ですが、事前に参加登録が必要となります。
     <br />
     興味のある方は、ご自身の予定の確認と松江行きの旅程を調整しておいてください。
+call_for_lt:
+  title: 狭ピッチトーク募集中！
+  description: |
+    いわゆる「ライトニングトーク」形式で、キーボードにかける思いを5分間で語ってくれるトークを募集しています。
+  url: https://example.com
 license: This work by KeebKaigi Team is licensed under a Creative Commons Attribution 4.0 Unported License.
