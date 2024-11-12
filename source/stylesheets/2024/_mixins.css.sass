@@ -26,6 +26,14 @@
 =text-gradient
   background: linear-gradient(to right, #fac774 10%, #ec8956 50%, #aa6f83 80%, #7682bd 90%)
 
+=text-gaming
+  +infinite-gradient
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-size: 200% 200%
+  animation: gaming-diagonal 0.5s ease-in-out infinite
+  transition: 0.3s ease
+
 =mq
   @media (max-width: $mq-width)
     @content
