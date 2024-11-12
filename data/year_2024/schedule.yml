@@ -1,0 +1,198 @@
+- category: misc
+  time: '15:30'
+  title: Door Open
+  title_ja: 開場
+- category: opening
+  time: '16:30 - 16:40'
+  title: Opening
+  title_ja: 開会
+  speaker:
+    id: kakutani
+    name: Shintaro Kakutani
+    url: https://twitter.com/kakutani
+    avatar: kakutani.jpeg
+- category: Keeb Talk
+  time: '16:40 - 17:00'
+  title: Me, Keyboard, and RubyKaigi 2023
+  speaker:
+    id: swan_match
+    name: Takuma Shirotori
+    twitter: https://twitter.com/swan_match
+    github: https://github.com/swanmatch
+    website: https://royal-keyboard-works.square.site/
+    avatar: swan_match.jpeg
+    bio: He is a keyboard designer who loves unique layouts and full-color LEDs. He also creates 'Infinite Possibilities'.
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+- category: Keeb Talk
+  time: '17:00 - 17:20'
+  title: Building the Perfect Custom Keyboard
+  speaker:
+    id: takai
+    name: Naoto TAKAI
+    twitter: https://twitter.com/recompile_keys
+    github: https://github.com/takai
+    website: https://keys.recompile.net/
+    avatar: takai.png
+    bio: He is a keyboard designer and custom keyboard enthusiast. He created the Nomu30, Choco60, and other designs under his brand, Recompile Keys.
+    abstract: |
+      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+- category: misc
+  time: '17:20 - 17:35'
+  title: Networking Break
+  title_ja: キーボード交流タイム
+- category: Sema-Pitches
+  time: '17:35 - 18:35'
+  title: Sema-Pitches
+  title_ja: '"狭ピッチ"トーク'
+  description: |
+    In this slot, we'll be using a lightning talk-style format. With back-to-back presentations,
+    each speaker will have a strict 5 minutes to share their passions.
+  description_ja: |
+    いわゆる「ライトニングトーク」形式で、各スピーカーは持ち時間5分で各々のキーボードにかける思いを語っていただきます。
+  submission:
+    text: ...and You!
+    title: 'KeebKaigi 2023 "Sema-Pitches" Submission Form'
+    url: https://forms.gle/GnprAEPtKzjNz4uW9
+  speakers:
+  - id: yadaita
+    name: yadaita
+    twitter: https://twitter.com/yadaita
+    github: https://github.com/yada-ITA
+    website:
+    avatar: yadaita.jpeg
+    title: OLEDに癒しを求めてみた（仮）
+    bio: くまモン好きのRubyist
+  - id: kirikak2
+    name: Toshio Maki
+    twitter: https://twitter.com/Kirika_K2
+    github: https://github.com/kirikak2
+    website:
+    avatar: kirikak2.jpeg
+    title: 'Do PRK_FIRMWARE Dream of MIDI implementation?'
+    bio: My handmade keyboards are HELIX rev2, Ergo42 and Pipi Gherkin. 
+  - id: kurotaky
+    name: kurotaky
+    twitter: https://twitter.com/kurotaky
+    github: https://github.com/kurotaky
+    website:
+    avatar: kurotaky.jpeg
+    title: 'The story of repairing my junk keyboard with The kinT keyboard controller'
+    bio: Kinesis Advantage Beginner.
+  - id: kota_syan
+    name: kawakami
+    twitter: https://twitter.com/kota_syan
+    github: https://github.com/asya81/
+    website: https://asya81.hatenablog.com/
+    avatar: kota_syan.png
+    title: My First DIY Keyboard
+    bio: Beginner karate-ka Rubyist. Just built the first keyboard🔰
+  - id: shugomaeda
+    name: Shugo Maeda
+    twitter: https://twitter.com/shugomaeda
+    github: https://github.com/shugo
+    website: https://github.com/shugo/textbringer/
+    avatar: shugomaeda.jpeg
+    title: 'Why are number keys important?'
+    bio: 'The author of Textbringer'
+  - id: yujiyokoo
+    name: Yuji Yokoo
+    twitter: https://twitter.com/yujiyokoo
+    github: https://github.com/yujiyokoo
+    website: https://yujiyokoo.dev
+    avatar: yujiyokoo.jpeg
+    title: 'A software-focused tale on DIY keyboards by a non-enthusiast'
+    bio:  Yuji is a software developer based in Adelaide, Australia.
+  - id: Fendo181
+    name: Futoshi Endo
+    twitter: https://twitter.com/Fendo181
+    github: https://github.com/Fendo181
+    website: https://www.fendo181.me/
+    avatar: Fendo181.jpeg
+    title: 'Introduction to Typing Practice'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: achamixx
+    name: あちゃ
+    twitter: https://twitter.com/achamixx
+    github:
+    website: https://diary.achamixx.com/
+    avatar: achamixx.jpeg
+    title: I would like to be obsessed with ”self-made keyboards”
+    bio: "I'm tech PR. I love group photos. Let's #keebfriends together!"
+  - id: eightbitraptor
+    name: Matt Valentine-House
+    twitter: https://twitter.com/eightbitraptor
+    github: https://github.com/eightbitraptor
+    website:
+    avatar: eightbitraptor.jpeg
+    title: 'Keyboard design for newbies.'
+    bio:  (great profile text goes here in ~80 chars)
+  - id: F_YUUCHI
+    name: ゆーち
+    twitter: https://twitter.com/F_YUUCHI
+    github: https://github.com/kata0510
+    website:
+    avatar: F_YUUCHI.jpeg
+    title: 'How to start RP2040'
+    bio: I'm Site Reliability Engineer, Maker, Keyboard Designer, DJ, VJ
+  - id: asonas
+    name: あそなす
+    twitter: https://twitter.com/asonas
+    github: https://github.com/asonas
+    website: https://ason.as
+    avatar: asonas.png
+    title: 'DIY Keyboard: Endgame'
+    bio: I'm Software Engineer, Photographer, DJ, Maker.
+- category: opening
+  time: '18:35 - 18:45'
+  title: "TBD"
+  title_ja: "(調整中)"
+  speaker:
+    id: takkanm
+    name: Mitsutaka Mimura
+    url: https://twitter.com/takkanm
+    avatar: takkanm.jpeg
+- category: misc
+  time: '18:45 - 19:00'
+  title: Networking Break
+  title_ja: キーボード交流タイム
+- category: Keeb Talk
+  time: '19:00 - 19:20'
+  title: Crafting the Endgame Keyboard
+  speaker:
+    id: foostan
+    name: Kosuke Adachi
+    twitter: https://twitter.com/foostan
+    github: https://github.com/foostan
+    website: https://fstn.hateblo.jp/
+    avatar: foostan.png
+    bio: As a keyboard designer and software engineer, he is passionate about crafting compact keyboards with distinct concepts. His creations include Corne, Cornelius, and more.
+    abstract: |
+      This presentation introduces the approach of keyboard design, exploring three distinct concepts - a DIY split keyboard, a high-end design philosophy with a focus on keystroke feeling, and a unique and flexible 3D design. Discover the inspiration behind each design and introduce its unique features and purposes.
+- category: Keeb Talk
+  time: '19:20 - 19:40'
+  title: Pointing Device On The Partner Half
+  speaker:
+    id: hasumikin
+    name: Hitoshi HASUMI
+    twitter: https://twitter.com/hasumikin
+    github: https://github.com/hasumikin
+    website: https://hasumikin.com/about/
+    avatar: hasumikin.jpeg
+    bio: Creater of PRK Firmware. Through the development of PRK, he aims to promote PicoRuby as a first-class language in microcontroller programming.
+    abstract: |
+      We will discuss a better way of communication between the right and left of a split-type keyboard. One person might want to put a touchpad on the partner half while another might want to put a joystick and a rotary encoder. How can we manage this?
+- category: Keeb Talk
+  time: '19:40 - 20:00'
+  title: Initial-V, Final Stage!
+  speaker:
+    id: tenderlove
+    name: Aaron Patterson
+    twitter: https://twitter.com/tenderlove
+    github: https://github.com/tenderlove
+    website: http://tenderlovemaking.com/
+    avatar: tenderlove.jpeg
+    bio: Ruby and Rails hacker working at Shopify.
+    abstract: |
+      Initial-V is a BMW shifter that has been converted to a custom keyboard for use with Vim.  We'll look at how the keyboard was designed and built, and see the keyboard in action too!
+
