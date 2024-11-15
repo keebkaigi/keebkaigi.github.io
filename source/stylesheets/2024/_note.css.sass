@@ -1,13 +1,10 @@
 // .note
 
-.note__body-en
-  font-size: 0.9rem
-  font-weight: normal
+.note__heading
+  font-size: 2rem
+  font-weight: bold
 
-  +mq
-    text-align: left
-
-.note__body-ja
+.note__body
   font-size: 0.9rem
   font-weight: normal
 
@@ -21,11 +18,11 @@
   font-weight: normal
   max-width: 400px
 
-.note__list-item
-  margin-bottom: 0.5rem
-
-.note__en
-  margin-bottom: 3rem
-
-.note__list-link
+.note__link
+  font-weight: bold
+  display: inline-block
+  margin-top: 3rem
   text-decoration: underline dotted
+  text-underline-offset: 0.3rem
+  &:hover
+    color: $hover-color
