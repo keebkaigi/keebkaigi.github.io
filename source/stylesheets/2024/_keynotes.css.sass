@@ -1,8 +1,3 @@
-$keynotes__avatar-image-size: 120px
-$keynotes__avatar-size: 260px
-$keynotes__min-width: 400px
-$route2: 1.4142
-
 .keynotes__speakers
   display: flex
   list-style: none
@@ -39,8 +34,8 @@ $route2: 1.4142
 
   &:before
     content: ''
-    width: 270px * $route2 + 10px
-    height: 270px * $route2 + 10px
+    width: ($keynotes__avatar-size + 10px) * $route2 + 10px
+    height: ($keynotes__avatar-size + 10px) * $route2 + 10px
     border-top: 1px solid white
     transform: rotate(45deg)
     transform-origin: 0 0
@@ -51,8 +46,8 @@ $route2: 1.4142
 
   &:after
     content: ''
-    width: 270px * $route2 + 10px
-    height: 270px * $route2 + 10px
+    width: ($keynotes__avatar-size + 10px) * $route2 + 10px
+    height: ($keynotes__avatar-size + 10px) * $route2 + 10px
     border-top: 1px solid white
     transform: rotate(-45deg)
     transform-origin: 100% 0
@@ -60,7 +55,6 @@ $route2: 1.4142
     top: 0
     right: 0
     z-index: 2
-
 
 .keynotes__avatar-image
   width: $keynotes__avatar-image-size
