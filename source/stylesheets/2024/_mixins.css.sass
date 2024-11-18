@@ -34,6 +34,56 @@
   animation: gaming-diagonal 0.5s ease-in-out infinite
   transition: 0.3s ease
 
+=avatar($size: $keynotes__avatar-size)
+  +button-gradient
+  background-size: 200% 200%
+  background-position: 100% 100%
+  width: $size
+  height: $size
+  border-radius: 10px
+  text-align: center
+  box-sizing: border-box
+  padding: 50px
+  margin-bottom: 1.5rem
+  display: inline-block
+  position: relative
+  overflow: hidden
+  z-index: 1
+  transition: 0.5s ease
+
+  &:before
+    content: ''
+    width: ($size + 10px) * $route2 + 10px
+    height: ($size + 10px) * $route2 + 10px
+    border-top: 1px solid white
+    transform: rotate(45deg)
+    transform-origin: 0 0
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+
+  &:after
+    content: ''
+    width: ($size + 10px) * $route2 + 10px
+    height: ($size + 10px) * $route2 + 10px
+    border-top: 1px solid white
+    transform: rotate(-45deg)
+    transform-origin: 100% 0
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 2
+
+=avatar-image($size: $keynotes__avatar-image-size)
+  width: $size
+  height: $size
+  border: 20px solid white
+  border-radius: 6px
+  position: relative
+  z-index: 3
+  transition: 0.3s ease
+
 =mq
   @media (max-width: $mq-width)
     @content
