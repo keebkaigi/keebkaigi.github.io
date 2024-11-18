@@ -1,48 +1,70 @@
 - category: misc
-  time: '15:30'
-  title: Door Open
-  title_ja: 開場
-- category: opening
-  time: '16:30 - 16:40'
-  title: Opening
-  title_ja: 開会
+  time: '13:00'
+  title: 開場
+  title_en: Door Open
+- category: misc
+  time: '14:00 - 14:15'
+  title: 開会
+  title_en: Opening
   speaker:
     id: kakutani
     name: Shintaro Kakutani
     url: https://twitter.com/kakutani
     avatar: kakutani.jpeg
 - category: Keeb Talk
-  time: '16:40 - 17:00'
-  title: Me, Keyboard, and RubyKaigi 2023
+  time: '14:20 - 14:35'
+  title: トークタイトル
   speaker:
-    id: swan_match
-    name: Takuma Shirotori
-    twitter: https://twitter.com/swan_match
-    github: https://github.com/swanmatch
-    website: https://royal-keyboard-works.square.site/
-    avatar: swan_match.jpeg
-    bio: He is a keyboard designer who loves unique layouts and full-color LEDs. He also creates 'Infinite Possibilities'.
-    abstract: |
-      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
-- category: Keeb Talk
-  time: '17:00 - 17:20'
-  title: Building the Perfect Custom Keyboard
-  speaker:
-    id: takai
-    name: Naoto TAKAI
-    twitter: https://twitter.com/recompile_keys
-    github: https://github.com/takai
-    website: https://keys.recompile.net/
+    id: yhara
+    name: 原 悠
+    name_en: Yutaka Hara
+    twitter: https://twitter.com/yhara
+    github: https://github.com/yhara
+    website: https://yhara.jp/
     avatar: takai.png
-    bio: He is a keyboard designer and custom keyboard enthusiast. He created the Nomu30, Choco60, and other designs under his brand, Recompile Keys.
-    abstract: |
-      (日本語または英語でトークの概要を記述してください。日本語でも英語でもかまいません。サイトへの掲載レイアウトは調整中です)
+    bio: 松江市在住のRubyプログラマ。自作キーボード界隈の初期から携わる。BiwaSchemeの作者。著書に『Rubyで作る奇妙なプログラミング言語』。KMC/KUCC OB。プログラミング言語Shiikaを作っています。
+- category: Keeb Talk
+  time: '14:35 - 14:50'
+  title: トークタイトル
+  speaker:
+    id: yhara
+    name: 原 悠
+    name_en: Yutaka Hara
+    twitter: https://twitter.com/yhara
+    github: https://github.com/yhara
+    website: https://yhara.jp/
+    avatar: takai.png
+    bio: 松江市在住のRubyプログラマ。自作キーボード界隈の初期から携わる。BiwaSchemeの作者。著書に『Rubyで作る奇妙なプログラミング言語』。KMC/KUCC OB。プログラミング言語Shiikaを作っています。
+- category: Keeb Talk
+  time: '14:50 - 15:05'
+  title: トークタイトル
+  speaker:
+    id: yhara
+    name: 原 悠
+    name_en: Yutaka Hara
+    twitter: https://twitter.com/yhara
+    github: https://github.com/yhara
+    website: https://yhara.jp/
+    avatar: takai.png
+    bio: 松江市在住のRubyプログラマ。自作キーボード界隈の初期から携わる。BiwaSchemeの作者。著書に『Rubyで作る奇妙なプログラミング言語』。KMC/KUCC OB。プログラミング言語Shiikaを作っています。
+- category: Keeb Talk
+  time: '15:05 - 15:20'
+  title: トークタイトル
+  speaker:
+    id: yhara
+    name: 原 悠
+    name_en: Yutaka Hara
+    twitter: https://twitter.com/yhara
+    github: https://github.com/yhara
+    website: https://yhara.jp/
+    avatar: takai.png
+    bio: 松江市在住のRubyプログラマ。自作キーボード界隈の初期から携わる。BiwaSchemeの作者。著書に『Rubyで作る奇妙なプログラミング言語』。KMC/KUCC OB。プログラミング言語Shiikaを作っています。
 - category: misc
-  time: '17:20 - 17:35'
-  title: Networking Break
-  title_ja: キーボード交流タイム
+  time: '15:20 - 15:35'
+  title: キーボード交流タイム
+  title_en: Networking Break
 - category: Sema-Pitches
-  time: '17:35 - 18:35'
+  time: '15:35 - 16:35'
   title: Sema-Pitches
   title_ja: '"狭ピッチ"トーク'
   description: |
@@ -70,7 +92,7 @@
     website:
     avatar: kirikak2.jpeg
     title: 'Do PRK_FIRMWARE Dream of MIDI implementation?'
-    bio: My handmade keyboards are HELIX rev2, Ergo42 and Pipi Gherkin. 
+    bio: My handmade keyboards are HELIX rev2, Ergo42 and Pipi Gherkin.
   - id: kurotaky
     name: kurotaky
     twitter: https://twitter.com/kurotaky
@@ -143,56 +165,71 @@
     avatar: asonas.png
     title: 'DIY Keyboard: Endgame'
     bio: I'm Software Engineer, Photographer, DJ, Maker.
-- category: opening
-  time: '18:35 - 18:45'
-  title: "TBD"
-  title_ja: "(調整中)"
-  speaker:
-    id: takkanm
-    name: Mitsutaka Mimura
-    url: https://twitter.com/takkanm
-    avatar: takkanm.jpeg
 - category: misc
-  time: '18:45 - 19:00'
-  title: Networking Break
-  title_ja: キーボード交流タイム
+  time: '16:35 - 16:50'
+  title: キーボード交流タイム
+  title_en: Networking Break
 - category: Keeb Talk
-  time: '19:00 - 19:20'
-  title: Crafting the Endgame Keyboard
+  time: '16:50 - 17:05'
+  title: トークタイトル
   speaker:
-    id: foostan
-    name: Kosuke Adachi
-    twitter: https://twitter.com/foostan
-    github: https://github.com/foostan
-    website: https://fstn.hateblo.jp/
-    avatar: foostan.png
-    bio: As a keyboard designer and software engineer, he is passionate about crafting compact keyboards with distinct concepts. His creations include Corne, Cornelius, and more.
-    abstract: |
-      This presentation introduces the approach of keyboard design, exploring three distinct concepts - a DIY split keyboard, a high-end design philosophy with a focus on keystroke feeling, and a unique and flexible 3D design. Discover the inspiration behind each design and introduce its unique features and purposes.
+    id: yhara
+    name: 原 悠
+    name_en: Yutaka Hara
+    twitter: https://twitter.com/yhara
+    github: https://github.com/yhara
+    website: https://yhara.jp/
+    avatar: takai.png
+    bio: 松江市在住のRubyプログラマ。自作キーボード界隈の初期から携わる。BiwaSchemeの作者。著書に『Rubyで作る奇妙なプログラミング言語』。KMC/KUCC OB。プログラミング言語Shiikaを作っています。
 - category: Keeb Talk
-  time: '19:20 - 19:40'
-  title: Pointing Device On The Partner Half
+  time: '17:05 - 17:20'
+  title: トークタイトル
   speaker:
-    id: hasumikin
-    name: Hitoshi HASUMI
-    twitter: https://twitter.com/hasumikin
-    github: https://github.com/hasumikin
-    website: https://hasumikin.com/about/
-    avatar: hasumikin.jpeg
-    bio: Creater of PRK Firmware. Through the development of PRK, he aims to promote PicoRuby as a first-class language in microcontroller programming.
-    abstract: |
-      We will discuss a better way of communication between the right and left of a split-type keyboard. One person might want to put a touchpad on the partner half while another might want to put a joystick and a rotary encoder. How can we manage this?
+    id: yhara
+    name: 原 悠
+    name_en: Yutaka Hara
+    twitter: https://twitter.com/yhara
+    github: https://github.com/yhara
+    website: https://yhara.jp/
+    avatar: takai.png
+    bio: 松江市在住のRubyプログラマ。自作キーボード界隈の初期から携わる。BiwaSchemeの作者。著書に『Rubyで作る奇妙なプログラミング言語』。KMC/KUCC OB。プログラミング言語Shiikaを作っています。
 - category: Keeb Talk
-  time: '19:40 - 20:00'
-  title: Initial-V, Final Stage!
+  time: '17:20 - 17:35'
+  title: トークタイトル
   speaker:
-    id: tenderlove
-    name: Aaron Patterson
-    twitter: https://twitter.com/tenderlove
-    github: https://github.com/tenderlove
-    website: http://tenderlovemaking.com/
-    avatar: tenderlove.jpeg
-    bio: Ruby and Rails hacker working at Shopify.
-    abstract: |
-      Initial-V is a BMW shifter that has been converted to a custom keyboard for use with Vim.  We'll look at how the keyboard was designed and built, and see the keyboard in action too!
-
+    id: yhara
+    name: 原 悠
+    name_en: Yutaka Hara
+    twitter: https://twitter.com/yhara
+    github: https://github.com/yhara
+    website: https://yhara.jp/
+    avatar: takai.png
+    bio: 松江市在住のRubyプログラマ。自作キーボード界隈の初期から携わる。BiwaSchemeの作者。著書に『Rubyで作る奇妙なプログラミング言語』。KMC/KUCC OB。プログラミング言語Shiikaを作っています。
+- category: Keeb Talk
+  time: '17:35 - 17:50'
+  title: トークタイトル
+  speaker:
+    id: yhara
+    name: 原 悠
+    name_en: Yutaka Hara
+    twitter: https://twitter.com/yhara
+    github: https://github.com/yhara
+    website: https://yhara.jp/
+    avatar: takai.png
+    bio: 松江市在住のRubyプログラマ。自作キーボード界隈の初期から携わる。BiwaSchemeの作者。著書に『Rubyで作る奇妙なプログラミング言語』。KMC/KUCC OB。プログラミング言語Shiikaを作っています。
+- category: Keeb Talk
+  time: '17:50 - 18:05'
+  title: トークタイトル
+  speaker:
+    id: yhara
+    name: 原 悠
+    name_en: Yutaka Hara
+    twitter: https://twitter.com/yhara
+    github: https://github.com/yhara
+    website: https://yhara.jp/
+    avatar: takai.png
+    bio: 松江市在住のRubyプログラマ。自作キーボード界隈の初期から携わる。BiwaSchemeの作者。著書に『Rubyで作る奇妙なプログラミング言語』。KMC/KUCC OB。プログラミング言語Shiikaを作っています。
+- category: misc
+  time: '18:05 - 18:15'
+  title: 閉会
+  title_en: Closing

@@ -1,11 +1,7 @@
 %section.schedule#schedule
-  %h2.schedule__heading Schedule
-  %p.schedule__note
-    = 'Most talks are planned to be in Japanese, but we think we can "communicate" through keyboards️ (just like Ruby works too!).'
-    %br
-    = ' If you\'re interested in keebs, you\'ll be just fine, so join us!! 😉'
+  %h2.heading Schedule
   %ul.schedule__table
-    - data.year_2023.schedule.each do |item|
+    - data.year_2024.schedule.each do |item|
       %li.schedule__item
         .schedule__time
           = item.time
@@ -13,8 +9,8 @@
 
           - if item.category == 'misc'
             %h3.schedule__title
-              .schedule__title-en= item.title
-              .schedule__title-ja= item.title_ja
+              .schedule__title-ja= item.title
+              .schedule__title-en= item.title_en
 
           - if item.category == 'opening'
             .schedule__opening
@@ -87,8 +83,6 @@
                   alt: item.speaker.id,
                   class: 'schedule__talk-avatar-image')
                 .schedule__talk-content
-                  .schedule__talk-heading
-                    = item.category
                   %h3.schedule__talk-title
                     = item.title
                   .schedule__talk-speaker
