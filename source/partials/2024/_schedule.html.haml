@@ -24,7 +24,11 @@
               .schedule__title-en= item.title
             .schedule__sema-description
               %p= item.description
-
+              = link_to data.year_2024.general.call_for_lt.url,
+                class: 'schedule__call-for-lt',
+                target: '_blank' do
+                %i.fa-solid.fa-angle-right.call-for-lt__icon
+                %span.schedule__call-for-lt-message= 'ただいまトーク募集中！'
             -# 狭ピッチトーク決定後に表示
             -# %ul.schedule__sema
             -#   - item.speakers.each do |speaker|
