@@ -16,13 +16,14 @@
   - <img width="1206" alt="keeb-readme-sample" src="https://github.com/user-attachments/assets/96755c04-70ea-4e61-85cf-80b09c1fa033">
 
 
-## ローカル確認方法 (Optional)
+## ローカル確認方法 (任意)
 
-見た目の確認は運営の方でもやりますので、ローカル環境での確認は任意で、Yamlの方だけ編集いただければ大丈夫です。興味のある方は以下の方法でご確認ください。  
+見た目の確認は運営の方でもやりますので、ローカル環境での確認は任意で、Yamlの方だけ編集いただければ大丈夫です。  
+興味のある方は以下の方法でご確認ください。  
 [Middleman](https://middlemanapp.com/jp/) で作ってます。
 
 - `$ gem install middleman`
 - `$ cd keebkaigi.github.io`
 - `$ bundle install`
 - `$ bundle exec middleman`
-- See -> `https://localhost:4567/2024/`
+- See -> [http://localhost:4567/2024/](http://localhost:4567/2024/)
