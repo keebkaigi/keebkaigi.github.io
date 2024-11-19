@@ -17,7 +17,7 @@
   display: flex
   align-items: stretch
 
-  +mq
+  +mq-sp
     display: block
 
   &:nth-child(2)
@@ -78,10 +78,13 @@
     right: -5.5px
     top: 8px
 
-  +mq
-    font-size: 0.8rem
+  +mq-sp
     text-align: left
-    margin-bottom: 1rem
+    border-right: 0
+    padding-right: 0
+    margin-bottom: 1.5rem
+    &:after
+      display: none
 
 .schedule__content
   flex: 100
