@@ -2,8 +2,8 @@
 
 "Kaigi" for Keyboard Enthuiasits ⌨️
 
-🏯 [2023](https://keebkaigi.org/2023/) - May 10, Matsumoto, Nagano, Japan
-⚔️ [2024 KeebWorld Conference](https://keebkaigi.org/2023/) - Dec. 12, Matsue, Shimane, Japan
+- 🏯 [2023](https://keebkaigi.org/2023/) - May 10, Matsumoto, Nagano, Japan
+- ⚔️ [2024 KeebWorld Conference](https://keebkaigi.org/2023/) - Dec. 12, Matsue, Shimane, Japan
 
 
 # トークのタイトル、プロフィールの入力・編集方法
