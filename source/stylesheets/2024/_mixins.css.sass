@@ -34,7 +34,7 @@
   animation: gaming-diagonal 0.5s ease-in-out infinite
   transition: 0.3s ease
 
-=avatar($size: $keynotes__avatar-size)
+=avatar($size: $keynotes__avatar-size, $padding: 50px)
   +button-gradient
   background-size: 200% 200%
   background-position: 100% 100%
@@ -43,7 +43,7 @@
   border-radius: 10px
   text-align: center
   box-sizing: border-box
-  padding: 50px
+  padding: $padding
   margin-bottom: 1.5rem
   display: inline-block
   position: relative

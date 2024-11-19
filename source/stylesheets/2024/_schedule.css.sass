@@ -5,7 +5,6 @@
 
 .schedule__heading
   font-size: 2rem
-  letter-spacing: 0.3rem
   margin-bottom: 3rem
 
 .schedule__table
@@ -20,6 +19,43 @@
 
   +mq
     display: block
+
+  &:nth-child(2)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 1s
+
+  &:nth-child(3)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 2s
+
+  &:nth-child(4)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 3s
+
+  &:nth-child(5)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 4s
+
+  &:nth-child(9)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 1s
+
+  &:nth-child(10)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 2s
+
+  &:nth-child(11)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 3s
+
+  &:nth-child(12)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 4s
+
+  &:nth-child(13)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 5s
+
 
 .schedule__time
   flex: 0 0 10rem
@@ -59,24 +95,114 @@
   align-items: center
 
 .schedule__title-ja
-  transform: scale(0.9, 1)
   font-size: 2rem
   font-family: 'Zen Antique Soft', serif
   font-weight: normal
-  margin-right: 0.6rem
-  letter-spacing: 0.3rem
+  margin-right: 1rem
 
 .schedule__title-en
   font-size: 1rem
   font-family: 'Saira', sans-serif
-  font-weight: bold
-  transform: translateY(1px)
+  font-weight: 500
+  transform: translateY(2px)
 
+.schedule__talk-container
+  display: flex
+
+  +mq
+    flex-direction: column
+
+.schedule__talk-avatar
+  +avatar($size: 200px, $padding: 40px)
+  margin-right: 1.5rem
+
+  &:hover, &:focus, &:active
+    transform: translateY(5px)
+    background-position: 0 0
+
+.schedule__talk-avatar-image
+  +avatar-image($size: 80px)
+
+.schedule__talk-content
+  flex: 100
+
+.schedule__talk-title
+  font-family: 'Zen Antique Soft', serif
+  font-weight: normal
+  font-size: 2.5rem
+  margin: 0 0 0.5rem 0
+  transform-origin: top left
+  transform: scale(0.95, 1) translateY(-2px)
+  line-height: 1.2
+  +text-gaming
+  animation: gaming-diagonal 3s ease-in-out infinite
+
+.schedule__talk-speaker
+  margin-bottom: 0.5rem
+
+.schedule__talk-speaker-name
+  font-family: 'Zen Antique Soft', serif
+  font-weight: normal
+  font-size: 2rem
+  transform-origin: top left
+  transform: scale(0.9, 1)
+
+.schedule__talk-speaker-name-en
+  font-family: 'Saira', sans-serif
+  font-weight: 500
+  font-size: 1rem
+
+.schedule__talk-speaker-link
+  margin-bottom: 1rem
+
+.schedule__talk-speaker-id
+  font-family: 'Saira', sans-serif
+  font-weight: 600
+  font-size: 1.6rem
+  margin-right: 0.5rem
+  +text-gaming
+  animation: gaming-diagonal 3s ease-in-out infinite
+
+  &:hover
+    animation: gaming-diagonal 0.3s ease-in-out infinite
+
+.schedule__bio
+  font-family: 'Zen Kaku Gothic New', sans-serif
+  font-size: 0.8rem
+  line-height: 1.6
+
+.schedule__speaker-sns
+  display: inline-block
+  $size: 1.6rem
+  width: $size
+  height: $size
+  line-height: $size
+  background-color: #000
+  border-radius: 4px
+  color: white
+  font-size: 1rem
+  text-align: center
+  margin-right: 0.8rem
+
+  i
+    transform: translateY(1px)
+
+  &:hover, &:focus
+    color: $bg-color
+    +infinite-gradient
+    animation: gaming-diagonal 0.3s ease infinite
+    background-size: 200% 200%
+
+  &.is-website
+    font-size: 0.8rem
+    i
+      transform: translateX(1px)
 
 .schedule__sema-description
-  font-weight: 400
+  font-weight: normal
   font-size: 0.9rem
-  margin-bottom: 2rem
+  font-family: 'Zen Kaku Gothic New', sans-serif
+  margin-bottom: 3rem
 
 .schedule__sema
   list-style: none
@@ -132,11 +258,11 @@
   width: $avatar-sema
   height: $avatar-sema
   margin-right: 1rem
-  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
-  background-size: 400% 400%
+  +infinite-gradient
+  background-size: 200% 200%
   border-radius: 10px
   position: relative
-  animation: gaming-diagonal 6s linear infinite
+  animation: gaming-diagonal 4s linear infinite
 
   &:hover, &:focus
     animation: gaming-diagonal 0.3s linear infinite
@@ -151,6 +277,8 @@
 .schedule__sema-profile
   display: flex
   flex-wrap: wrap
+  align-content: center
+  align-items: center
   margin-bottom: 0.6rem
   font-size: 0.9rem
   line-height: 1.4
@@ -158,26 +286,36 @@
 .schedule__sema-speaker-link
   display: flex
 
+.schedule__sema-title
+  font-family: 'Zen Antique Soft', serif
+  font-size: 1.5rem
+  margin: 0 0 0.8rem 0
+  line-height: 1.2
+  transform: scale(0.95, 1)
+  transform-origin: top left
+  +text-gaming
+  animation: gaming-diagonal 3s ease infinite
+
 .schedule__sema-speaker-name
+  font-family: 'Zen Antique Soft', serif
+  font-size: 1.2rem
   margin-right: 0.5rem
+  font-weight: normal
+  line-height: 1
 
 .schedule__sema-speaker-id
-  font-weight: 400
-  margin-right: 0.5rem
+  font-family: 'Saira', sans-serif
+  font-size: 1.1rem
+  font-weight: 600
+  margin-right: 1rem
+  +text-gaming
+  animation: gaming-diagonal 3s ease infinite
+
+  &:hover, &:focus
+    animation: gaming-diagonal 0.3s ease infinite
 
 .schedule__sema-right
   flex: 100
-  padding-top: 0.3rem
-
-.schedule__sema-title
-  font-size: 1.2rem
-  margin: 0 0 0.5rem 0
-  line-height: 1.4
-  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
-  background-size: 120% 120%
-  -webkit-background-clip: text
-  -webkit-text-fill-color: transparent
-  animation: gaming-diagonal 1.5s ease infinite
 
 .schedule__sema-sns
   $size: 1.2rem
@@ -186,22 +324,25 @@
   width: $size
   height: $size
   line-height: $size + 0.1rem
-  font-size: 0.8rem
+  font-size: 0.6rem
   border-radius: 3px
   text-align: center
-  margin-right: 0.5rem
+  margin-right: 0.8rem
   transform: translateY(0.1rem)
   transition-duration: 0.3s
 
   &:hover, &:focus
-    background-color: $hover-color
     color: $bg-color
+    +infinite-gradient
+    animation: gaming-diagonal 0.3s ease infinite
+    background-size: 200% 200%
 
   &.is-website
     font-size: 0.7rem
 
 .schedule__sema-bio
-  font-size: 0.7rem
+  font-family: 'Zen Kaku Gothic New', sans-serif
+  font-size: 0.8rem
   font-weight: 400
 
 .schedule__small-avatar
@@ -254,142 +395,6 @@
 .schedule__small-speaker-id
   font-weight: 400
   font-size: 1rem
-
-.schedule__talk-heading
-  font-size: 0.8rem
-  letter-spacing: 0.2rem
-
-.schedule__talk-container
-
-  margin-top: 0.5rem
-  display: flex
-
-  +mq
-    flex-direction: column
-
-
-.schedule__talk-avatar
-  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 40%, #F92174 65%, #D067FF 70%, #39B54A 100%)
-  background-size: 400% 400%
-  $size: 160px
-  width: $size
-  height: $size
-  flex: 0 0 $size
-  margin-right: 1.5rem
-  border-radius: 20px
-  position: relative
-  animation: gaming-diagonal 4s ease infinite
-
-  +mq
-    margin-bottom: 1rem
-
-  &:hover
-    animation: gaming-diagonal 0.3s ease infinite
-    transform: translateY(1rem)
-
-    +mq
-      transform: translateY(0.5rem)
-
-  &:after
-    content: ''
-    display: block
-    $size: 160px
-    width: $size
-    height: $size
-    position: absolute
-    top: 0
-    left: 0
-    background-image: image_url('2023/avatar-keeb.svg')
-    background-repeat: no-repeat
-
-  &.is-takai
-    animation-delay: 1s
-
-  &.is-foostan
-    animation-delay: 2s
-
-  &.is-hasumikin
-    animation-delay: 3s
-
-  &.is-tenderlove
-    animation-delay: 4s
-
-.schedule__talk-avatar-image
-  $size: 100px
-  width: $size
-  height: $size
-  background-color: white
-  border-radius: 10px
-  position: relative
-  top: 12px
-  left: 16px
-  border: 4px solid $bg-color
-
-.schedule__talk-content
-  flex: 100
-
-.schedule__talk-title
-  display: inline-block
-  font-size: 1.6rem
-  line-height: 1.4
-  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
-  background-size: 120% 120%
-  -webkit-background-clip: text
-  -webkit-text-fill-color: transparent
-  margin: 0.6rem 0 0.4rem
-  animation: gaming-diagonal 1.5s ease infinite
-
-  +mq
-    font-size: 1.4rem
-    margin: 0.4rem 0
-
-.schedule__talk-speaker
-  margin-bottom: 0.8rem
-  line-height: 2
-
-.schedule__talk-speaker-name
-  font-size: 1.2rem
-  font-weight: 800
-  margin-right: 0.6rem
-
-.schedule__talk-speaker-id
-  font-weight: 400
-  font-size: 1rem
-  margin-right: 1rem
-
-  +mq
-    display: block
-    margin-bottom: 0.5rem
-
-.schedule__speaker-sns
-  display: inline-block
-  $size: 1.6rem
-  width: $size
-  height: $size
-  line-height: $size
-  background-color: white
-  border-radius: 4px
-  color: $bg-color
-  font-size: 1rem
-  text-align: center
-  margin-right: 0.8rem
-
-  i
-    transform: translateY(1px)
-
-  &:hover, &:focus
-    color: $bg-color
-    background-color: $hover-color
-
-  &.is-website
-    font-size: 0.8rem
-    i
-      transform: translateX(1px)
-
-.schedule__bio
-  font-weight: 400
-  font-size: 0.9rem
-  line-height: 1.4
 
 .schedule__sema-pitches-submission
   font-size: 1.4rem

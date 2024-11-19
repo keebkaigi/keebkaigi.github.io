@@ -31,11 +31,10 @@
 
           - if item.category == 'Sema-Pitches'
             .schedule__title
-              .schedule__title-en= item.title
               .schedule__title-ja= item.title_ja
+              .schedule__title-en= item.title
             .schedule__sema-description
               %p= item.description
-              %p= item.description_ja
 
             %ul.schedule__sema
               - item.speakers.each do |speaker|
@@ -78,20 +77,23 @@
                 = link_to item.speaker.twitter,
                   title:  item.speaker.id,
                   target: '_blank',
-                  class:  "schedule__talk-avatar is-#{item.speaker.id}" do
-                  = image_tag("2023/avatars/#{item.speaker.avatar}",
+                  class:  "schedule__talk-avatar" do
+                  = image_tag("2024/avatars/#{item.speaker.avatar}",
                   alt: item.speaker.id,
                   class: 'schedule__talk-avatar-image')
                 .schedule__talk-content
                   %h3.schedule__talk-title
                     = item.title
                   .schedule__talk-speaker
+                    %span.schedule__talk-speaker-name
+                      = item.speaker.name
+                    %span.schedule__talk-speaker-name-en
+                      = item.speaker.name_en
+                  .schedule__talk-speaker-link
                     = link_to item.speaker.twitter,
                       title:  item.speaker.id,
                       target: '_blank',
                       class:  'schedule__talk-speaker-id' do
-                      %span.schedule__talk-speaker-name
-                        = item.speaker.name
                       = "@#{item.speaker.id}"
                     = link_to item.speaker.twitter,
                       title:  item.speaker.twitter,
