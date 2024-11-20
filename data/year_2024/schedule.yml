@@ -69,12 +69,12 @@
   time: '15:40 - 15:55'
   title: TBD
   speaker:
-    id: higashi
+    id: HirohitoHigashi
     name: 東裕人
     twitter:
     github: https://github.com/HirohitoHigashi
     website:
-    avatar:
+    avatar: https://avatars.githubusercontent.com/u/16683312?v=4
     bio:
 - category: misc
   time: '15:55 - 16:10'

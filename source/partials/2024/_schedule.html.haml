@@ -82,26 +82,34 @@
                     %span.schedule__talk-speaker-name
                       = item.speaker.name
                   .schedule__talk-speaker-id
-                    = link_to item.speaker.twitter,
+                    - if item.speaker.twitter.present?
+                      - url = item.speaker.twitter
+                    - else
+                      - url = item.speaker.github
+                    = link_to url,
                       title:  item.speaker.id,
                       target: '_blank',
                       class:  'schedule__talk-speaker-twitter-id' do
                       = "@#{item.speaker.id}"
                   .schedule__talk-speaker-links
-                    = link_to item.speaker.twitter,
-                      title:  item.speaker.twitter,
-                      target: '_blank',
-                      class:  'schedule__speaker-sns is-twitter' do
-                      %i.fa-brands.fa-twitter
-                    = link_to item.speaker.github,
-                      title:  item.speaker.github,
-                      target: '_blank',
-                      class:  'schedule__speaker-sns is-github' do
-                      %i.fa-brands.fa-github
-                    = link_to item.speaker.website,
-                      title:  item.speaker.website,
-                      target: '_blank',
-                      class:  'schedule__speaker-sns is-website' do
-                      %i.fa-solid.fa-link
-                  .schedule__bio
-                    = item.speaker.bio
+                    - if item.speaker.twitter.present?
+                      = link_to item.speaker.twitter,
+                        title:  item.speaker.twitter,
+                        target: '_blank',
+                        class:  'schedule__speaker-sns is-twitter' do
+                        %i.fa-brands.fa-twitter
+                    - if item.speaker.github.present?
+                      = link_to item.speaker.github,
+                        title:  item.speaker.github,
+                        target: '_blank',
+                        class:  'schedule__speaker-sns is-github' do
+                        %i.fa-brands.fa-github
+                    - if item.speaker.website.present?
+                      = link_to item.speaker.website,
+                        title:  item.speaker.website,
+                        target: '_blank',
+                        class:  'schedule__speaker-sns is-website' do
+                        %i.fa-solid.fa-link
+                  - if item.speaker.bio.present?
+                    .schedule__bio
+                      = item.speaker.bio
