@@ -1,0 +1,24 @@
+- d = data.year_2024
+
+.footer
+  .footer__container
+    .footer__content
+      .footer__left
+        .footer__powered-by
+          Powered by
+        = link_to 'https://keebkaigi.org/2023',
+          class: 'footer__logo-link',
+          target: '_blank' do
+          .footer__logo
+      .footer__right
+        - d.team.each do |role|
+          .footer__role
+            %h4.footer__role-name= role[0].capitalize
+            %ul.footer__members-list
+              - role[1].each do |member|
+                %li.footer__member<>
+                  = link_to "@#{member}",
+                    "https://twitter.com/#{member}",
+                    target: '_blank'
+    .footer__license
+      = d.general.license
