@@ -82,7 +82,11 @@
                     %span.schedule__talk-speaker-name
                       = item.speaker.name
                   .schedule__talk-speaker-id
-                    = link_to item.speaker.twitter,
+                    - if item.speaker.twitter.present?
+                      - url = item.speaker.twitter
+                    - else
+                      - url = item.speaker.github
+                    = link_to url,
                       title:  item.speaker.id,
                       target: '_blank',
                       class:  'schedule__talk-speaker-twitter-id' do
