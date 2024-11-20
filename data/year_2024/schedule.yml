@@ -30,7 +30,7 @@
     bio:
 - category: Keeb Talk
   time: '14:40 - 14:55'
-  title: TBD
+  title: '"Actual" Security in Microcontroller Ruby!?'
   speaker:
     id: s01
     name: sylph01
@@ -38,7 +38,7 @@
     github: https://github.com/sylph01
     website: https://s01.ninja/
     avatar: https://pbs.twimg.com/profile_images/1659377456439242754/YSGKv0W8_400x400.png
-    bio:
+    bio: やせいのプログラマ。暗号とか認証認可とかできます。日常使いのキーボードはIris（Keebioの60%分割モデル）。
 - category: misc
   time: '14:55 - 15:10'
   title: キーボード交流タイム
