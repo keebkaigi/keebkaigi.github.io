@@ -145,13 +145,16 @@
 
 .schedule__talk-speaker
   margin-bottom: 0.4rem
+  display: flex
+
+  +mq-sp
+    display: block
 
 .schedule__talk-speaker-name
   font-family: 'Zen Antique Soft', serif
   font-weight: normal
-  font-size: 1.8rem
-  transform-origin: top left
-  transform: scale(0.9, 1)
+  font-size: 1.6rem
+  margin-right: 1rem
 
 .schedule__talk-speaker-name-en
   font-family: 'Saira', sans-serif

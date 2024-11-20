@@ -79,18 +79,18 @@
                   %h3.schedule__talk-title
                     = item.title
                   .schedule__talk-speaker
-                    %span.schedule__talk-speaker-name
+                    .schedule__talk-speaker-name
                       = item.speaker.name
-                  .schedule__talk-speaker-id
-                    - if item.speaker.twitter.present?
-                      - url = item.speaker.twitter
-                    - else
-                      - url = item.speaker.github
-                    = link_to url,
-                      title:  item.speaker.id,
-                      target: '_blank',
-                      class:  'schedule__talk-speaker-twitter-id' do
-                      = "@#{item.speaker.id}"
+                    .schedule__talk-speaker-id
+                      - if item.speaker.twitter.present?
+                        - url = item.speaker.twitter
+                      - else
+                        - url = item.speaker.github
+                      = link_to url,
+                        title:  item.speaker.id,
+                        target: '_blank',
+                        class:  'schedule__talk-speaker-twitter-id' do
+                        = "@#{item.speaker.id}"
                   .schedule__talk-speaker-links
                     - if item.speaker.twitter.present?
                       = link_to item.speaker.twitter,
