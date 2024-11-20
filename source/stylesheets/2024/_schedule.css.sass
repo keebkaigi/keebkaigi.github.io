@@ -1,0 +1,459 @@
+// .schedule
+
+.schedule
+  margin-top: 0
+
+.schedule__heading
+  font-size: 2rem
+  margin-bottom: 3rem
+
+.schedule__table
+  margin: 0 auto
+  padding: 0
+  list-style: none
+  text-align: left
+
+.schedule__item
+  display: flex
+  align-items: stretch
+
+  +mq-sp
+    display: block
+
+  &:nth-child(2)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 1s
+
+  &:nth-child(3)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 2s
+
+  &:nth-child(4)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 3s
+
+  &:nth-child(5)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 4s
+
+  &:nth-child(9)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 1s
+
+  &:nth-child(10)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 2s
+
+  &:nth-child(11)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 3s
+
+  &:nth-child(12)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 4s
+
+  &:nth-child(13)
+    .schedule__talk-title, .schedule__talk-speaker-id
+      animation-delay: 5s
+
+
+.schedule__time
+  flex: 0 0 10rem
+  text-align: right
+  margin-right: 2rem
+  border-right: 1px solid #000
+  padding-right: 1.5rem
+  position: relative
+
+  &:after
+    $size: 10px
+    content: ''
+    display: block
+    width: $size
+    height: $size
+    border-radius: 50%
+    background-color: #000
+    position: absolute
+    right: -5.5px
+    top: 8px
+
+  +mq-sp
+    text-align: left
+    border-right: 0
+    padding-right: 0
+    margin-bottom: 1rem
+    &:after
+      display: none
+
+.schedule__content
+  flex: 100
+  padding-bottom: 3rem
+
+.schedule__title
+  margin: 0
+  line-height: 1.4
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+
+.schedule__title-ja
+  font-size: 2rem
+  font-family: 'Zen Antique Soft', serif
+  font-weight: normal
+  margin-right: 1rem
+
+.schedule__title-en
+  font-size: 1rem
+  font-family: 'Saira', sans-serif
+  font-weight: 500
+  transform: translateY(2px)
+
+.schedule__talk-container
+  display: flex
+
+  +mq
+    flex-direction: column
+
+.schedule__talk-avatar
+  +avatar($size: 200px, $padding: 40px)
+  margin-right: 1.5rem
+  margin-bottom: 0
+
+  &:hover, &:focus, &:active
+    transform: translateY(5px)
+    background-position: 0 0
+
+  +mq-sp
+    margin-bottom: 1rem
+
+.schedule__talk-avatar-image
+  +avatar-image($size: 80px)
+
+.schedule__talk-content
+  flex: 100
+
+.schedule__talk-title
+  font-family: 'Zen Antique Soft', serif
+  font-weight: normal
+  font-size: 2.5rem
+  margin: 0 0 0.4rem 0
+  transform-origin: top left
+  transform: scale(0.95, 1) translateY(-2px)
+  line-height: 1.2
+  +text-gaming
+  animation: gaming-diagonal 3s ease-in-out infinite
+
+.schedule__talk-speaker
+  margin-bottom: 0.4rem
+
+.schedule__talk-speaker-name
+  font-family: 'Zen Antique Soft', serif
+  font-weight: normal
+  font-size: 1.8rem
+  transform-origin: top left
+  transform: scale(0.9, 1)
+
+.schedule__talk-speaker-name-en
+  font-family: 'Saira', sans-serif
+  font-weight: 500
+  font-size: 1rem
+
+.schedule__talk-speaker-link
+  margin-bottom: 0.5rem
+
+.schedule__talk-speaker-id
+  margin-bottom: 0.9rem
+
+.schedule__talk-speaker-twitter-id
+  font-family: 'Saira', sans-serif
+  font-weight: 600
+  font-size: 1.6rem
+  margin-right: 0.5rem
+  +text-gaming
+  animation: gaming-diagonal 3s ease-in-out infinite
+
+  &:hover
+    animation: gaming-diagonal 0.3s ease-in-out infinite
+
+.schedule__bio
+  margin-top: 1rem
+  font-family: 'Zen Kaku Gothic New', sans-serif
+  font-size: 0.9rem
+  line-height: 1.6
+
+.schedule__speaker-sns
+  display: inline-block
+  $size: 2rem
+  width: $size
+  height: $size
+  line-height: $size
+  background-color: #000
+  border-radius: 4px
+  color: white
+  font-size: 1rem
+  text-align: center
+  margin-right: 0.8rem
+
+  i
+    transform: translateY(1px)
+
+  &:hover, &:focus
+    color: $bg-color
+    +infinite-gradient
+    animation: gaming-diagonal 0.3s ease infinite
+    background-size: 200% 200%
+
+  &.is-website
+    font-size: 0.8rem
+    i
+      transform: translateX(1px)
+
+.schedule__sema-description
+  font-weight: normal
+  font-size: 0.9rem
+  font-family: 'Zen Kaku Gothic New', sans-serif
+  margin-bottom: 3rem
+
+.schedule__sema
+  list-style: none
+  margin: 0
+  padding: 0
+
+.schedule__sema-speaker
+  display: flex
+  margin-bottom: 1.8rem
+
+  &:nth-child(2)
+    .schedule__sema-avatar, .schedule__sema-title
+      animation-delay: 1s
+
+  &:nth-child(3)
+    .schedule__sema-avatar, .schedule__sema-title
+      animation-delay: 2s
+
+  &:nth-child(4)
+    .schedule__sema-avatar, .schedule__sema-title
+      animation-delay: 3s
+
+  &:nth-child(5)
+    .schedule__sema-avatar, .schedule__sema-title
+      animation-delay: 4s
+
+  &:nth-child(6)
+    .schedule__sema-avatar, .schedule__sema-title
+      animation-delay: 5s
+
+  &:nth-child(7)
+    .schedule__sema-avatar, .schedule__sema-title
+      animation-delay: 6s
+
+  &:nth-child(8)
+    .schedule__sema-avatar, .schedule__sema-title
+      animation-delay: 7s
+
+  &:nth-child(9)
+    .schedule__sema-avatar, .schedule__sema-title
+      animation-delay: 8s
+
+  &:nth-child(10)
+    .schedule__sema-avatar, .schedule__sema-title
+      animation-delay: 9s
+
+  &:nth-child(11)
+    .schedule__sema-avatar, .schedule__sema-title
+      animation-delay: 10s
+
+.schedule__sema-avatar
+  flex: $avatar-sema 0 0
+  width: $avatar-sema
+  height: $avatar-sema
+  margin-right: 1rem
+  +infinite-gradient
+  background-size: 200% 200%
+  border-radius: 10px
+  position: relative
+  animation: gaming-diagonal 4s linear infinite
+
+  &:hover, &:focus
+    animation: gaming-diagonal 0.3s linear infinite
+
+.schedule__sema-avatar-image
+  width: $avatar-sema - 6px
+  border-radius: 9px
+  position: absolute
+  left: 3px
+  top: 3px
+
+.schedule__sema-profile
+  display: flex
+  flex-wrap: wrap
+  align-content: center
+  align-items: center
+  margin-bottom: 0.6rem
+  font-size: 0.9rem
+  line-height: 1.4
+
+.schedule__sema-speaker-link
+  display: flex
+
+.schedule__sema-title
+  font-family: 'Zen Antique Soft', serif
+  font-size: 1.5rem
+  margin: 0 0 0.8rem 0
+  line-height: 1.2
+  transform: scale(0.95, 1)
+  transform-origin: top left
+  +text-gaming
+  animation: gaming-diagonal 3s ease infinite
+
+.schedule__sema-speaker-name
+  font-family: 'Zen Antique Soft', serif
+  font-size: 1.2rem
+  margin-right: 0.5rem
+  font-weight: normal
+  line-height: 1
+
+.schedule__sema-speaker-id
+  font-family: 'Saira', sans-serif
+  font-size: 1.1rem
+  font-weight: 600
+  margin-right: 1rem
+  +text-gaming
+  animation: gaming-diagonal 3s ease infinite
+
+  &:hover, &:focus
+    animation: gaming-diagonal 0.3s ease infinite
+
+.schedule__sema-right
+  flex: 100
+
+.schedule__sema-sns
+  $size: 1.2rem
+  background-color: $text-color
+  color: $bg-color
+  width: $size
+  height: $size
+  line-height: $size + 0.1rem
+  font-size: 0.6rem
+  border-radius: 3px
+  text-align: center
+  margin-right: 0.8rem
+  transform: translateY(0.1rem)
+  transition-duration: 0.3s
+
+  &:hover, &:focus
+    color: $bg-color
+    +infinite-gradient
+    animation: gaming-diagonal 0.3s ease infinite
+    background-size: 200% 200%
+
+  &.is-website
+    font-size: 0.7rem
+
+.schedule__sema-bio
+  font-family: 'Zen Kaku Gothic New', sans-serif
+  font-size: 0.8rem
+  font-weight: 400
+
+.schedule__small-avatar
+  $size: 42px
+  width: $size
+  height: $size
+  flex: 0 0 $size
+  margin-right: 0.6rem
+  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
+  background-size: 400% 400%
+  border-radius: 8px
+  position: relative
+  animation: gaming-diagonal 6s linear infinite
+
+  +mq
+    size: 30px
+    width: $size
+    height: $size
+    flex: 0 0 $size
+    margin-right: 10px
+
+.schedule__small-avatar-image
+  $size: 36px
+  width: $size
+  height: $size
+  border-radius: 6px
+  position: relative
+  top: 3px
+  left: 3px
+
+.schedule__small-content
+  font-size: 1.2rem
+  flex: 1 0 0
+
+.schedule__small-speaker-link
+  display: flex
+  align-items: center
+
+  &:hover
+    .schedule__small-avatar
+      animation: gaming-diagonal 0.3s linear infinite
+
+.schedule__small-speaker-right
+  display: flex
+  flex-wrap: wrap
+
+.schedule__small-speaker-name
+  margin-right: 0.4rem
+
+.schedule__small-speaker-id
+  font-weight: 400
+  font-size: 1rem
+
+.schedule__sema-pitches-submission
+  font-size: 1.4rem
+  display: block
+  margin-top: 2rem
+  background: linear-gradient(45deg, #39B54A 0%, #FCC02E 25%, #f25350 50%, #F92174 75%, #D067FF 100%)
+  background-size: 120% 120%
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  animation: gaming-diagonal 1.5s ease infinite
+  line-height: 1.4
+
+  &:hover, &:focus
+    animation: gaming-diagonal 0.3s ease infinite
+    text-shadow: none
+
+.schedule__sema-pitches-submission-form
+  font-weight: 400
+  font-size: 0.9rem
+  margin-left: 1rem
+  text-decoration: underline
+
+.schedule__sema-pitches-submission-icon
+  font-size: 0.8rem
+  letter-spacing: -0.5rem
+
+.schedule__opening
+  display: flex
+
+  +mq
+    display: block
+
+.schedule__opening-speaker
+  margin-left: 2rem
+
+  +mq
+    margin-left: 0
+    margin-top: 1rem
+
+.schedule__call-for-lt
+  font-family: 'Zen Antique Soft', serif
+  font-size: 1.8rem
+  font-weight: normal
+  display: block
+  margin: 3rem 0 0 0
+  +text-gaming
+  animation: gaming-diagonal 3s ease-in-out infinite
+  transform: scale(0.95, 1)
+  transform-origin: top left
+
+  &:hover, &:focus
+    animation: gaming-diagonal 0.3s ease-in-out infinite

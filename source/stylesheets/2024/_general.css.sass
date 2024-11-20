@@ -30,7 +30,7 @@ a
   width: $content-width
   position: relative
   z-index: 1
-  padding: 4rem 0
+  padding: 2rem 0
   margin: 0 auto
   box-sizing: border-box
 
@@ -50,5 +50,15 @@ a
 .marker
   background: linear-gradient(transparent 50%, #ffc66b 50%)
 
-.main-container
-  padding
+.sijimi
+  $size: 3.5rem
+  width: $size
+  height: $size
+  margin: 3rem auto 0
+  +infinite-gradient
+  background-size: 200% 200%
+  mask-image: url("/images/2024/sijimi--white.svg")
+  mask-size: cover
+  mask-repeat: no-repeat
+  mask-size: cover
+  animation: gaming-diagonal 3s ease-in-out infinite

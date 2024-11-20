@@ -1,0 +1,174 @@
+- category: misc
+  time: '13:00'
+  title: 開場
+  title_en: Door Open
+- category: misc
+  time: '14:00 - 14:05'
+  title: 開会
+  title_en: Opening
+- category: Keeb Talk
+  time: '14:10 - 14:25'
+  title: TBD
+  speaker:
+    id: yhara
+    name: 原 悠
+    twitter: https://x.com/yhara
+    github: https://github.com/yhara
+    website: https://yhara.jp/
+    avatar: https://pbs.twimg.com/profile_images/912324428981182465/QhybIgJ8_400x400.jpg
+    bio:
+- category: Keeb Talk
+  time: '14:25 - 14:40'
+  title: TBD
+  speaker:
+    id: kurod1492
+    name: Akihiro Kurotani
+    twitter: https://x.com/kurod1492
+    github: https://github.com/kurod1492
+    website: https://qiita.com/kurod1492
+    avatar: https://pbs.twimg.com/profile_images/1349302401413468161/b-6UyR_U_400x400.jpg
+    bio:
+- category: Keeb Talk
+  time: '14:40 - 14:55'
+  title: TBD
+  speaker:
+    id: s01
+    name: sylph01
+    twitter: https://x.com/s01
+    github: https://github.com/sylph01
+    website: https://s01.ninja/
+    avatar: https://pbs.twimg.com/profile_images/1659377456439242754/YSGKv0W8_400x400.png
+    bio:
+- category: misc
+  time: '14:55 - 15:10'
+  title: キーボード交流タイム
+  title_en: Networking Break
+- category: Keeb Talk
+  time: '15:10 - 15:25'
+  title: TBD
+  speaker:
+    id: yukihiro_matz
+    name: まつもとゆきひろ
+    twitter: https://x.com/yukihiro_matz
+    github: https://github.com/matz
+    website: https://matz.rubyist.net/
+    avatar: https://pbs.twimg.com/profile_images/511244255294001152/v5phEU1O_400x400.jpeg
+    bio:
+- category: Keeb Talk
+  time: '15:25 - 15:40'
+  title: キーボードは実質Ruby リターンズ
+  speaker:
+    id: hasmikin
+    name: 羽角均
+    twitter: https://x.com/hasumikin
+    github: https://github.com/hasumikin
+    website: https://hasumikin.com/
+    avatar: https://pbs.twimg.com/profile_images/1764475604571963392/DHPuBTBd_400x400.jpg
+    bio: PRK Firmwareの作者です。キーボードは40%くらいのが好きです。ポインティングデバイスはトラックボール派。よろしくお願いします。
+- category: Keeb Talk
+  time: '15:40 - 15:55'
+  title: TBD
+  speaker:
+    id: higashi
+    name: 東裕人
+    twitter:
+    github: https://github.com/HirohitoHigashi
+    website:
+    avatar:
+    bio:
+- category: misc
+  time: '15:55 - 16:10'
+  title: キーボード交流タイム
+  title_en: Networking Break
+- category: Sema-Pitches
+  time: '15:10 - 16:40'
+  title: Sema-Pitches
+  title_ja: '"狭ピッチ"トーク'
+  description: |
+    いわゆる「ライトニングトーク」形式で、各スピーカーは持ち時間5分で各々のキーボードにかける思いを語っていただきます。
+  submission:
+    text: ...and You!
+    title: 'KeebWorld Conference 2024 "Sema-Pitches" Submission Form'
+    url: https://docs.google.com/forms/d/e/1FAIpQLSd5RJ3m8CrmXaf66j2aPI48JSZBV58TRSZ9UZtQfw8gpoGdBg/viewform
+  speakers:
+  - id: sakahukamaki
+    name: 炬燵
+    twitter: https://x.com/sakahukamaki
+    github: https://github.com/sakahukamaki
+    website: https://sakahukamaki.github.io/portfolio/
+    avatar: https://pbs.twimg.com/profile_images/1839651450940751872/Ewgy8dPj_400x400.jpg
+    title: TBD
+    bio:
+  - id:
+    name:
+    twitter:
+    github:
+    website:
+    avatar:
+    title:
+    bio:
+  - id:
+    name:
+    twitter:
+    github:
+    website:
+    avatar:
+    title:
+    bio:
+  - id:
+    name:
+    twitter:
+    github:
+    website:
+    avatar:
+    title:
+    bio:
+  - id:
+    name:
+    twitter:
+    github:
+    website:
+    avatar:
+    title:
+    bio:
+- category: misc
+  time: '16:40 - 16:55'
+  title: キーボード交流タイム
+  title_en: Networking Break
+- category: Keeb Talk
+  time: '16:55 - 17:10'
+  title: TBD
+  speaker:
+    id: emorima
+    name: 江森 真由美
+    twitter: https://x.com/emorima
+    github: https://github.com/emorima
+    website: https://emori.house/
+    avatar: https://cdn.bsky.app/img/avatar/plain/did:plc:p2ju7jlygcxnnsbsr6ucaatb/bafkreif3p7lwcv77by5k3remnx2yrcisiggzqf6nku5l54w3e6tpupryxa@jpeg
+    bio:
+- category: Keeb Talk
+  time: '17:10 - 17:25'
+  title: TBD
+  speaker:
+    id: tagomoris
+    name: Satoshi Tagomori
+    twitter: https://x.com/tagomoris
+    github: https://github.com/tagomoris
+    website: https://tagomoris.hatenablog.com/
+    avatar: https://pbs.twimg.com/profile_images/884652305462681600/2Otf6_Ln_400x400.jpg
+    bio:
+- category: Keeb Talk
+  time: '17:25 - 17:40'
+  title: TBD
+  speaker:
+    id: X___MOON___X
+    name: みなも♨️30%
+    twitter: https://x.com/X___MOON___X
+    github: https://github.com/masayukiFukada
+    website: https://scrapbox.io/self-made-kbds-ja/minamo
+    avatar: https://pbs.twimg.com/profile_images/1680555936489021446/2tIvftas_400x400.jpg
+    bio:
+- category: misc
+  time: '17:40 - 17:45'
+  title: 閉会
+  title_en: Closing

@@ -1,8 +1,3 @@
-$keynotes__avatar-image-size: 120px
-$keynotes__avatar-size: 260px
-$keynotes__min-width: 400px
-$route2: 1.4142
-
 .keynotes__speakers
   display: flex
   list-style: none
@@ -21,55 +16,10 @@ $route2: 1.4142
     margin-bottom: 4rem
 
 .keynotes__avatar
-  +button-gradient
-  background-size: 200% 200%
-  background-position: 100% 100%
-  width: $keynotes__avatar-size
-  height: $keynotes__avatar-size
-  border-radius: 10px
-  text-align: center
-  box-sizing: border-box
-  padding: 50px
-  margin-bottom: 1.5rem
-  display: inline-block
-  position: relative
-  overflow: hidden
-  z-index: 1
-  transition: 0.5s ease
-
-  &:before
-    content: ''
-    width: 270px * $route2 + 10px
-    height: 270px * $route2 + 10px
-    border-top: 1px solid white
-    transform: rotate(45deg)
-    transform-origin: 0 0
-    position: absolute
-    top: 0
-    left: 0
-    z-index: 2
-
-  &:after
-    content: ''
-    width: 270px * $route2 + 10px
-    height: 270px * $route2 + 10px
-    border-top: 1px solid white
-    transform: rotate(-45deg)
-    transform-origin: 100% 0
-    position: absolute
-    top: 0
-    right: 0
-    z-index: 2
-
+  +avatar($size: $keynotes__avatar-size)
 
 .keynotes__avatar-image
-  width: $keynotes__avatar-image-size
-  height: $keynotes__avatar-image-size
-  border: 20px solid white
-  border-radius: 6px
-  position: relative
-  z-index: 3
-  transition: 0.3s ease
+  +avatar-image($size: $keynotes__avatar-image-size)
 
 .keynotes__name
   font-size: 2.5rem
