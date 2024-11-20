@@ -15,7 +15,8 @@
 - <img width="701" alt="keeb-readme" src="https://github.com/user-attachments/assets/af20ffe0-933a-4f71-831b-51bd17004757">
 - プルリクエストを送ってください 🙏
 - こんな感じでサイトに反映されます
-  - <img width="1190" alt="image" src="https://github.com/user-attachments/assets/4de6680e-5a98-4275-b562-c678bd3b609a">
+  - <img width="1204" alt="image" src="https://github.com/user-attachments/assets/1091fadf-b314-4b94-a07b-ca3e693e7c31">
+
 
 
 
