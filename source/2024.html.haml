@@ -8,47 +8,7 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
 
 - d = data.year_2024
 
-.hero
-  .hero__bg
-    .hero__tagline
-      = d.general.tagline
-    .hero__container
-      .hero__logo
-        .hero__logo-left
-        .hero__logo-center
-        .hero__logo-right
-      .hero__content
-        .hero__logo-sub
-          .hero__year
-            = d.general.year
-          .hero__city
-            = d.general.city
-        .hero__datetime
-          %span.hero__date= "#{d.general.year} - #{d.general.month} - #{d.general.day}"
-          %span.hero__weekday= "（#{d.general.weekday}）"
-          %br.hero__datetime-br
-          %span.hero__time= "#{d.general.start_time} - #{d.general.end_time}"
-        .hero__rubyworld
-          = link_to d.general.rubyworld.name,
-            d.general.rubyworld.url,
-            title: d.general.rubyworld.name,
-            target: '_blank'
-          = '-'
-          = d.general.rubyworld.date
-        .hero__venue
-          = link_to d.general.venue.url,
-            title: d.general.venue.name,
-            class: 'hero__venue-link',
-            target: '_blank' do
-            %span.hero__venue-name-ja= d.venue.name
-          .hero__venue-google-map
-            = link_to d.general.venue.map_url,
-              title: 'View on Google Map',
-              target: '_blank',
-              class: 'hero__venue-google-map-link' do
-              %i.fa-solid.fa-location-dot.hero__venue-icon
-              = d.general.venue.address
-
+= partial('partials/2024/hero')
 
 .enter
   = link_to d.general.enter.url,
