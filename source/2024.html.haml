@@ -17,16 +17,12 @@ keywords: keyboard, DIY keyboard, RubyKaigi, 自作キーボード, keeb, keebka
         .hero__logo-left
         .hero__logo-center
         .hero__logo-right
-        -# = image_tag("2024/hero__logo.svg",
-        -#   class: 'hero__logo-image',
-        -#   alt: d.general.event_name)
       .hero__content
         .hero__logo-sub
           .hero__year
             = d.general.year
           .hero__city
             = d.general.city
-        -# .hero__sijimi
         .hero__datetime
           %span.hero__date= "#{d.general.year} - #{d.general.month} - #{d.general.day}"
           %span.hero__weekday= "（#{d.general.weekday}）"
