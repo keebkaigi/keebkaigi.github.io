@@ -10,7 +10,7 @@
 
 ## トークのタイトル、プロフィールの入力・編集方法
 
-- このリポジトリをCloneする
+- このリポジトリをForkする
 - `/data/year_2024/schedule.yml` からご自分のトークを探して編集
 - <img width="701" alt="keeb-readme" src="https://github.com/user-attachments/assets/af20ffe0-933a-4f71-831b-51bd17004757">
 - プルリクエストを送ってください 🙏
