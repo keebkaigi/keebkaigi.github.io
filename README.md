@@ -18,12 +18,10 @@
   - <img width="1204" alt="image" src="https://github.com/user-attachments/assets/1091fadf-b314-4b94-a07b-ca3e693e7c31">
 
 
-
-
 # ローカル確認方法 (任意)
 
-見た目の確認は運営の方でもやりますので、ローカル環境での確認は任意で、Yamlの方だけ編集いただければ大丈夫です。  
-興味のある方は以下の方法でご確認ください。  
+見た目の確認は運営の方でもやりますので、ローカル環境での確認は任意で、Yamlの方だけ編集いただければ大丈夫です。
+興味のある方は以下の方法でご確認ください。
 [Middleman](https://middlemanapp.com/jp/) で作ってます。
 
 - `$ gem install middleman`
