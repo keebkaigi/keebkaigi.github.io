@@ -1,0 +1,31 @@
+タイトルのdescender が欠けるのを修正
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Wed Nov 20 22:42:27 2024 +0900
+#
+# On branch tweak-design-2
+# Changes to be committed:
+#	modified:   source/stylesheets/2024/_schedule.css.sass
+#
+# ------------------------ >8 ------------------------
+# Do not modify or remove the line above.
+# Everything below it will be ignored.
+diff --git a/source/stylesheets/2024/_schedule.css.sass b/source/stylesheets/2024/_schedule.css.sass
+index 28f3bed..aad13df 100644
+--- a/source/stylesheets/2024/_schedule.css.sass
++++ b/source/stylesheets/2024/_schedule.css.sass
+@@ -136,10 +136,11 @@
+   font-family: 'Zen Antique Soft', serif
+   font-weight: normal
+   font-size: 2.5rem
+-  margin: 0 0 0.4rem 0
+   transform-origin: top left
+   transform: scale(0.95, 1) translateY(-2px)
+   line-height: 1.2
++  margin: 0
++  padding-bottom: 0.5rem
+   +text-gaming
+   animation: gaming-diagonal 3s ease-in-out infinite
+ 

@@ -1,3 +1,7 @@
+- name: nacl
+  name_ja: 株式会社ネットワーク応用通信研究所
+  url: https://www.netlab.jp/
+  logo: nacl.svg
 - name: esa
   name_ja: 合同会社esa
   url: https://esa.io/
