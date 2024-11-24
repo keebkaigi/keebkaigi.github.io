@@ -99,20 +99,20 @@
     avatar: https://pbs.twimg.com/profile_images/1839651450940751872/Ewgy8dPj_400x400.jpg
     title: TBD
     bio:
-  - id:
-    name:
-    twitter:
-    github:
-    website:
-    avatar:
-    title:
+  - id: hayaokimura
+    name: hachi
+    twitter: hachiblog
+    github: hayaokimura
+    website: https://hayaokimura.com/
+    avatar: https://pbs.twimg.com/profile_images/1686645362923278336/18o7E7-o_400x400.jpg
+    title: Raw HID とOLEDで広げるキーボードの可能性
     bio:
-  - id:
-    name:
-    twitter:
-    github:
-    website:
-    avatar:
+  - id: shugomaeda
+    name: Shugo Maeda
+    twitter: https://twitter.com/shugomaeda
+    github: https://github.com/shugo
+    website: https://github.com/shugo/textbringer/
+    avatar: https://pbs.twimg.com/profile_images/1859883694/klx125_400x400.jpg
     title:
     bio:
   - id:
