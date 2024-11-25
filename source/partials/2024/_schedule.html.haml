@@ -46,7 +46,11 @@
                         .schedule__sema-speaker-name
                           = speaker.name
                         .schedule__sema-speaker-id
-                          = "@#{speaker.id}"
+                          = link_to speaker.twitter,
+                            title:  speaker.id,
+                            target: '_blank',
+                            class:  'schedule__sema-speaker-id-link' do
+                            = "@#{speaker.id}"
                         = link_to speaker.twitter,
                           title:  speaker.twitter,
                           target: '_blank',
