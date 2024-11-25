@@ -32,38 +32,39 @@
             -# 狭ピッチトーク決定後に表示
             %ul.schedule__sema
               - item.speakers.each do |speaker|
-                %li.schedule__sema-speaker
-                  .schedule__sema-avatar
-                    = link_to speaker.twitter, target: '_blank', class: 'schedule__sema-speaker-link' do
-                      = image_tag(speaker.avatar,
-                        alt: speaker.id,
-                        class: 'schedule__sema-avatar-image')
-                  .schedule__sema-right
-                    %h4.schedule__sema-title
-                      = speaker.title
-                    .schedule__sema-profile
-                      .schedule__sema-speaker-name
-                        = speaker.name
-                      .schedule__sema-speaker-id
-                        = "@#{speaker.id}"
-                      = link_to speaker.twitter,
-                        title:  speaker.twitter,
-                        target: '_blank',
-                        class:  'schedule__sema-sns is-twitter' do
-                        %i.fa-brands.fa-twitter
-                      = link_to speaker.github,
-                        title:  speaker.github,
-                        target: '_blank',
-                        class:  'schedule__sema-sns is-github' do
-                        %i.fa-brands.fa-github
-                      - if speaker.website.present?
-                        = link_to speaker.website,
-                          title:  speaker.website,
+                - if speaker.id.present?
+                  %li.schedule__sema-speaker
+                    .schedule__sema-avatar
+                      = link_to speaker.twitter, target: '_blank', class: 'schedule__sema-speaker-link' do
+                        = image_tag(speaker.avatar,
+                          alt: speaker.id,
+                          class: 'schedule__sema-avatar-image')
+                    .schedule__sema-right
+                      %h4.schedule__sema-title
+                        = speaker.title
+                      .schedule__sema-profile
+                        .schedule__sema-speaker-name
+                          = speaker.name
+                        .schedule__sema-speaker-id
+                          = "@#{speaker.id}"
+                        = link_to speaker.twitter,
+                          title:  speaker.twitter,
                           target: '_blank',
-                          class:  'schedule__sema-sns is-website' do
-                          %i.fa-solid.fa-link
-                    .schedule__sema-bio
-                      = speaker.bio
+                          class:  'schedule__sema-sns is-twitter' do
+                          %i.fa-brands.fa-twitter
+                        = link_to speaker.github,
+                          title:  speaker.github,
+                          target: '_blank',
+                          class:  'schedule__sema-sns is-github' do
+                          %i.fa-brands.fa-github
+                        - if speaker.website.present?
+                          = link_to speaker.website,
+                            title:  speaker.website,
+                            target: '_blank',
+                            class:  'schedule__sema-sns is-website' do
+                            %i.fa-solid.fa-link
+                      .schedule__sema-bio
+                        = speaker.bio
 
           - if item.category == 'Keeb Talk'
             .schedule__talk
