@@ -97,23 +97,23 @@
     github: https://github.com/sakahukamaki
     website: https://sakahukamaki.github.io/portfolio/
     avatar: https://pbs.twimg.com/profile_images/1839651450940751872/Ewgy8dPj_400x400.jpg
-    title: TBD
+    title: 自作しないゆるふわこだわりキーボード生活
     bio:
-  - id:
-    name:
-    twitter:
-    github:
-    website:
-    avatar:
-    title:
+  - id: hayaokimura
+    name: hachi
+    twitter: https://x.com/hachiblog
+    github: https://github.com/hayaokimura
+    website: https://hayaokimura.com/
+    avatar: https://pbs.twimg.com/profile_images/1686645362923278336/18o7E7-o_400x400.jpg
+    title: Raw HID とOLEDで広げるキーボードの可能性
     bio:
-  - id:
-    name:
-    twitter:
-    github:
-    website:
-    avatar:
-    title:
+  - id: shugomaeda
+    name: Shugo Maeda
+    twitter: https://x.com/shugomaeda
+    github: https://github.com/shugo
+    website: https://github.com/shugo/textbringer/
+    avatar: https://pbs.twimg.com/profile_images/1859883694/klx125_400x400.jpg
+    title: 漢字直接入力のすすめ
     bio:
   - id:
     name:
@@ -159,7 +159,7 @@
     bio:
 - category: Keeb Talk
   time: '17:25 - 17:40'
-  title: TBD
+  title: 30%キーボード発想法
   speaker:
     id: X___MOON___X
     name: みなも♨️30%
@@ -167,7 +167,7 @@
     github: https://github.com/masayukiFukada
     website: https://scrapbox.io/self-made-kbds-ja/minamo
     avatar: https://pbs.twimg.com/profile_images/1680555936489021446/2tIvftas_400x400.jpg
-    bio:
+    bio: 今は昔 知る人ぞ知る 30% 好き
 - category: misc
   time: '17:40 - 17:45'
   title: 閉会
