@@ -123,13 +123,13 @@
     avatar: https://pbs.twimg.com/profile_images/570144165409738752/UKbc9xT0_400x400.png
     title: TBD
     bio:
-  - id:
-    name:
-    twitter:
-    github:
+  - id: nishidayuya
+    name: Yuya Nishida
+    twitter: https://x.com/nishidayuya
+    github: https://github.com/nishidayuya
     website:
     avatar:
-    title:
+    title: そして少キーへ...
     bio:
 - category: misc
   time: '16:40 - 16:55'
