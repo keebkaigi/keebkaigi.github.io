@@ -17,6 +17,9 @@
 - こんな感じでサイトに反映されます
   - <img width="1204" alt="image" src="https://github.com/user-attachments/assets/1091fadf-b314-4b94-a07b-ca3e693e7c31">
 
+# Keynote Template and Design Sources
+
+[Keynote, Rabbit 等のプレゼンで利用できるテンプレートやデザイン素材はこちら](https://esa-pages.io/p/sharing/3/posts/12845/3fd6e6b704ad3c8b82d1.html)
 
 # ローカル確認方法 (任意)
 

@@ -20,5 +20,10 @@
                   = link_to "@#{member}",
                     "https://twitter.com/#{member}",
                     target: '_blank'
+        .footer__design-sources
+          = link_to d.general.design_sources.url,
+            target: '_blank' do
+            %i.fa-solid.fa-caret-right
+            = d.general.design_sources.text
     .footer__license
       = d.general.license
