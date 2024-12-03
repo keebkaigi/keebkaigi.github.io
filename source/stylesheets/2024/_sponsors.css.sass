@@ -3,16 +3,26 @@
   padding: 0
   display: flex
   justify-content: space-around
+  align-items: center
+
+  +mq
+    display: block
+    text-align: center
 
 .sponsors__logo
-  $size: 220px
-  width: $size
   margin-right: 1rem
   transition: 0.5s ease
 
   &:hover
     transform: scale(1.1)
 
+  +mq
+    margin: 3rem auto
+
 .sponsors__logo-image
+  width: 220px
   object-fit: cover
   transition: 0.5s ease
+
+  &.is-mrubyc
+    width: 300px
