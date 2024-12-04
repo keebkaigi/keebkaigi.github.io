@@ -19,7 +19,7 @@
     bio: 松江在住の40% keyboard enthusiast
 - category: Keeb Talk
   time: '14:25 - 14:40'
-  title: TBD
+  title: キーボードからロボットへ
   speaker:
     id: kurod1492
     name: Akihiro Kurotani
@@ -27,7 +27,7 @@
     github: https://github.com/kurod1492
     website: https://qiita.com/kurod1492
     avatar: https://pbs.twimg.com/profile_images/1349302401413468161/b-6UyR_U_400x400.jpg
-    bio:
+    bio: 松江市でRedmineの記事を書いています。Helix PicoとOyamada Willowを使っています。
 - category: Keeb Talk
   time: '14:40 - 14:55'
   title: '"Actual" Security in Microcontroller Ruby!?'
